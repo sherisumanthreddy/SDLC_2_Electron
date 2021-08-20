@@ -57,9 +57,8 @@ The cost requires only for software development and implementation of the softwa
 * These games are played between students and even experts to check their logical thinking.
 
 ## What:
-This game is played for enjoyment.This game is about the first player with 3
-marks in a row, where a row can be either vertical, horizontal, or
-diagonal will win the game. If all the cells become filled the game is a draw.
+* It provides multiple gaming options.
+* User can choose any game of his choice from the given list.
 
 ## When:
 
