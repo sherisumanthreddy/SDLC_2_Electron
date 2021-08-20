@@ -26,7 +26,7 @@ class FileIOHandler:
         return
     
     @staticmethod
-    def validateCleanedData(string):
+    def ValidateCleanedData(string):
         """
         Checks if read data(sudokuTxt) is valid.
         Input: string
@@ -34,23 +34,13 @@ class FileIOHandler:
         """
         return
 
-    def SaveSudokuToTxt(self, sudokuGridObject):
+    def SaveSudokuToTxt(self, sudokuGridObject, pathToSolTxt):
         """
         Takes SudokuGrid object and saves it to a file
-        Input: SudokuGrid object
+        Input: SudokuGrid object, path to txt
         Returns: True or False
         """
         return
-
-    @staticmethod
-    def FormatGridToTxt(sudokuGridObject):
-        """ 
-        This is complementary to cleanData function this converts grid to compatible string
-        Input: sudokuGrid Object
-        Returns: string
-        """
-        return
-
 
 class SudokuGrid:
     """
@@ -60,11 +50,47 @@ class SudokuGrid:
         2. this object handles displaying this object.
         3. this object is required by Sudoku Solver Object.
     """
-    pass
+    def __init__(self, IOHandlerObj, puzz_source, sol_destination = None):
+        self.Grid = [[]] # 9 x 9 List
+        self.IOHandler = IOHandlerObj
+        self.IOSource = puzz_source
+        self.IODestination = sol_destination
+
+    def setIODestination(self, path_):
+        self.IODestination = path_
+
+    def Read(self):
+        self.IOHandler.ReadSudokuFromTxt(self.IOSource)
+
+    def StringToGrid(self):
+        pass
+        
+    def Save(self):
+        self.IOHandler.SaveSudokuToTxt(self, self.IODestination)
+        
+
+    def __str__(self):
+        """
+        This converts grid to compatible string or can be called GridToString
+        Input: self
+        Returns: string
+        """
+
 
 class SudokuSolver:
     """
     This takes a SudokuGrid object and provides the solution and other stuff required.
         * Backtracking reccursive algorithm for solving.
     """
-    pass
+    def __init__(self, sudokuGridObj):
+        self.Puzz = sudokuGridObj
+        self.Soln = None
+    
+    def IsValidEntry(self, row, col, val):
+        pass
+
+    def SolverHelper(self):
+        pass
+
+    def Solve(self):
+        pass
