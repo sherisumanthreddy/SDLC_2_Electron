@@ -23,3 +23,8 @@ PS No. |  Name   |    Features    | Issues Raised |Issues Resolved|No Test Cases
 `99005688` | Tankasala  Gaanalola  |     | X No     | X No   |X No   |X No  
 `99005679` | Annappa  M |     | X No     | X No   |X No   |X No     
 `99005635` | Yaseer Faiz Ahmed |     | X No     | X No   |X No   |X No  
+## Challenges Faced and How Was It Overcome
+
+1. Faced issues with integrating the modules because each of us had a different coding style. But eventually, reading through code and undersanding it helped us modify it and integrate it accordingly.
+2. Testing was something new to each and everyone of us in Python. We had to start from scratch and learn how to write test files for python programs.
+3. Following and keeping track of every process in SDLC was very difficult. With constant support and hardwork, we were able to atleast keep up with atleast half of it.
