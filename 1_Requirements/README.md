@@ -90,6 +90,7 @@ The cost requires only for software development and implementation of the softwa
 
 ### How:
 * The system aims to provide smooth experience for users and should be implemented in least possible cost and efficient way.
+* Users can attempt to play the games through any of the online medium
 
 ## Detailed Requirements
 
@@ -105,3 +106,6 @@ ID  | Description                   | HLR ID | Status
 ----|-------------------------------|--------|-------
 LL0X | **Sudoku Puzzle Input / Output** : Read or Save a sudoku grid from or to a file | HL03 | ❌ 
 LL0X | **Sudoku Puzzle Display**: Display Sudoku grid to the user | HL03 | ❌
+LL0X | **Sudoku Puzzle Message**: Find if solution exists for the given puzzle or not | HL03 | ❌
+LL0X | **Sudoku Puzzle Solve**: Solve the puzzle and display the same | HL03 | ❌
+LL0X | **Sudoku Puzzle Hint**: Provide hints for solving the sudoku puzzle| HL03 | ❌
