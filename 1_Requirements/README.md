@@ -52,7 +52,9 @@ The cost requires only for software development and implementation of the softwa
 # 4W's and 1'H
 
 ## Who:
-  This game was played between students and even experts to check there logical thinking.Normaly anybody can play this tic tac toe game.
+  Individuals looking for fun activities.
+  Game lovers irrespective of their age group.
+  These games are played between students and even experts to check their logical thinking.
 
 ## What:
 This game is played for enjoyment.This game is about the first player with 3
