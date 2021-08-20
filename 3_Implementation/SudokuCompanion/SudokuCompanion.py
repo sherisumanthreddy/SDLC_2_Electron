@@ -10,8 +10,8 @@ class FileIOHandler:
 
     def ReadSudokuFromTxt(self, pathToPuzzle):
         """
+        Reads the formatted puzzle txt file and stores it as text (sudokuTxt<-Puzzle.txt).
         Input: Path to puzzle file
-        Description: Reads the formatted puzzle txt file and stores it as text (sudokuTxt<-Puzzle.txt).
         Returns: True or False
         """
         return 
