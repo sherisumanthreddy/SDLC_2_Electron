@@ -67,7 +67,7 @@ This game is played in a short interval of time when the two players are decided
 
 ## Where:
 
-This game was usually played in paper,mobile and Pc.
+This game is usually played in paper,mobile and Pc.
 
 ## How:
 
@@ -76,4 +76,4 @@ with an X and who will go first. Play proceeds with the opponents
 alternately placing their marks in any unoccupied cell 
 The object of the game is to be the first player with 3
 marks in a row, where a row can be either vertical, horizontal, or
-diagonal. If all the cells become filled the game is a draw.
+diagonal. If all the cells are occupied the game is a draw.
