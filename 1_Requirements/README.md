@@ -64,8 +64,7 @@ The cost requires only for software development and implementation of the softwa
 * These games can be played in a short interval of time if the user wants to prevent boredom, for relaxation and enjoyment.
 
 ## Where:
-
-This game is usually played in paper,mobile and Pc.
+* It is simple and user-friendly, so it can be used in many domains.
 
 ## How:
 
