@@ -14,11 +14,7 @@ FONT_SIZE = 12
 FONT = ('Arial', FONT_SIZE, 'bold')
 
 	
-while True:
-	turtle.onscreenclick(btnclick_2048, 1)	
-	turtle.listen()
-	turtle.done()
-	window.update()
+
 
 
 gameboard = [[0, 0, 0, 0],
@@ -143,5 +139,9 @@ pen.penup()
 pen.goto(7, 6)	#with reference to the drawn canvas
 pen.write("2048 game", font=FONT)
 
-
+while True:
+	turtle.onscreenclick(btnclick_2048, 1)	
+	turtle.listen()
+	turtle.done()
+	window.update()
 	
