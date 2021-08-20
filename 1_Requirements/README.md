@@ -61,8 +61,7 @@ The cost requires only for software development and implementation of the softwa
 * User can choose any game of his choice from the given list.
 
 ## When:
-
-This game is played in a short interval of time when the two players are decided to pass the boring time or challenge who will win among themself.
+* These games can be played in a short interval of time if the user wants to prevent boredom, for relaxation and enjoyment.
 
 ## Where:
 
