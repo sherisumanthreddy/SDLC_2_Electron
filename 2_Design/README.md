@@ -20,8 +20,10 @@ Low Level:
 
 ### Tic-Tac-Toe
 ### Usecase Diagram
-![UseCase](https://user-images.githubusercontent.com/66193894/130224628-59df5222-5c62-4bf4-9e64-b2c190b3cb96.png)
+![UseCase](https://user-images.githubusercontent.com/66193894/130224628-59df5222-5c62-4bf4-9e64-b2c190b3cb96.png
 
+### Activity Diagram
+![ActivityDiagram](https://user-images.githubusercontent.com/66193894/130256678-15037fb4-0fbd-49c7-ab79-75bc213cf870.png)
 
 ## Low Level Design
 ### Flowchart
