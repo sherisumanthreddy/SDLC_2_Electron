@@ -75,6 +75,7 @@ The cost requires only for software development and implementation of the softwa
 * Individuals looking for fun activities.
 * Game lovers irrespective of their age group.
 * These games are played between students and even experts to check their logical thinking.
+* People of any economical background having a hobby of playing games
 
 ## What:
 * It provides multiple gaming options.
