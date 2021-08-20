@@ -59,34 +59,34 @@ Sudoku is a logic-based, combinatorial number-placement puzzle. Sudoku Companion
 
 ## Research
 
-## Cost and features
+### Cost and features
 The cost requires only for software development and implementation of the software.
 
-## Defining Our System
+### Defining Our System
 
 
 ## SWOT Analysis
 ![swot analysis](https://user-images.githubusercontent.com/81503646/130212472-be28520b-a495-451c-972e-28a45c8b0101.png)
 
 
-# 4W's and 1'H
+## 4W's and 1'H
 
-## Who:
+### Who:
 * Individuals looking for fun activities.
 * Game lovers irrespective of their age group.
 * These games are played between students and even experts to check their logical thinking.
 * People of any economical background having a hobby of playing games
 
-## What:
+### What:
 * It provides multiple gaming options.
 * User can choose any game of his choice from the given list.
 
-## When:
+### When:
 * These games can be played in a short interval of time if the user wants to prevent boredom, for relaxation and enjoyment.
 
-## Where:
+### Where:
 * It is simple and user-friendly, so it can be used in many domains.
 * It can be used anywhere around the world by anyone who loves playing games.
 
-## How:
+### How:
 * The system aims to provide smooth experience for users and should be implemented in least possible cost and efficient way.
