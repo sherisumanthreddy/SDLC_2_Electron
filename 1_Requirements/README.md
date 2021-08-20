@@ -53,8 +53,8 @@ The cost requires only for software development and implementation of the softwa
 
 ## When
 
-A person gets bored
-To refresh and relax our mind
+1. A person gets bored
+2. To refresh and relax our mind
 
 ## Where
 
