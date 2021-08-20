@@ -51,15 +51,27 @@ The cost requires only for software development and implementation of the softwa
 
 # 4W's and 1'H
 
-## When
+## Who:
+  This game was played between students and even experts to check there logical thinking.Normaly anybody can play this tic tac toe game.
 
-1. A person gets bored
-2. To refresh and relax our mind
+## What:
+This game is played for enjoyment.This game is about the first player with 3
+marks in a row, where a row can be either vertical, horizontal, or
+diagonal will win the game. If all the cells become filled the game is a draw.
 
-## Where
+## When:
 
-At any place
+This game is played in a short interval of time when the two players are decided to pass the boring time or challenge who will win among themself.
 
-## Why
+## Where:
 
-To improve IQ level
+This game was usually played in paper,mobile and Pc.
+
+## How:
+
+The players first decide who will mark his moves
+with an X and who will go first. Play proceeds with the opponents
+alternately placing their marks in any unoccupied cell 
+The object of the game is to be the first player with 3
+marks in a row, where a row can be either vertical, horizontal, or
+diagonal. If all the cells become filled the game is a draw.
