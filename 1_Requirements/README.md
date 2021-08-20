@@ -65,12 +65,7 @@ The cost requires only for software development and implementation of the softwa
 
 ## Where:
 * It is simple and user-friendly, so it can be used in many domains.
+* It can be used anywhere around the world by anyone who loves playing games.
 
 ## How:
-
-The players first decide who will mark his moves
-with an X and who will go first. Play proceeds with the opponents
-alternately placing their marks in any unoccupied cell 
-The object of the game is to be the first player with 3
-marks in a row, where a row can be either vertical, horizontal, or
-diagonal. If all the cells are occupied the game is a draw.
+* The system aims to provide smooth experience for users and should be implemeted in least possible cost and efficient way.
