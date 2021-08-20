@@ -68,4 +68,4 @@ The cost requires only for software development and implementation of the softwa
 * It can be used anywhere around the world by anyone who loves playing games.
 
 ## How:
-* The system aims to provide smooth experience for users and should be implemeted in least possible cost and efficient way.
+* The system aims to provide smooth experience for users and should be implemented in least possible cost and efficient way.
