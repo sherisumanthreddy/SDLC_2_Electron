@@ -15,12 +15,22 @@ diagonal. If all the cells become filled the game is a draw.
 ## Tic Tae Toe Detail requirements
 ## High Level Requirements
 
-ID |  Description  |    Category    |     Status    |
--------|---------|----------------|----------------|
-HR01 | Display board  | Technical | |
-HR02 | Player move  |  Technical | |
-HR03 | Computer move |  Technical | |
-HR04 | Winner finder  |  Technical | |
+  ID |  Description  |    Category    |     Status    |
+  -------|---------|----------------|----------------|
+  HR01 | Display board  | Technical | |
+  HR02 | Player move  |  Technical | |
+  HR03 | Computer move |  Technical | |
+  HR04 | Winner finder  |  Technical | |
+
+##  Low level Requirements:
+  ID  | Description                   | HLR ID | Status 
+  ----|-------------------------------|--------|---------------------------
+ LR01 | User shoud be able to input | HR02 | 
+ LR02 | User should be able to take move | HR02 | 
+ LR03 | Space is checked whether it is free  | HR02 | 
+ LR04 | User should be able to insert letter | HR02 | 
+ LR05 | Selection of random no | HR03 | 
+ LR06 | Winner is decided   | HR03 | 
 
 
 
