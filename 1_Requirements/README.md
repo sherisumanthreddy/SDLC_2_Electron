@@ -90,3 +90,13 @@ The cost requires only for software development and implementation of the softwa
 
 ### How:
 * The system aims to provide smooth experience for users and should be implemented in least possible cost and efficient way.
+
+## Detailed Requirements
+
+### High Level Requirements
+
+ID |  Description  |    Category    |     Status    |
+---|---------------|----------------|---------------|
+HL03| **Sudoku Companion** : Provide tools to solve sudoku puzzle like hints, possible solution and check is a puzzle has a solution | Technical | NA |
+
+### Low Level Requirements
