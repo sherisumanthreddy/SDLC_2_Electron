@@ -27,3 +27,8 @@ non functional:
 3) pretty UI
 4) high score
 
+### Sudoku Companion
+Sudoku is a logic-based, combinatorial number-placement puzzle. Sudoku Companion is a mini-application which can be used to solve Sudoku puzzles more conveniently. It provides the following functions:
+1. checking if a solution exists
+2. provide hints 
+3. solve puzzle entirely
