@@ -37,5 +37,7 @@ Sudoku is a logic-based, combinatorial number-placement puzzle. Sudoku Companion
 2. provide hints 
 3. solve puzzle entirely
 
+## Research
+
 ## SWOT Analysis
 ![SWOT](https://user-images.githubusercontent.com/66193894/130211379-69403c52-57a7-44d4-b072-788c13c307f0.png)
