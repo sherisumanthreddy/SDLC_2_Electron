@@ -5,7 +5,52 @@ class FileIOHandler:
     This class handles reading sudoku puzzle from a text file 
     and saving the same to the text file.
     """
-    pass
+    def __init__(self):
+        self.sudokuTxt = "" # the data read from file is stored as string with no space or any delimiters
+
+    def ReadSudokuFromTxt(self, pathToPuzzle):
+        """
+        Input: Path to puzzle file
+        Description: Reads the formatted puzzle txt file and stores it as text (sudokuTxt<-Puzzle.txt).
+        Returns: True or False
+        """
+        return 
+    
+    @staticmethod
+    def CleanReadData(stringObject):
+        """
+        This reads the puzzle file and removes unnecessary stuff.
+        Input: string
+        Returns: string
+        """
+        return
+    
+    @staticmethod
+    def validateCleanedData(string):
+        """
+        Checks if read data(sudokuTxt) is valid.
+        Input: string
+        Returns: True or False
+        """
+        return
+
+    def SaveSudokuToTxt(self, sudokuGridObject):
+        """
+        Takes SudokuGrid object and saves it to a file
+        Input: SudokuGrid object
+        Returns: True or False
+        """
+        return
+
+    @staticmethod
+    def FormatGridToTxt(sudokuGridObject):
+        """ 
+        This is complementary to cleanData function this converts grid to compatible string
+        Input: sudokuGrid Object
+        Returns: string
+        """
+        return
+
 
 class SudokuGrid:
     """
