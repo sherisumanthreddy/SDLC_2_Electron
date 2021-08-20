@@ -41,7 +41,6 @@ Sudoku is a logic-based, combinatorial number-placement puzzle. Sudoku Companion
 
 ## Cost and features
 
-The cost requires only for software development and implementation of the software.
-
 ## SWOT Analysis
-![SWOT](https://user-images.githubusercontent.com/66193894/130211379-69403c52-57a7-44d4-b072-788c13c307f0.png)
+![swot analysis](https://user-images.githubusercontent.com/81503646/130212472-be28520b-a495-451c-972e-28a45c8b0101.png)
+
