@@ -90,6 +90,7 @@ The cost requires only for software development and implementation of the softwa
 
 ### How:
 * The system aims to provide smooth experience for users and should be implemented in least possible cost and efficient way.
+* Users can attempt to play the games through any of the online medium
 
 ## Detailed Requirements
 
