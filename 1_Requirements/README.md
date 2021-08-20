@@ -12,6 +12,16 @@ The object of the game is to be the first player with 3
 marks in a row, where a row can be either vertical, horizontal, or
 diagonal. If all the cells become filled the game is a draw.
 
+## Tic Tae Toe Detail requirements
+## High Level Requirements
+
+ID |  Description  |    Category    |     Status    |
+-------|---------|----------------|----------------|
+HR01 | Display board  | Technical | |
+HR02 | Player move  |  Technical | |
+HR03 | Computer move |  Technical | |
+HR04 | Winner finder  |  Technical | |
+
 
 
 ### 2048
