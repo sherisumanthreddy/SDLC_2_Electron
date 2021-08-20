@@ -51,3 +51,15 @@ The cost requires only for software development and implementation of the softwa
 
 # 4W's and 1'H
 
+## When
+
+A person gets bored
+To refresh and relax our mind
+
+## Where
+
+At any place
+
+## Why
+
+To improve IQ level
