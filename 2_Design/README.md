@@ -25,7 +25,7 @@ Low Level:
 ### Activity Diagram
 ![ActivityDiagram](https://user-images.githubusercontent.com/66193894/130256678-15037fb4-0fbd-49c7-ab79-75bc213cf870.png)
 
-### class diagram
+### Class Diagram
 ![classdiagram](https://user-images.githubusercontent.com/80813102/130295145-c7d964d0-6ede-4646-bc94-ac79d09e312c.png)
 
 
