@@ -106,3 +106,5 @@ ID  | Description                   | HLR ID | Status
 ----|-------------------------------|--------|-------
 LL0X | **Sudoku Puzzle Input / Output** : Read or Save a sudoku grid from or to a file | HL03 | ❌ 
 LL0X | **Sudoku Puzzle Display**: Display Sudoku grid to the user | HL03 | ❌
+LL0X | **Sudoku Puzzle Message**: Find if solution exists for the given puzzle or not | HL03 | ❌
+LL0X | **Sudoku Puzzle Solve**: Solve the puzzle and display the same | HL03 | ❌
