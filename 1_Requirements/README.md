@@ -95,9 +95,9 @@ The cost requires only for software development and implementation of the softwa
 
 ### High Level Requirements
 
-ID |  Description  |    Category    |     Status    
----|---------------|----------------|---------------
-HL03| **Sudoku Companion** : Provide tools to solve sudoku puzzle like hints, possible solution and check if a puzzle has a solution | Technical | ❌ 
+ID |  Description  |     Status    
+---|---------------|----------------
+HL03| **Sudoku Companion** : Provide tools to solve sudoku puzzle like hints, possible solution and check if a puzzle has a solution | ❌ 
 
 ### Low Level Requirements
 
