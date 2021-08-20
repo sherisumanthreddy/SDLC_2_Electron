@@ -15,3 +15,6 @@ Low Level:
 3) addition of tiles of the same number - done
 4) randomly selecting where the new tiles appear (one way to implement this is to select a random number from 0 till 2 and then randomly select the positions from the empty tiles, and place either 2 or 4 (or 8 based on difficulty)  randomly on those spots) - okay slight change here, upon research it was discovered that only one new tile appears randomly and there is a chance that it is either 2 or 4, difficulty dictates this split
 5) game over detection - ya kind of works needs concrete logic
+
+### Tic-Tac-Toe
+![Tic-tac-toe UML](https://user-images.githubusercontent.com/80352730/130210483-74785721-49c1-43c7-88dd-4d88d16f9105.png)
