@@ -2,7 +2,7 @@
 
 ## Tic-Tac-Toe
 
-##  High level test plan
+###  High level test plan
 
 |Test ID | Description | Exp I/P | Exp O/P |
 |--------|-------------|---------|---------|
@@ -12,7 +12,7 @@
 
 
 
-##  Low level test plan
+###  Low level test plan
 
 |Test ID | Description | Exp I/P | Exp O/P |
 |--------|-------------|---------|---------|
