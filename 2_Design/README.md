@@ -20,4 +20,4 @@ Low Level:
 
 ### Tic-Tac-Toe
 ### Usecase Diagram
-![UML](https://user-images.githubusercontent.com/66193894/130223967-f5d25ab4-8742-408a-8dee-051c5e86e752.png)
+![UseCase](https://user-images.githubusercontent.com/66193894/130224628-59df5222-5c62-4bf4-9e64-b2c190b3cb96.png)
