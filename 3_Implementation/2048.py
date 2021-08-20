@@ -1,10 +1,27 @@
 import random
+import turtle
+
+#creating window
+window = turtle.Screen()
+window.bgcolor("white")
+window.setup(width = 400, height=600)
+window.title("Mini Arcade Games")
+window.tracer()
+
+CURSOR_SIZE = 20
+FONT_SIZE = 12
+FONT = ('Arial', FONT_SIZE, 'bold')
+
+	
+#while True:
+#	window.update()
+
 
 gameboard = [[0, 0, 0, 0],
              [0, 0, 0, 0],
              [0, 0, 0, 0],
              [0, 0, 0, 0]]
-
+			 
 
 def print_gameboard():
     for i in gameboard:
@@ -84,20 +101,45 @@ def pick_random_tile():
         gameboard[pos[0]][pos[1]] = 2
 
 
-pick_random_tile()
-pick_random_tile()
-print_gameboard()
-while 0 not in gameboard: #the game doesn't end properly, there is a bit of nuance here that I am not able to figure out
-    char = input().rstrip()[0]
 
-    if char == 'w':
-        move_up()
-    elif char == 's':
-        move_down()
-    elif char == 'd':
-        move_right()
-    elif char == 'a':
-        move_left()
+def game_2048():
+	pick_random_tile()
+	pick_random_tile()
+	print_gameboard()
+	while 0 not in gameboard: #the game doesn't end properly, there is a bit of nuance here that I am not able to figure out
+		char = input().rstrip()[0]
 
-    pick_random_tile()
-    print_gameboard()
+		if char == 'w':
+			move_up()
+		elif char == 's':
+			move_down()
+		elif char == 'd':
+			move_right()
+		elif char == 'a':
+			move_left()
+
+		pick_random_tile()
+		print_gameboard()
+		
+		
+def btnclick_2048(x, y):
+	if x > 0 and x < 81 and y > 0 and y<30:
+		print("need to call 2048 game loop")
+		game_2048()
+		
+
+#pen for creating buttons
+pen = turtle.Turtle()
+pen.hideturtle()	#an invisible turtle for drawing buttons
+pen.forward(80)
+pen.left(90)	#now torn 90dergrees clock wise 
+pen.forward(30)
+pen.left(90)
+pen.penup()
+pen.goto(7, 6)	#with reference to the drawn canvas
+pen.write("2048 game", font=FONT)
+
+turtle.onscreenclick(btnclick_2048, 1)	
+turtle.listen()
+turtle.done()
+	
