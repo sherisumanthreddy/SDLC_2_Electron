@@ -29,6 +29,6 @@ def test_FileIOHandler_SaveSudokuToTxt():
 
     IO_Obj = FileIOHandler()
     assert IO_Obj.SaveSudokuToTxt(var, path_)
-    assert IO_Obj.ReadSudokuFromTxt(path_))
+    assert IO_Obj.ReadSudokuFromTxt(path_)
     
     os.remove(path_)
