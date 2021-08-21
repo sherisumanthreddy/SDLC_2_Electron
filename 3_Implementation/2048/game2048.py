@@ -3,6 +3,7 @@ import turtle
 import random
 
 
+<<<<<<< HEAD
 # Seting up the screen
 window = turtle.Screen()
 window.title("Mini arcade games")
@@ -20,12 +21,15 @@ CURSOR_SIZE = 20
 FONT_SIZE = 15
 FONT = ('Arial', FONT_SIZE, 'bold')
 ARCADE_FONT = ('Arcade Interlaced', FONT_SIZE, 'bold')
+=======
+
+>>>>>>> eaa9309d8d54080e75f0664e9d021191be6aeb7f
 
 
 #our main grid 
 gameboard = [
     [0, 0, 0, 0],
-    [0, 0, 2, 0],
+    [0, 0, 0, 0],
     [0, 0, 0, 0],
     [0, 0, 0, 0]
 ]
@@ -198,6 +202,7 @@ def btnclick_2048(x, y):
 def transpose(board):
     interim_board = [[board[j][i] for j in range(4)] for i in range(4)]
     return interim_board
+<<<<<<< HEAD
 ## 
 #  @brief missor image the grid
 #  
@@ -216,6 +221,15 @@ def reverse(board):
 #  
 #  @details 
 #  
+=======
+
+
+def reverse(board):
+    interim_board = [row[::-1] for row in board]
+    return interim_board
+
+
+>>>>>>> eaa9309d8d54080e75f0664e9d021191be6aeb7f
 def slam_left():
     for j in range(4):
         for _ in range(3):
@@ -223,6 +237,7 @@ def slam_left():
                 if gameboard[j][i] == 0:
                     gameboard[j][i] = gameboard[j][i + 1]
                     gameboard[j][i + 1] = 0
+<<<<<<< HEAD
 ## 
 #  @brief merges the blocks if similar
 #  
@@ -230,12 +245,17 @@ def slam_left():
 #  
 #  @details 
 #  
+=======
+
+
+>>>>>>> eaa9309d8d54080e75f0664e9d021191be6aeb7f
 def compress_left():
     for j in range(4):
         for i in range(3):
             if gameboard[j][i] != 0 and gameboard[j][i] == gameboard[j][i + 1]:
                 gameboard[j][i] = gameboard[j][i] * 2
                 gameboard[j][i + 1] = 0
+<<<<<<< HEAD
 ## 
 #  @brief moves left
 #  
@@ -245,10 +265,21 @@ def compress_left():
 #  
 def move_left():
     pick_random_tile()
+=======
+
+def raw_move_left():
+>>>>>>> eaa9309d8d54080e75f0664e9d021191be6aeb7f
     slam_left()
     compress_left()
     slam_left()
+
+
+def move_left():
+    
+    raw_move_left()
+    pick_random_tile()
     draw_grid()
+<<<<<<< HEAD
 ## 
 #  @brief moves up
 #  
@@ -256,13 +287,19 @@ def move_left():
 #  
 #  @details 
 #  
+=======
+
+
+>>>>>>> eaa9309d8d54080e75f0664e9d021191be6aeb7f
 def move_up():
-    pick_random_tile()
+    
     global gameboard
     gameboard = transpose(gameboard)
-    move_left()
+    raw_move_left()
     gameboard = transpose(gameboard)
+    pick_random_tile()
     draw_grid()
+<<<<<<< HEAD
 ## 
 #  @brief moves right
 #  
@@ -270,13 +307,19 @@ def move_up():
 #  
 #  @details 
 #  
+=======
+
+
+>>>>>>> eaa9309d8d54080e75f0664e9d021191be6aeb7f
 def move_right():
-    pick_random_tile()
+    
     global gameboard
     gameboard = reverse(gameboard)
-    move_left()
+    raw_move_left()
     gameboard = reverse(gameboard)
+    pick_random_tile()
     draw_grid()
+<<<<<<< HEAD
 ## 
 #  @brief moves down
 #  
@@ -284,14 +327,19 @@ def move_right():
 #  
 #  @details 
 #  
+=======
+
+
+>>>>>>> eaa9309d8d54080e75f0664e9d021191be6aeb7f
 def move_down():
-    pick_random_tile()
+    
     global gameboard
     gameboard = transpose(gameboard)
     gameboard = reverse(gameboard)
-    move_left()
+    raw_move_left()
     gameboard = reverse(gameboard)
-    gameboard = transpose(gameboard)	
+    gameboard = transpose(gameboard)
+    pick_random_tile()
     draw_grid()
 
 
@@ -304,6 +352,7 @@ def move_down():
 #  
 def main():
 	menu()
+<<<<<<< HEAD
 	
 	window.listen()	#listen to the anykeyboad key pressess
 	window.onkeyrelease(menu, "e")	#exit to the menu 
@@ -311,13 +360,48 @@ def main():
 	window.onkeyrelease(move_right, "d")	#move right
 	window.onkeyrelease(move_up, "w")	#move up
 	window.onkeyrelease(move_down, "s")	#move down
+=======
+
+
+	window.listen()
+	window.onkeyrelease(menu, "e")
+	window.onkeyrelease(move_left, "a")
+	window.onkeyrelease(move_right, "d")
+	window.onkeyrelease(move_up, "w")
+	window.onkeyrelease(move_down, "s")
+>>>>>>> eaa9309d8d54080e75f0664e9d021191be6aeb7f
 	
 	turtle.onscreenclick(btnclick_2048, 1)	#if mouse is clicked? check weather its inside the button's boundaries
 	window.mainloop()	#run the windown thread parallely
 
 
 
+<<<<<<< HEAD
 if __name__ == "__main__":	
 	main()
+=======
+if __name__ == "__main__":
+
+    # Set up the screen
+    window = turtle.Screen()
+    window.title("Mini arcade games")
+    window.bgcolor("black")
+    window.setup(width=450, height=600)
+    window.tracer(0)
+    
+    pen = turtle.Turtle()
+    pen.speed(0)
+    pen.hideturtle()  # an invisible turtle for drawing buttons
+    
+    CURSOR_SIZE = 20
+    FONT_SIZE = 12
+    FONT = ('Arial', FONT_SIZE, 'bold')
+    
+    x_2048 = 0
+    y_2048 = 0
+    pick_random_tile()
+    pick_random_tile()
+    main()
+>>>>>>> eaa9309d8d54080e75f0664e9d021191be6aeb7f
 
 
