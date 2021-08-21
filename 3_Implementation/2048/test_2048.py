@@ -19,7 +19,7 @@ def test_compress_left():
                           [4, 0, 0, 0],
                           [0, 0, 2, 2]]
 
-    game2048.compress_left()
+    game2048.compress_left(True)
 
     assert game2048.gameboard == [[2, 0, 2, 0],
                                   [0, 0, 0, 8],

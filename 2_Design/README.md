@@ -18,6 +18,10 @@ Low Level:
 
 ## High Level Design
 
+### Mini Arcade Game
+![gen2](https://user-images.githubusercontent.com/80380749/130321212-4e6acd37-cab3-46dd-9f7a-2bb48f645955.jpg)
+
+
 ### Tic-Tac-Toe
 ### Usecase Diagram
 ![UseCase](https://user-images.githubusercontent.com/66193894/130224628-59df5222-5c62-4bf4-9e64-b2c190b3cb96.png)
