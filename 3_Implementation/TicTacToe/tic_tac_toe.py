@@ -1,21 +1,20 @@
 board = [' ' for x in range(10)]
 
-def insertLetter(letter,pos):
+def insert_letter(letter,pos):
     board[pos] = letter
 
-
 def take_input():
-    x = input("Do you want to play again? (y/n)")
-    return x
+    opt = input("Do you want to play? (y/n) : ")
+    return opt
 
 def take_move():
-    move = input("please select a position to enter the X between 1 to 9: ")
+    move = input("Select a position to enter the X between 1 to 9 : ")
     return move
 
-def spaceIsFree(pos):
+def space_is_free(pos):
     return board[pos] == ' '
 
-def printBoard(board):
+def print_board(board):
     print('   |   |   ')
     print(' ' + board[1] + ' | ' + board[2] + ' | ' + board[3])
     print('   |   |   ')
@@ -25,16 +24,16 @@ def printBoard(board):
     print('   |   |   ')
     print('------------')
     print('   |   |   ')
-    print(' ' + board[7] + ' | ' + board[8] + ' | ' + board[9])
+    print(' ' + board[7]  + ' | ' + board[8] + ' | ' + board[9])
     print('   |   |   ')
 
-def isBoardFull(board):
-    if board.count(' ') > 2:
+def is_board_full(board):
+    if board.count(' ') != 1:
         return False
     else:
         return True
 
-def IsWinner(b,l):
+def is_winner(b,l):
     return ((b[1] == l and b[2] == l and b[3] == l) or
     (b[4] == l and b[5] == l and b[6] == l) or
     (b[7] == l and b[8] == l and b[9] == l) or
@@ -44,91 +43,94 @@ def IsWinner(b,l):
     (b[1] == l and b[5] == l and b[9] == l) or
     (b[3] == l and b[5] == l and b[7] == l))
 
-def playerMove():
+def player_move():
     run = True
     while run:
         move = take_move()
         try:
             move = int(move)
             if move > 0 and move < 10:
-                if spaceIsFree(move):
+                if space_is_free(move):
                     run = False
-                    insertLetter('X' , move)
+                    insert_letter('X', move)
                 else:
                     print('Sorry, this space is occupied')
             else:
-                print('please type a number between 1 and 9')
+                print('Select a number between 1 and 9 : ')
 
         except:
             print('Please type a number')
 
-def computerMove():
-    possibleMoves = [x for x , letter in enumerate(board) if letter == ' ' and x != 0  ]
+def computer_move():
+    possible_moves = [x for x, letter in enumerate(board) if letter == ' ' and x != 0]
     move = 0
 
-    for let in ['O' , 'X']:
-        for i in possibleMoves:
+    for let in ['O', 'X']:
+        for i in possible_moves:
             boardcopy = board[:]
             boardcopy[i] = let
-            if IsWinner(boardcopy, let):
+            if is_winner(boardcopy, let):
                 move = i
                 return move
 
-    cornersOpen = []
-    for i in possibleMoves:
-        if i in [1 , 3 , 7 , 9]:
-            cornersOpen.append(i)
+    corners_open = []
+    for i in possible_moves:
+        if i in [1, 3, 7, 9]:
+            corners_open.append(i)
 
-    if len(cornersOpen) > 0:
-        move = selectRandom(cornersOpen)
+    if len(corners_open) > 0:
+        move = select_random(corners_open)
         return move
 
-    if 5 in possibleMoves:
+    if 5 in possible_moves:
         move = 5
         return move
 
-    edgesOpen = []
-    for i in possibleMoves:
+    edges_open = []
+    for i in possible_moves:
         if i in [2,4,6,8]:
-            edgesOpen.append(i)
+            edges_open.append(i)
 
-    if len(edgesOpen) > 0:
-        move = selectRandom(edgesOpen)
+    if len(edges_open) > 0:
+        move = select_random(edges_open)
         return move
 
-def selectRandom(li):
+def select_random(li):
     import random
     ln = len(li)
     r = random.randrange(0,ln)
     return li[r]
 
 def main():
-    print("Welcome to the game!")
-    printBoard(board)
-
-    while not(isBoardFull(board)):
-        if not(IsWinner(board , 'O')):
-            playerMove()
-            printBoard(board)
+    print("Welcome to tic-tac-toe game!")
+    print_board(board)
+    if is_board_full(board):
+        print("Tie game")
+    while not(is_board_full(board)):
+        if not(is_winner(board, 'O')):
+            player_move()
+            print_board(board)
+            if is_board_full(board):
+                print("Tie game")
+                break
         else:
-            print("sorry you loose!")
+            print("You loose! try again")
             break
 
-        if not(IsWinner(board , 'X')):
-            move = computerMove()
+        if not(is_winner(board, 'X')):
+            move = computer_move()
             if move == 0:
                 print(" ")
             else:
-                insertLetter('O' , move)
-                print('computer placed an o on position' , move , ':')
-                printBoard(board)
+                insert_letter('O', move)
+                print('computer placed an o on position', move, ':')
+                print_board(board)
+                if is_board_full(board):
+                    print("Tie game")
+                    break
         else:
-            print("you win!")
+            print("You win!")
             break
-
-
-    if isBoardFull(board):
-        print("Tie game")
 
 while True:
     x = take_input()
