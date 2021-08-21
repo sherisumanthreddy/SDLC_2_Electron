@@ -17,6 +17,10 @@ def test_take_input():
     assert tic_tac_toe.take_input()=='n'
     assert tic_tac_toe.take_input()!='y'
     
+def test_take_move():
+
+    assert tic_tac_toe.take_move() == '1'or '2' or '3'or '4' or '5'or '6'or'7'or'8'or'9'    
+    
 
 
 """ 
