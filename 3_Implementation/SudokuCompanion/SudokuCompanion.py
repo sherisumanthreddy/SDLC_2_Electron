@@ -98,4 +98,9 @@ class SudokuSolver:
         pass
 
     def Solve(self):
+        """
+        This function provides the entire solution
+        Input: self
+        Returns: String
+        """
         pass
