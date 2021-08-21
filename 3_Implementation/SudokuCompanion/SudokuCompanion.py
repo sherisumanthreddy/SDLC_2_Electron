@@ -104,6 +104,7 @@ class SudokuSolver:
     def __init__(self, sudokuGridObj):
         self.Puzz = sudokuGridObj
         self.Soln = None
+        self.count = 0
     
     def IsValidEntry(self, row, col, val):
         """
@@ -111,10 +112,32 @@ class SudokuSolver:
         Input: row number,column number, value
         Returns: True or False
         """
-        pass
+        for i in range(9):
+            if self.Puzz.grid[row][i] == val:
+                return False
+        for i in range(9):
+            if self.Puzz.grid[i][col] == val:
+                return False
+        for i in range(3):
+            for j in range(3):
+                if self.Puzz.grid[(row//3)*3 + i][(col//3)*3 + j] == val:
+                    return False
+        return True
 
     def SolverHelper(self):
-        pass
+        for i in range(0, 9):
+            for j in range(0, 9):
+                if self.Puzz.grid[i][j] == '#':
+                    for val in range(1, 10):
+                        if self.IsValidEntry(i, j, val):
+                            self.Puzz.grid[i][j] = val
+                            self.Solve()
+                            self.Puzz.grid[i][j] = '#'
+                    return
+        if self.count == 0:
+            self.Soln = deepcopy(self.Puzz)
+            self.count += 1
+  
 
     def Solve(self):
         """
@@ -122,7 +145,9 @@ class SudokuSolver:
         Input: self
         Returns: String
         """
-        pass
+        self.SolverHelper()
+        return self.Soln
+        
 
 """
 class SudokuSolver:
