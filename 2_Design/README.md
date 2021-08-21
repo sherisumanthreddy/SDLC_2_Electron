@@ -4,10 +4,10 @@
 design:
 
 High Level:
-1) gameboard
+1) gameboard - done
 2) game logic - done
 3) scoring system
-4) UI
+4) UI - gameboard done
 
 Low Level:
 1) collision detection - done
