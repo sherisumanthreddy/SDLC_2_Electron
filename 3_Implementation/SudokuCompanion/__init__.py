@@ -30,3 +30,7 @@ class SudokuSolver:
         if self.count == 0:
             self.solution_grid = deepcopy(self.sudoku_grid)
             self.count += 1
+
+    def solve(self):
+        self.helper_solve()
+        return self.solution_grid
