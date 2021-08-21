@@ -21,8 +21,11 @@ class FileIOHandler:
                 data += i
             file.close()
             data = FileIOHandler.CleanReadData(data)
-            print(data)
-            return False
+            if FileIOHandler.ValidateCleanedData(data):
+                return True
+            else:
+                return False
+    
         except Exception as e:
             print(e)
             return False
@@ -45,13 +48,24 @@ class FileIOHandler:
         return retvar
 
     @staticmethod
-    def ValidateCleanedData(string):
+    def ValidateCleanedData(stringObj):
         """
         Checks if read data(sudokuTxt) is valid.
         Input: string
         Returns: True or False
         """
-        return
+        if len(stringObj) != 81:
+            return False
+        
+        for i in stringObj:
+            if i.isdigit():
+                if int(i) < 1 and int(i) > 9:
+                    return False
+            else:
+                if i != ".":
+                    return False
+
+        return True
 
     def SaveSudokuToTxt(self, sudokuGridObject, pathToSolTxt):
         """
