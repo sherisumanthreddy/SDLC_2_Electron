@@ -2,7 +2,7 @@ from SudokuCompanion import FileIOHandler, SudokuGrid, SudokuSolver
 import os
 
 def test_FileIOHandler_ReadSudokuFromTxt():
-    path_ = "puzzle.txt"
+    path_ = "SudokuCompanion/puzzle.txt"
 
     IO_Obj = FileIOHandler()
     assert IO_Obj.ReadSudokuFromTxt(path_)
@@ -34,7 +34,7 @@ def test_FileIOHandler_SaveSudokuToTxt():
     os.remove(path_)
 
 def test_SudokuGrid_StrAndRead():
-    myGridSudoku = SudokuGrid(FileIOHandler, "puzzle.txt")
+    myGridSudoku = SudokuGrid(FileIOHandler, "SudokuCompanion/puzzle.txt")
     assert str(myGridSudoku) == "." * 81
 
     var = "9..21.4...32.4.....4.8....7..7.5...9..17.23..3...8.17.5....9.8.....2854...8.....1"
@@ -42,7 +42,7 @@ def test_SudokuGrid_StrAndRead():
     assert str(myGridSudoku) == var
     
 def test_Sudoku_Save():
-    myGridSudoku = SudokuGrid(FileIOHandler, "puzzle.txt")
+    myGridSudoku = SudokuGrid(FileIOHandler, "SudokuCompanion/puzzle.txt")
     myGridSudoku.Read()
 
     path_ = "save.txt"
@@ -54,5 +54,3 @@ def test_Sudoku_Save():
     print("\n")
     myGridSudoku.PrintSudoku()
     print("\n")
-
-    
