@@ -240,16 +240,16 @@ def compress_left(TESTING = False):
 #  
 #  @details 
 #  
-def raw_move_left():
+def raw_move_left(TESTING = False):
     slam_left()
-    compress_left()
+    compress_left(TESTING)
     slam_left()
 
 
 
 def move_left(TESTING = False):
 
-    raw_move_left()
+    raw_move_left(TESTING)
     if not TESTING:
         pick_random_tile()
         draw_grid()
@@ -264,7 +264,7 @@ def move_up(TESTING = False):
 
     global gameboard
     gameboard = transpose(gameboard)
-    raw_move_left()
+    raw_move_left(TESTING)
     gameboard = transpose(gameboard)
     if not TESTING:
         pick_random_tile()
@@ -280,7 +280,7 @@ def move_right(TESTING = False):
 
     global gameboard
     gameboard = reverse(gameboard)
-    raw_move_left()
+    raw_move_left(TESTING)
     gameboard = reverse(gameboard)
     if not TESTING:
         pick_random_tile()
@@ -297,7 +297,7 @@ def move_down(TESTING = False):
     global gameboard
     gameboard = transpose(gameboard)
     gameboard = reverse(gameboard)
-    raw_move_left()
+    raw_move_left(TESTING)
     gameboard = reverse(gameboard)
     gameboard = transpose(gameboard)
     if not TESTING:
