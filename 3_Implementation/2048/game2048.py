@@ -187,6 +187,7 @@ def btnclick_2048(x, y):
 		
 		pen.clear()	#just clearing in case
 		pick_random_tile()
+		pick_random_tile()
 		draw_grid()	#lets game!
 	
 #
@@ -245,12 +246,18 @@ def compress_left():
 #  
 #  @details 
 #  
-def move_left(TESTING = False):
-    if not TESTING:
-        pick_random_tile()
+def raw_move_left():
     slam_left()
     compress_left()
     slam_left()
+
+
+
+def move_left(TESTING = False):
+
+    raw_move_left()
+    if not TESTING:
+        pick_random_tile()
     draw_grid()
 ## 
 #  @brief moves up
@@ -260,12 +267,13 @@ def move_left(TESTING = False):
 #  @details 
 #  
 def move_up(TESTING = False):
-    if not TESTING:
-        pick_random_tile()
+
     global gameboard
     gameboard = transpose(gameboard)
-    move_left(TESTING)
+    raw_move_left()
     gameboard = transpose(gameboard)
+    if not TESTING:
+        pick_random_tile()
     draw_grid()
 ## 
 #  @brief moves right
@@ -275,12 +283,13 @@ def move_up(TESTING = False):
 #  @details 
 #  
 def move_right(TESTING = False):
-    if not TESTING:
-        pick_random_tile()
+
     global gameboard
     gameboard = reverse(gameboard)
-    move_left(TESTING)
+    raw_move_left()
     gameboard = reverse(gameboard)
+    if not TESTING:
+        pick_random_tile()
     draw_grid()
 ## 
 #  @brief moves down
@@ -290,15 +299,17 @@ def move_right(TESTING = False):
 #  @details 
 #  
 def move_down(TESTING = False):
-    if not TESTING:
-        pick_random_tile()
+
     global gameboard
     gameboard = transpose(gameboard)
     gameboard = reverse(gameboard)
-    move_left(TESTING)
+    raw_move_left()
     gameboard = reverse(gameboard)
-    gameboard = transpose(gameboard)	
+    gameboard = transpose(gameboard)
+    if not TESTING:
+        pick_random_tile()
     draw_grid()
+
 
 
 ## 
