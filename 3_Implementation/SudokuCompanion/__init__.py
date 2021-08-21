@@ -17,7 +17,7 @@ class SudokuSolver:
                     return False
         return True
 
-    def helper_solve(self):
+    def SolverHelper(self):
         for i in range(0, 9):
             for j in range(0, 9):
                 if self.sudoku_grid.grid[i][j] == '#':
