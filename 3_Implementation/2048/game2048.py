@@ -20,6 +20,7 @@ CURSOR_SIZE = 20
 FONT_SIZE = 15
 FONT = ('Arial', FONT_SIZE, 'bold')
 ARCADE_FONT = ('Arcade Interlaced', FONT_SIZE, 'bold')
+TESTING = False
 
 
 #our main grid 
@@ -244,8 +245,9 @@ def compress_left():
 #  
 #  @details 
 #  
-def move_left():
-    pick_random_tile()
+def move_left(TESTING = False):
+    if not TESTING:
+        pick_random_tile()
     slam_left()
     compress_left()
     slam_left()
@@ -257,11 +259,12 @@ def move_left():
 #  
 #  @details 
 #  
-def move_up():
-    pick_random_tile()
+def move_up(TESTING = False):
+    if not TESTING:
+        pick_random_tile()
     global gameboard
     gameboard = transpose(gameboard)
-    move_left()
+    move_left(TESTING)
     gameboard = transpose(gameboard)
     draw_grid()
 ## 
@@ -271,11 +274,12 @@ def move_up():
 #  
 #  @details 
 #  
-def move_right():
-    pick_random_tile()
+def move_right(TESTING = False):
+    if not TESTING:
+        pick_random_tile()
     global gameboard
     gameboard = reverse(gameboard)
-    move_left()
+    move_left(TESTING)
     gameboard = reverse(gameboard)
     draw_grid()
 ## 
@@ -285,12 +289,13 @@ def move_right():
 #  
 #  @details 
 #  
-def move_down():
-    pick_random_tile()
+def move_down(TESTING = False):
+    if not TESTING:
+        pick_random_tile()
     global gameboard
     gameboard = transpose(gameboard)
     gameboard = reverse(gameboard)
-    move_left()
+    move_left(TESTING)
     gameboard = reverse(gameboard)
     gameboard = transpose(gameboard)	
     draw_grid()
@@ -305,7 +310,7 @@ def move_down():
 #  
 def main():
 	menu()
-
+	
 	window.listen()	#listen to the anykeyboad key pressess
 	window.onkeyrelease(menu, "e")	#exit to the menu 
 	window.onkeyrelease(move_left, "a")	#move left
@@ -320,6 +325,5 @@ def main():
 
 if __name__ == "__main__":	
 	main()
-
 
 

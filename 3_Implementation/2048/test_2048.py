@@ -57,7 +57,7 @@ def test_move_left():
                           [4, 0, 0, 0],
                           [0, 0, 2, 2]]
 
-    game2048.move_left()
+    game2048.move_left(True)
     
     assert game2048.gameboard == [[4, 0, 0, 0],
                                   [8, 0, 0, 0],
@@ -71,7 +71,7 @@ def test_move_up():
                           [4, 0, 0, 0],
                           [0, 0, 2, 2]]
 
-    game2048.move_up()
+    game2048.move_up(True)
 
     assert game2048.gameboard == [[2, 0, 4, 8],
                                   [4, 0, 0, 2],
@@ -85,7 +85,7 @@ def test_move_right():
                           [4, 0, 0, 0],
                           [0, 0, 2, 2]]
 
-    game2048.move_right()
+    game2048.move_right(True)
 
     assert game2048.gameboard == [[0, 0, 0, 4],
                                   [0, 0, 0, 8],
@@ -99,7 +99,7 @@ def test_move_down():
                           [4, 0, 0, 0],
                           [0, 0, 2, 2]]
 
-    game2048.move_down()
+    game2048.move_down(True)
 
     assert game2048.gameboard == [[0, 0, 0, 0],
                                   [0, 0, 0, 0],
