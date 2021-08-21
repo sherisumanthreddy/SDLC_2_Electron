@@ -30,8 +30,7 @@ class FileIOHandler:
         except Exception as e:
             print(e)
             return False
-        
-    
+
     @staticmethod
     def CleanReadData(stringObject):
         """
@@ -122,7 +121,7 @@ class SudokuGrid:
             print(e)
             return False
         return True
-        
+
     def Save(self):
         if not self.IOHandler.SaveSudokuToTxt(str(self), self.IODestination):
             return False
@@ -169,7 +168,7 @@ class SudokuSolver:
         self.Puzz = sudokuGridObj
         self.Soln = None
         self.count = 0
-    
+ 
     def IsValidEntry(self, row, col, val):
         """
         This checks if the value entered is right or wrong
@@ -201,7 +200,6 @@ class SudokuSolver:
         if self.count == 0:
             self.Soln = deepcopy(self.Puzz)
             self.count += 1
-  
 
     def Solve(self):
         """
@@ -211,4 +209,3 @@ class SudokuSolver:
         """
         self.SolverHelper()
         return self.Soln
-        
