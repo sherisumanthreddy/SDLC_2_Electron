@@ -87,6 +87,11 @@ class SudokuSolver:
         self.Soln = None
     
     def IsValidEntry(self, row, col, val):
+        """
+        This checks if the value entered is right or wrong
+        Input: row number,column number, value
+        Returns: True or False
+        """
         pass
 
     def SolverHelper(self):
