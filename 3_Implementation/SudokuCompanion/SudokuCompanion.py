@@ -16,8 +16,12 @@ class FileIOHandler:
         """
         try:
             file = open(pathToPuzzle, 'r')
-            data = file.readlines()
+            data = ""
+            for i in file.readlines():
+                data += i
             file.close()
+            data = FileIOHandler.CleanReadData(data)
+            print(data)
             return False
         except Exception as e:
             print(e)
@@ -31,8 +35,15 @@ class FileIOHandler:
         Input: string
         Returns: string
         """
-        return
-    
+        retvar = stringObject
+        retvar = retvar.replace("\n", ",")
+        retvar = retvar.replace(",", "")
+        retvar = retvar.replace("#", ".")
+        for i in retvar:
+            if i not in [".","1","2","3","4","5","6","7","8","9"]:
+                retvar = retvar.replace(i,".")
+        return retvar
+
     @staticmethod
     def ValidateCleanedData(string):
         """
