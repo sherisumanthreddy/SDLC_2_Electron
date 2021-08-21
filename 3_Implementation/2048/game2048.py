@@ -216,13 +216,14 @@ def slam_left():
 #  @details 
 #  
 def compress_left(TESTING = False):
-    global score
-    global high_score
+
     for j in range(4):
         for i in range(3):
             if gameboard[j][i] != 0 and gameboard[j][i] == gameboard[j][i + 1]:
                 gameboard[j][i] = gameboard[j][i] * 2
                 if not TESTING:
+                    global score
+                    global high_score
                     score = score + gameboard[j][i]
                     print(score)
                     if score > high_score:
