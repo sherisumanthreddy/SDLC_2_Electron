@@ -215,24 +215,23 @@ def slam_left():
 #  
 #  @details 
 #  
-def compress_left():
+def compress_left(TESTING = False):
     global score
     global high_score
     for j in range(4):
         for i in range(3):
             if gameboard[j][i] != 0 and gameboard[j][i] == gameboard[j][i + 1]:
                 gameboard[j][i] = gameboard[j][i] * 2
-                score = score + gameboard[j][i]
-                print(score)
-                if score > high_score:
-                    high_score = score
-                    high_score_pickle = open('highscorepickle.txt', 'w')
-                    high_score_pickle.write(str(high_score))
-                    #print(high_score)
-                    high_score_pickle.close()
+                if not TESTING:
+                    score = score + gameboard[j][i]
+                    print(score)
+                    if score > high_score:
+                        high_score = score
+                        high_score_pickle = open('highscorepickle.txt', 'w')
+                        high_score_pickle.write(str(high_score))
+                        #print(high_score)
+                        high_score_pickle.close()
 
-
-                    
                 gameboard[j][i + 1] = 0
 ## 
 #  @brief moves left
