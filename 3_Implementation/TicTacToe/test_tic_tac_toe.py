@@ -1,3 +1,4 @@
+import pytest
 import tic_tac_toe
 
 board = tic_tac_toe.board
@@ -10,6 +11,13 @@ def test_insertletter():
 
     assert board[Pos] == 'X'
     assert board[Pos] != 'O'
+
+
+def test_take_input():
+    assert tic_tac_toe.take_input()=='n'
+    assert tic_tac_toe.take_input()!='y'
+    
+
 
 """ 
 THis is how you write test.

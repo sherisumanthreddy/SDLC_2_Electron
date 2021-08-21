@@ -127,8 +127,6 @@ def main():
             break
 
 
-
-
     if isBoardFull(board):
         print("Tie game")
 
@@ -139,5 +137,4 @@ while True:
         print('--------------------')
         main()
     else:
-
         break
