@@ -9,7 +9,7 @@ def take_input():
     return x
 
 def take_move():
-    move = input("please select a position to enter the X between 1 to 9")
+    move = input("please select a position to enter the X between 1 to 9: ")
     return move
 
 def spaceIsFree(pos):
@@ -29,7 +29,7 @@ def printBoard(board):
     print('   |   |   ')
 
 def isBoardFull(board):
-    if board.count(' ') > 1:
+    if board.count(' ') > 2:
         return False
     else:
         return True
