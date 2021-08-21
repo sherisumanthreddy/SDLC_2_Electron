@@ -4,16 +4,16 @@ class SudokuSolver:
         self.solution_grid = None
         self.count = 0
 
-    def is_valid_entry(self, row, col, entry):
+    def IsValidEntry(self, row, col, val):
         for i in range(9):
-            if self.sudoku_grid.grid[row][i] == entry:
+            if self.sudoku_grid.grid[row][i] == val:
                 return False
         for i in range(9):
-            if self.sudoku_grid.grid[i][col] == entry:
+            if self.sudoku_grid.grid[i][col] == val:
                 return False
         for i in range(3):
             for j in range(3):
-                if self.sudoku_grid.grid[(row//3)*3 + i][(col//3)*3 + j] == entry:
+                if self.sudoku_grid.grid[(row//3)*3 + i][(col//3)*3 + j] == val:
                     return False
         return True
 
