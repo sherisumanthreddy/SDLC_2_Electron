@@ -100,8 +100,36 @@ def menu():
 	pen.setx(pen.xcor()+100)
 	pen.sety(pen.ycor()+100)
 	pen.penup()
+
+
+## 
+#  @brief displays the score
+#  
+#  @return nothing
+#  
+#  @details 
+#  
+def draw_score():
+	global SCORE
+	global SCORE_INCREMENT
+	global HIGH_SCORE
+
+	pen.goto(-185, 150)
+	pen.color("black")
+	pen.write("SCORE: ", font=('Arcade Interlaced', 10))
+	pen.goto(-95, 150)
+	pen.write(str(SCORE), font=('Arcade Interlaced', 10))
+	pen.penup()
 	
+	pen.goto(-10, 150)
+	pen.color("black")
+	pen.write("HIGHSCORE: ", font=('Arcade Interlaced', 10))
+	pen.goto(120, 150)
+	pen.write(str(HIGH_SCORE), font=('Arcade Interlaced', 10))
+	pen.penup()
 	
+	SCORE += SCORE_INCREMENT
+
 
 	
 ## 
@@ -112,6 +140,11 @@ def menu():
 #  @details 
 #  
 def draw_grid():
+	global SCORE
+	global SCORE_INCREMENT
+	global HIGH_SCORE
+	
+	
 	#turtle.Screen().clear()
 	pen.clear()	#clear all the previously drawn stuff
 	MOVE = 60	#some distnace btw two blocks
@@ -148,7 +181,18 @@ def draw_grid():
 		board_x +=1
 		pen.penup()	#finish writing
 		#_x += 60
-
+	if SCORE > HIGH_SCORE:	#if scored highscore
+		HIGH_SCORE = SCORE
+		file = open("scoringfile.txt", 'w')	#store it somewhere
+		file.write(str(HIGH_SCORE))
+		file.close()
+	else:
+		file = open("scoringfile.txt", 'r')
+		HIGH_SCORE = int(file.readline())	#keep displaying the highscore
+		file.close()
+	
+	
+	draw_score()
 
 ## 
 #  @brief this function checks wheather you click on the right button 
@@ -368,7 +412,11 @@ if __name__ == "__main__":
     FONT = ('Arial', FONT_SIZE, 'bold')
     ARCADE_FONT = ('Arcade Interlaced', FONT_SIZE, 'bold')
     TESTING = False
+    HIGH_SCORE = 0
+    SCORE = 0
+    SCORE_INCREMENT = 100	#A linear increment of score
     
+	
     main()
 
 
