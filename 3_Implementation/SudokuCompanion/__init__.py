@@ -31,6 +31,6 @@ class SudokuSolver:
             self.solution_grid = deepcopy(self.sudoku_grid)
             self.count += 1
 
-    def solve(self):
-        self.helper_solve()
+    def Solve(self):
+        self.SolverHelper()
         return self.solution_grid
