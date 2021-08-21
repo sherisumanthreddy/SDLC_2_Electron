@@ -4,28 +4,12 @@ import turtle
 import random
 
 
-# Set up the screen
-window = turtle.Screen()
-window.title("Mini arcade games")
-window.bgcolor("black")
-window.setup(width=450, height=600)
-window.tracer(0)
 
-pen = turtle.Turtle()
-pen.speed(0)
-pen.hideturtle()	#an invisible turtle for drawing buttons
-
-CURSOR_SIZE = 20
-FONT_SIZE = 12
-FONT = ('Arial', FONT_SIZE, 'bold')
-
-x_2048 = 0
-y_2048 = 0
 
 
 gameboard = [
     [0, 0, 0, 0],
-    [0, 0, 2, 0],
+    [0, 0, 0, 0],
     [0, 0, 0, 0],
     [0, 0, 0, 0]
 ]
@@ -148,9 +132,13 @@ def btnclick_2048(x, y):
 def transpose(board):
     interim_board = [[board[j][i] for j in range(4)] for i in range(4)]
     return interim_board
+
+
 def reverse(board):
     interim_board = [row[::-1] for row in board]
     return interim_board
+
+
 def slam_left():
     for j in range(4):
         for _ in range(3):
@@ -158,46 +146,64 @@ def slam_left():
                 if gameboard[j][i] == 0:
                     gameboard[j][i] = gameboard[j][i + 1]
                     gameboard[j][i + 1] = 0
+
+
 def compress_left():
     for j in range(4):
         for i in range(3):
             if gameboard[j][i] != 0 and gameboard[j][i] == gameboard[j][i + 1]:
                 gameboard[j][i] = gameboard[j][i] * 2
                 gameboard[j][i + 1] = 0
-def move_left():
-    pick_random_tile()
+
+def raw_move_left():
     slam_left()
     compress_left()
     slam_left()
+
+
+def move_left():
+    
+    raw_move_left()
+    pick_random_tile()
     draw_grid()
+
+
 def move_up():
-    pick_random_tile()
+    
     global gameboard
     gameboard = transpose(gameboard)
-    move_left()
+    raw_move_left()
     gameboard = transpose(gameboard)
+    pick_random_tile()
     draw_grid()
+
+
 def move_right():
-    pick_random_tile()
+    
     global gameboard
     gameboard = reverse(gameboard)
-    move_left()
+    raw_move_left()
     gameboard = reverse(gameboard)
-    draw_grid()
-def move_down():
     pick_random_tile()
+    draw_grid()
+
+
+def move_down():
+    
     global gameboard
     gameboard = transpose(gameboard)
     gameboard = reverse(gameboard)
-    move_left()
+    raw_move_left()
     gameboard = reverse(gameboard)
-    gameboard = transpose(gameboard)	
+    gameboard = transpose(gameboard)
+    pick_random_tile()
     draw_grid()
 
 
 def main():
 	menu()
-	
+
+
 	window.listen()
 	window.onkeyrelease(menu, "e")
 	window.onkeyrelease(move_left, "a")
@@ -211,6 +217,26 @@ def main():
 
 
 if __name__ == "__main__":
-	main()
+
+    # Set up the screen
+    window = turtle.Screen()
+    window.title("Mini arcade games")
+    window.bgcolor("black")
+    window.setup(width=450, height=600)
+    window.tracer(0)
+    
+    pen = turtle.Turtle()
+    pen.speed(0)
+    pen.hideturtle()  # an invisible turtle for drawing buttons
+    
+    CURSOR_SIZE = 20
+    FONT_SIZE = 12
+    FONT = ('Arial', FONT_SIZE, 'bold')
+    
+    x_2048 = 0
+    y_2048 = 0
+    pick_random_tile()
+    pick_random_tile()
+    main()
 
 
