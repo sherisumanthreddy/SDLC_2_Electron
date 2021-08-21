@@ -3,25 +3,6 @@ import turtle
 import random
 
 
-# Seting up the screen
-window = turtle.Screen()
-window.title("Mini arcade games")
-window.bgcolor("black")
-window.setup(width=450, height=600)
-window.tracer(0)
-
-#general purpose pen turtle
-pen = turtle.Turtle()
-pen.speed(0)
-pen.hideturtle()	#an invisible turtle for drawing buttons
-
-#some constants 
-CURSOR_SIZE = 20
-FONT_SIZE = 15
-FONT = ('Arial', FONT_SIZE, 'bold')
-ARCADE_FONT = ('Arcade Interlaced', FONT_SIZE, 'bold')
-TESTING = False
-
 
 #our main grid 
 gameboard = [
@@ -335,6 +316,25 @@ def main():
 
 
 if __name__ == "__main__":	
-	main()
+    # Seting up the screen
+    window = turtle.Screen()
+    window.title("Mini arcade games")
+    window.bgcolor("black")
+    window.setup(width=450, height=600)
+    window.tracer(0)
+
+    #general purpose pen turtle
+    pen = turtle.Turtle()
+    pen.speed(0)
+    pen.hideturtle()  # an invisible turtle for drawing buttons
+
+    #some constants
+    CURSOR_SIZE = 20
+    FONT_SIZE = 15
+    FONT = ('Arial', FONT_SIZE, 'bold')
+    ARCADE_FONT = ('Arcade Interlaced', FONT_SIZE, 'bold')
+    TESTING = False
+    
+    main()
 
 
