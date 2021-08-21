@@ -1,6 +1,7 @@
 #libraries imports
 import turtle
 import random
+import pickle
 
 
 
@@ -118,14 +119,14 @@ def draw_score():
 	pen.color("black")
 	pen.write("SCORE: ", font=('Arcade Interlaced', 10))
 	pen.goto(-95, 150)
-	pen.write(str(SCORE), font=('Arcade Interlaced', 10))
+	pen.write(str(score), font=('Arcade Interlaced', 10))
 	pen.penup()
 	
 	pen.goto(-10, 150)
 	pen.color("black")
 	pen.write("HIGHSCORE: ", font=('Arcade Interlaced', 10))
 	pen.goto(120, 150)
-	pen.write(str(HIGH_SCORE), font=('Arcade Interlaced', 10))
+	pen.write(str(high_score), font=('Arcade Interlaced', 10))
 	pen.penup()
 	
 	SCORE += SCORE_INCREMENT
@@ -272,8 +273,10 @@ def compress_left(TESTING = False):
                     print(score)
                     if score > high_score:
                         high_score = score
-                        high_score_pickle = open('highscorepickle.txt', 'w')
-                        high_score_pickle.write(str(high_score))
+                        h = {}
+                        h['score'] = high_score
+                        high_score_pickle = open('highscorepickle.pkl', 'wb')
+                        pickle.dump(h , high_score_pickle)
                         #print(high_score)
                         high_score_pickle.close()
 
@@ -377,15 +380,18 @@ if __name__ == "__main__":
     global score
 
     try:
-        high_score_pickle = open('highscorepickle.txt', 'r')
-        high_score = int(high_score_pickle.read().rstrip())
+        high_score_pickle = open('highscorepickle.pkl', 'rb')
+        h = pickle.load(high_score_pickle)
+        high_score = h['score']
         print(high_score)
         high_score_pickle.close()
 
     except FileNotFoundError:
         high_score = 0
-        high_score_pickle = open('highscorepickle.txt', 'w')
-        high_score_pickle.write(str(high_score))
+        h = {}
+        h['score'] = high_score
+        high_score_pickle = open('highscorepickle.pkl', 'wb')
+        pickle.dump(h, high_score_pickle)
         high_score_pickle.close()
     
     print('high score is: ' + str(high_score))
