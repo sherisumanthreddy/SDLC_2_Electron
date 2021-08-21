@@ -239,7 +239,7 @@ def move_left(TESTING = False):
     raw_move_left()
     if not TESTING:
         pick_random_tile()
-    draw_grid()
+        draw_grid()
 ## 
 #  @brief moves up
 #  
@@ -255,7 +255,7 @@ def move_up(TESTING = False):
     gameboard = transpose(gameboard)
     if not TESTING:
         pick_random_tile()
-    draw_grid()
+        draw_grid()
 ## 
 #  @brief moves right
 #  
@@ -271,7 +271,7 @@ def move_right(TESTING = False):
     gameboard = reverse(gameboard)
     if not TESTING:
         pick_random_tile()
-    draw_grid()
+        draw_grid()
 ## 
 #  @brief moves down
 #  
@@ -289,7 +289,7 @@ def move_down(TESTING = False):
     gameboard = transpose(gameboard)
     if not TESTING:
         pick_random_tile()
-    draw_grid()
+        draw_grid()
 
 
 
