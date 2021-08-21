@@ -1,4 +1,5 @@
 from copy import deepcopy
+import random
 
 class FileIOHandler:
     """ 
@@ -116,7 +117,10 @@ class SudokuGrid:
         try:
             for i in range(9):
                 for j in range(9):
-                    self.Grid[i][j] = self.IOHandler.sudokuTxt[j+9*i]
+                    if self.IOHandler.sudokuTxt[j+9*i] == ".":
+                        self.Grid[i][j] = self.IOHandler.sudokuTxt[j+9*i]
+                    else:
+                        self.Grid[i][j] = int(self.IOHandler.sudokuTxt[j+9*i])
         except Exception as e:
             print(e)
             return False
@@ -137,7 +141,7 @@ class SudokuGrid:
         retvar =""
         for i in self.Grid:
             for j in i:
-                retvar += j
+                retvar += str(j)
         return retvar
 
     def PrintSudoku(self):
@@ -176,26 +180,26 @@ class SudokuSolver:
         Returns: True or False
         """
         for i in range(9):
-            if self.Puzz.grid[row][i] == val:
+            if self.Puzz.Grid[row][i] == val:
                 return False
         for i in range(9):
-            if self.Puzz.grid[i][col] == val:
+            if self.Puzz.Grid[i][col] == val:
                 return False
         for i in range(3):
             for j in range(3):
-                if self.Puzz.grid[(row//3)*3 + i][(col//3)*3 + j] == val:
+                if self.Puzz.Grid[(row//3)*3 + i][(col//3)*3 + j] == val:
                     return False
         return True
 
     def SolverHelper(self):
         for i in range(0, 9):
             for j in range(0, 9):
-                if self.Puzz.grid[i][j] == '#':
+                if self.Puzz.Grid[i][j] == '.':
                     for val in range(1, 10):
                         if self.IsValidEntry(i, j, val):
-                            self.Puzz.grid[i][j] = val
+                            self.Puzz.Grid[i][j] = val
                             self.Solve()
-                            self.Puzz.grid[i][j] = '#'
+                            self.Puzz.Grid[i][j] = '.'
                     return
         if self.count == 0:
             self.Soln = deepcopy(self.Puzz)
@@ -209,3 +213,21 @@ class SudokuSolver:
         """
         self.SolverHelper()
         return self.Soln
+
+    def IsSolvable(self):
+        soln = self.Solve()
+        if self.count >= 1 and (str(soln) != str(self.Puzz)):
+            return True
+        else:
+            return False
+    
+    def GetHintString(self):
+        if not self.IsSolvable():
+            return str(self.Puzz)
+        else:
+            soln = list( str( self.Solve() ) )
+            puzz = list( str( self.Puzz   ) )
+            for i in range(81):
+                if random.random() >= 0.8 and puzz[i] == ".":
+                    puzz[i] = soln[i]
+            return "".join(puzz)
