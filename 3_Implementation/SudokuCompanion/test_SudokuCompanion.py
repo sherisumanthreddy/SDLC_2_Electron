@@ -32,3 +32,27 @@ def test_FileIOHandler_SaveSudokuToTxt():
     assert IO_Obj.ReadSudokuFromTxt(path_)
     
     os.remove(path_)
+
+def test_SudokuGrid_StrAndRead():
+    myGridSudoku = SudokuGrid(FileIOHandler, "puzzle.txt")
+    assert str(myGridSudoku) == "." * 81
+
+    var = "9..21.4...32.4.....4.8....7..7.5...9..17.23..3...8.17.5....9.8.....2854...8.....1"
+    assert myGridSudoku.Read()
+    assert str(myGridSudoku) == var
+    
+def test_Sudoku_Save():
+    myGridSudoku = SudokuGrid(FileIOHandler, "puzzle.txt")
+    myGridSudoku.Read()
+
+    path_ = "save.txt"
+    myGridSudoku.setIODestination(path_)
+
+    assert myGridSudoku.Save()
+    os.remove(path_)
+
+    print("\n")
+    myGridSudoku.PrintSudoku()
+    print("\n")
+
+    

@@ -22,6 +22,7 @@ class FileIOHandler:
             file.close()
             data = FileIOHandler.CleanReadData(data)
             if FileIOHandler.ValidateCleanedData(data):
+                self.sudokuTxt = data
                 return True
             else:
                 return False
@@ -67,7 +68,8 @@ class FileIOHandler:
 
         return True
 
-    def SaveSudokuToTxt(self, sudokuGridObjectStr, pathToSolTxt):
+    @staticmethod
+    def SaveSudokuToTxt(sudokuGridObjectStr, pathToSolTxt):
         """
         Takes SudokuGrid object and saves it to a file
         Input: SudokuGrid object, path to txt
@@ -91,6 +93,7 @@ class FileIOHandler:
 
         return True
 
+
 class SudokuGrid:
     """
     This class is representation of a sudoku puzzle as a python object.
@@ -100,8 +103,8 @@ class SudokuGrid:
         3. this object is required by Sudoku Solver Object.
     """
     def __init__(self, IOHandlerObj, puzz_source, sol_destination = None):
-        self.Grid = [[]] # 9 x 9 List
-        self.IOHandler = IOHandlerObj
+        self.Grid = [['.' for _ in range(9)] for _ in range(9)] # 9 x 9 List
+        self.IOHandler = IOHandlerObj()
         self.IOSource = puzz_source
         self.IODestination = sol_destination
 
@@ -109,21 +112,52 @@ class SudokuGrid:
         self.IODestination = path_
 
     def Read(self):
-        self.IOHandler.ReadSudokuFromTxt(self.IOSource)
-
-    def StringToGrid(self):
-        pass
+        if not self.IOHandler.ReadSudokuFromTxt(self.IOSource):
+            return False
+        try:
+            for i in range(9):
+                for j in range(9):
+                    self.Grid[i][j] = self.IOHandler.sudokuTxt[j+9*i]
+        except Exception as e:
+            print(e)
+            return False
+        return True
         
     def Save(self):
-        self.IOHandler.SaveSudokuToTxt(self, self.IODestination)
+        if not self.IOHandler.SaveSudokuToTxt(str(self), self.IODestination):
+            return False
+        else:
+            return True
         
-
     def __str__(self):
         """
         This converts grid to compatible string or can be called GridToString
         Input: self
         Returns: string
         """
+        retvar =""
+        for i in self.Grid:
+            for j in i:
+                retvar += j
+        return retvar
+
+    def PrintSudoku(self):
+        stringObj = str(self)
+        if not FileIOHandler.ValidateCleanedData(stringObj):
+            print("MegaError!!!!!!!!")
+        
+        print("-"*25)
+        for i in range(9):
+            print("|", end = " ")
+            for j in range(9):
+                print(stringObj[j+i*9], end=" ")
+                if (j+1)%3 == 0:
+                    print("|", end=" ")
+            print("\n", end="")
+            if (i+1)%3 == 0:
+                print("-"*25)
+                
+        return
 
 
 class SudokuSolver:
