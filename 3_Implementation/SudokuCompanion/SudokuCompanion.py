@@ -67,13 +67,29 @@ class FileIOHandler:
 
         return True
 
-    def SaveSudokuToTxt(self, sudokuGridObject, pathToSolTxt):
+    def SaveSudokuToTxt(self, sudokuGridObjectStr, pathToSolTxt):
         """
         Takes SudokuGrid object and saves it to a file
         Input: SudokuGrid object, path to txt
         Returns: True or False
         """
-        return
+        if not FileIOHandler.ValidateCleanedData(sudokuGridObjectStr):
+            return False
+
+        file = open(pathToSolTxt, "x")
+
+        savestring = ""
+        for i in range(0,81):
+            savestring += sudokuGridObjectStr[i]
+            if (i + 1) % 9 == 0:
+                savestring += "\n"
+            else:
+                savestring += ","
+        
+        file.write(savestring)
+        file.close()
+
+        return True
 
 class SudokuGrid:
     """

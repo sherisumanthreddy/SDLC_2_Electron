@@ -1,4 +1,5 @@
 from SudokuCompanion import FileIOHandler, SudokuGrid, SudokuSolver
+import os
 
 def test_FileIOHandler_ReadSudokuFromTxt():
     path_ = "puzzle.txt"
@@ -20,3 +21,15 @@ def test_ValidateCleanedData():
     assert FileIOHandler.ValidateCleanedData(var)
     assert not FileIOHandler.ValidateCleanedData(var2)
     assert not FileIOHandler.ValidateCleanedData(var3)
+
+def test_SaveSudokuToTxt():
+    path_ = "save.txt"
+
+    var = "9..21.4...32.4.....4.8....7..7.5...9..17.23..3...8.17.5....9.8.....2854...8.....1"
+
+    IO_Obj = FileIOHandler()
+    assert IO_Obj.SaveSudokuToTxt(var, path_)
+    assert IO_Obj.ReadSudokuFromTxt(path_)
+    
+    os.remove(path_)
+
