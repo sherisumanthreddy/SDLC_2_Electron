@@ -7,7 +7,7 @@ def test_insertletter():
     Letter = 'X'
     Pos = 0
 
-    tic_tac_toe.insertLetter(Letter, Pos)
+    tic_tac_toe.insert_letter(Letter, Pos)
 
     assert board[Pos] == 'X'
     assert board[Pos] != 'O'
