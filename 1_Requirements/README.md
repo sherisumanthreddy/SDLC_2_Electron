@@ -36,7 +36,7 @@ Sudoku is a logic-based, combinatorial number-placement puzzle. Sudoku Companion
 
 
 ### Cost and features
-The cost requires only for software development and implementation of the software.
+The cost requires only for software development and implementation of the software. We can play 3 games using single Mini arcade game application.
 
 ### Defining Our System
 
@@ -71,8 +71,9 @@ The Mini Arcade Game system will ask user to select which game he wants to play 
 * Users can attempt to play the games through any of the online medium
 
 
-## Tic Tac Toe Detail requirements
-## High Level Requirements
+## Detail requirements
+
+### High Level Requirements
 
   ID |  Description  |    Category    |     Status    |
   -------|---------|----------------|----------------|
@@ -81,7 +82,8 @@ The Mini Arcade Game system will ask user to select which game he wants to play 
   HR03 | Computer move |  Technical | |
   HR04 | Winner finder  |  Technical | |
 
-##  Low level Requirements:
+###  Low level Requirements
+
   ID  | Description                   | HLR ID | Status 
   ----|-------------------------------|--------|---------------------------
  LR01 | User shoud be able to input | HR02 | 
