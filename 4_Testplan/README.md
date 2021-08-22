@@ -20,6 +20,12 @@
 |L_02    |  Play proceeds with the opponents alternately placing their marks in any unoccupied cell. check if any player finishes  with 3 marks in a row, where a row can be either                  vertical, horizontal, or diagonal. |   'X' or 'o' i/p from the two players alternatively      |   The player 1/2 won the game.      |
 |L_03    |   Check if all the 9 squares are full,the game is over and no player can get the 3 marks in a row the game is draw , if any one of the player get the 3 marks in a row                     that player will win the game           |  9 inputs from the users.       |                The game is over/Ended.       The player 1/2 won the game or The game is draw/tie |
 
+## Table no 1: High level test plan
 
+| **Test ID** | **Description**                                              | **Exp I/P** | **Exp O/P** | **Actual Out** |**Type Of Test**  |    
+|-------------|--------------------------------------------------------------|------------|-------------|----------------|------------------|
+|  HLR_01       | **Sudoku Companion Input/Output**: Test basic input/output function| Path to txt file containing puzzle|SudokuGrid|SudokuGrid|Requirement based |
+|  HLR_02       |**Sudoku Puzzle Solver**: Test to verify the solution provided by solver function|Path to txt file containing puzzle| Solved grid as a string|Solved grid as a string|Requirement based   |
+|  HLR_03      |**Sudoku Puzzle Issolvable**: Test to verify if given puzzle is sovable |Path to txt file containing puzzle|True or False| Can/cannot be solved|Requirement based |
 
 
