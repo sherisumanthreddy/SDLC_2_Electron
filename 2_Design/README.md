@@ -46,6 +46,6 @@ Low Level:
 ### Flowchart
 ![Flowchart](https://user-images.githubusercontent.com/80392588/130255510-3240d7fc-7770-42f2-8274-bdd6b534d432.png)
 
-#### SudokuCompanion
-![Flowchart](https://user-images.githubusercontent.com/81627731/130350626-f5a35118-b339-4035-9e83-42542d650b59.png)
+### SudokuCompanion
+![flow chart](https://user-images.githubusercontent.com/81627731/130350850-e825f6bb-d5cb-4376-abb7-96f1f03769c9.png)
 
