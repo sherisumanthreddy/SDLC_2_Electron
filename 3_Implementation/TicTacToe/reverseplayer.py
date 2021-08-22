@@ -2,7 +2,7 @@ import check
 # Flip the current player from X to O, or O to X
 
 def reverse_player():
-  # Global variables we need
+  # Global variables we needed
   
   global first_player
   # If the current player was X, make it O
