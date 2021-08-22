@@ -15,3 +15,5 @@
 4. A function to take Computer player move.
 5. A function to check whether playboard is full or not.
 6. A function to check status of game.
+7. A function to reverse player.
+8. A function to check winner.
