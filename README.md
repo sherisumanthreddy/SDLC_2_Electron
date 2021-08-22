@@ -13,7 +13,7 @@
 
 PS No. |  Name   |    Features    | Issues Raised |Issues Resolved|No Test Cases|Test Case Pass
 -------|-------------|----------------|----------------|---------------|-------------|--------------
-`99005667` | Swathi  Ramachandran |     | X No     | X No   |X No   |X No   
+`99005667` | Swathi  Ramachandran |  Tic-Tac-Toe 1 Player  | X No     | X No   | 7  | 7
 `99005660` | Bhargav  R | SudokuCompanion: FileI/O, Grid Representation and Providing Hint Feature Few, Unit Tests and Few HLR and LLR | 1    | X No   | 8  | 8  
 `99005364` | Prakhar  Deep |  Tic-Tac-Toe 2 player  | X No     | X No   |X No   |X No    
 `99005468` | Ayush  Bishnoi |     | X No     | X No   |X No   |X No     
