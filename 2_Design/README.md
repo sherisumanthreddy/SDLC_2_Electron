@@ -21,6 +21,9 @@ Low Level:
 ### Mini Arcade Game
 ![gen2](https://user-images.githubusercontent.com/80380749/130321212-4e6acd37-cab3-46dd-9f7a-2bb48f645955.jpg)
 
+### Activity Diagram
+![Mini Arcade Activity UML](https://user-images.githubusercontent.com/80352730/130353126-3a59b4cb-7dc5-47ad-a047-79c7ebbe56f9.png)
+
 
 ### Tic-Tac-Toe
 ### Usecase Diagram
