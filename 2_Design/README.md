@@ -19,6 +19,7 @@ Low Level:
 ## High Level Design
 
 ### Mini Arcade Game
+### Usecase Diagram
 ![gen2](https://user-images.githubusercontent.com/80380749/130321212-4e6acd37-cab3-46dd-9f7a-2bb48f645955.jpg)
 
 ### Activity Diagram
