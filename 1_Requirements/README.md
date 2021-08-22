@@ -50,7 +50,7 @@ The Mini Arcade Game system will ask user to select which game he wants to play 
 ## 4W's and 1'H
 
 ### Who:
-* People looking for fun activities.
+* Individuals looking for fun activities.
 * Game lovers irrespective of their age group.
 * These games are played between students and even experts to check their logical thinking and concentration.
 * People of any economical background having a hobby of playing games
@@ -97,6 +97,11 @@ LL07 | **Tic tac toe print board** : Provide 3X3 board to play|LL03|Implemented|
 LL08 | **Tic tac toe computermove** : Check empty squares and move accordingly|LL03|Implemented|
 LL09 | **Tic tac toe player move** : Player can check the empty squares and can play accordingly|LL03|Implemented|
 LL10 | **Tic tac toe winner** : Winner is decided by checking the board conditions | LL03 | Implemented |
+LL11 | **2048 Movement physics** : Used to move right,left,up and down | HL01| Implemented |
+Ll12 | **2048 Game board** : Display 2048 game board to the user | HL01 | Implemented |
+LL13 | **2048 detector** : Detect 2048 on the game board | HL01 | Implemented |
+LL14 | **2048 Scoring system** : Display scores on the game board | HL01 | Implemented |
+LL15 | **2048 Non functional system** : Provide sounds,timer,high score and pretty UI|HL01 |Implemented|
 
 
 
