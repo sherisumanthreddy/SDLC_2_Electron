@@ -21,6 +21,13 @@ Sudoku is a logic-based, combinatorial number-placement puzzle. Sudoku Companion
 2. provide hints 
 3. solve puzzle entirely
 
+### 2048
+
+2048 presents with with a 4×4 grid. When you start the game, there will be two “tiles” on the grid, each displaying the number 2 or 4. You hit the arrow keys on your keyboard to move the tiles around — and also to generate new tiles, which will also be valued at 2 or 4. When two equal tiles collide, they combine to give you one greater tile that displays their sum. The more you do this, obviously, the higher the tiles get and the more crowded the board becomes. Your objective is to reach 2048 before the board fills up.
+
+![image](https://user-images.githubusercontent.com/80813102/130348395-033b57ea-d359-4b08-b460-1c1bd244c3ca.png)
+
+
 
 ## Tic Tac Toe Detail requirements
 ## High Level Requirements
