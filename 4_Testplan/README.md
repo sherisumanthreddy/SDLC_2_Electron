@@ -16,9 +16,9 @@
 
 | **Test ID** | **Description**                                              | **Exp IN** | **Exp OUT** | **Actual Out** |**Type Of Test**  |    
 |-------------|--------------------------------------------------------------|------------|-------------|----------------|------------------|
-|  LL_01  |Test to verify whether user wants to play the game or not| user input('y' or 'n') | 'y' or 'n' | y' or 'n' as expected | Requirement based |
+|  LL_01  |Test to verify whether user wants to play the game or not| user input   ('y' or 'n') | 'y' or 'n' | y' or 'n' as expected | Requirement based |
 |  LL_02   |Test to verify the position in playboard|Number from 1 to 9| Corresponding position occupied |Position occupied as expected|Requirement based |
-|  LL_03  |Test to verify letter in particular position| NA |'X' or 'O' at particular position |Playboard with 'X' or  'O' at particular position as expected| Requirement based|
+|  LL_03  |Test to verify letter in particular position| letter |'X' or 'O' at particular position |Playboard with 'X' or  'O' at particular position as expected| Requirement based|
 |  LL_04   |Test to verify whether playboard is occupied completely| Playboard |True or False|True or False as expected | Requirement based |
 |  LL_05   |Test to verify whether given location is occupied or not| Number from 1 to 9 |True or False|True or False as expected|Requirement based |
 |  LL_06   |Test to verify the winner of the game| 'X' or 'O' |True or False|True or False as expected|Requirement based |
