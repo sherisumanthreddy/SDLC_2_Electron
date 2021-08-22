@@ -2,7 +2,7 @@
 | Unit Test |
 |-----------|
 |[![Pytest-Miniarcade](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/unittest.yml/badge.svg)](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/unittest.yml)|
-|[![Pytest-game2048](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/2048ptest.yml/badge.svg)](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/2048ptest.yml)|
+|[![Pytest-2048](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/2048ptest.yml/badge.svg)](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/2048ptest.yml)|
 
 ## Folder Structure
 
