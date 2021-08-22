@@ -55,10 +55,29 @@ non functional:
 4) high score
 
 ### Sudoku Companion
+
 Sudoku is a logic-based, combinatorial number-placement puzzle. Sudoku Companion is a mini-application which can be used to solve Sudoku puzzles more conveniently. It improves the concentration and logical thinking. It provides the following functions:
 1. checking if a solution exists
 2. provide hints 
 3. solve puzzle entirely
+
+### Sudoku Detailed Requirements
+
+### High Level Requirements
+
+ID |  Description  |     Status    
+---|---------------|----------------
+HL03| **Sudoku Companion** : Provide tools to solve sudoku puzzle like hints, possible solution and check if a puzzle has a solution | Implemented ✔ 
+
+### Low Level Requirements
+
+ID  | Description                   | HLR ID | Status 
+----|-------------------------------|--------|-------
+LL01 | **Sudoku Puzzle Input / Output** : Read or Save a sudoku grid from or to a file | HL03 | Implemented ✔ 
+LL02 | **Sudoku Puzzle Display**: Display Sudoku grid to the user | HL03 | Implemented ✔
+LL03 | **Sudoku Puzzle Message**: Find if solution exists for the given puzzle or not | HL03 | Implemented ✔
+LL04 | **Sudoku Puzzle Solve**: Solve the puzzle and display the same | HL03 | Implemented ✔
+LL05 | **Sudoku Puzzle Hint**: Provide hints for solving the sudoku puzzle| HL03 | Implemented ✔
 
 ## Research
 
@@ -96,20 +115,3 @@ The cost requires only for software development and implementation of the softwa
 * The system aims to provide smooth experience for users and should be implemented in least possible cost and efficient way.
 * Users can attempt to play the games through any of the online medium
 
-## Detailed Requirements
-
-### High Level Requirements
-
-ID |  Description  |     Status    
----|---------------|----------------
-HL03| **Sudoku Companion** : Provide tools to solve sudoku puzzle like hints, possible solution and check if a puzzle has a solution | Implemented ✔ 
-
-### Low Level Requirements
-
-ID  | Description                   | HLR ID | Status 
-----|-------------------------------|--------|-------
-LL0X | **Sudoku Puzzle Input / Output** : Read or Save a sudoku grid from or to a file | HL03 | Implemented ✔ 
-LL0X | **Sudoku Puzzle Display**: Display Sudoku grid to the user | HL03 | Implemented ✔
-LL0X | **Sudoku Puzzle Message**: Find if solution exists for the given puzzle or not | HL03 | Implemented ✔
-LL0X | **Sudoku Puzzle Solve**: Solve the puzzle and display the same | HL03 | Implemented ✔
-LL0X | **Sudoku Puzzle Hint**: Provide hints for solving the sudoku puzzle| HL03 | Implemented ✔
