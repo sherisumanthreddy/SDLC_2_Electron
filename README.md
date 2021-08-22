@@ -20,7 +20,7 @@ PS No. |  Name   |    Features    | Issues Raised |Issues Resolved|No Test Cases
 `99005667` | Swathi  Ramachandran |  Tic-Tac-Toe 1 Player  | X No     | X No   | 7  | 7
 `99005660` | Bhargav  R | SudokuCompanion: FileI/O, Grid Representation and Providing Hint Feature Few, Unit Tests and Few HLR and LLR | 1    | X No   | 8  | 8  
 `99005364` | Prakhar  Deep |  Tic-Tac-Toe 2 player  | X No     | X No   |X No   |X No    
-`99005468` | Ayush  Bishnoi |     | X No     | X No   |X No   |X No     
+`99005468` | Ayush  Bishnoi |  2048 game engine and binary score keeper   | X No     | X No   |8    | 8    
 `99005584` | Saurav  Raja  |     | X No     | X No   |X No   |X No
 `99005637` | Prajwal  M| Tic-Tac-Toe     | X No     | X No   | 1  | 1
 `99005638` | Kamarthi Vignesh  Sai |     | X No     | X No   |X No   |X No   
