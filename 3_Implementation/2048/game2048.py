@@ -1,6 +1,7 @@
 #libraries imports
 import turtle
 import random
+import pickle
 
 
 
@@ -117,14 +118,14 @@ def draw_score():
 	pen.color("black")
 	pen.write("SCORE: ", font=('Arcade Interlaced', 10))
 	pen.goto(-95, 150)
-	pen.write(str(SCORE), font=('Arcade Interlaced', 10))
+	pen.write(str(score), font=('Arcade Interlaced', 10))
 	pen.penup()
 	
 	pen.goto(-10, 150)
 	pen.color("black")
 	pen.write("HIGHSCORE: ", font=('Arcade Interlaced', 10))
 	pen.goto(120, 150)
-	pen.write(str(HIGH_SCORE), font=('Arcade Interlaced', 10))
+	pen.write(str(high_score), font=('Arcade Interlaced', 10))
 	pen.penup()
 	
 	SCORE += SCORE_INCREMENT
@@ -263,6 +264,23 @@ def compress_left():
         for i in range(3):
             if gameboard[j][i] != 0 and gameboard[j][i] == gameboard[j][i + 1]:
                 gameboard[j][i] = gameboard[j][i] * 2
+<<<<<<< HEAD
+=======
+                if not TESTING:
+                    global score
+                    global high_score
+                    score = score + gameboard[j][i]
+                    print(score)
+                    if score > high_score:
+                        high_score = score
+                        h = {}
+                        h['score'] = high_score
+                        high_score_pickle = open('highscorepickle.pkl', 'wb')
+                        pickle.dump(h , high_score_pickle)
+                        #print(high_score)
+                        high_score_pickle.close()
+
+>>>>>>> 6901e741598bc886a6e6e55ef94e20906436f7d7
                 gameboard[j][i + 1] = 0
 ## 
 #  @brief moves left
@@ -358,9 +376,34 @@ def main():
 	window.mainloop()	#run the windown thread parallely
 
 
+<<<<<<< HEAD
 
 if __name__ == "__main__":	
     # Seting up the screen
+=======
+    try:
+        high_score_pickle = open('highscorepickle.pkl', 'rb')
+        h = pickle.load(high_score_pickle)
+        high_score = h['score']
+        print(high_score)
+        high_score_pickle.close()
+
+    except FileNotFoundError:
+        high_score = 0
+        h = {}
+        h['score'] = high_score
+        high_score_pickle = open('highscorepickle.pkl', 'wb')
+        pickle.dump(h, high_score_pickle)
+        high_score_pickle.close()
+    
+    print('high score is: ' + str(high_score))
+    score = 0
+
+
+
+
+# Seting up the screen
+>>>>>>> 6901e741598bc886a6e6e55ef94e20906436f7d7
     window = turtle.Screen()
     window.title("Mini arcade games")
     window.bgcolor("black")

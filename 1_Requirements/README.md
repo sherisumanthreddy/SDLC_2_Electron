@@ -2,6 +2,10 @@
 
 ## Introduction
 
+To design a Mini Arcade game system to play 2048,Sudoku and Tic-Tac-Toe(1player and 2player) games based on user choice.
+
+## Research
+
 ### Tic-Tac-Toe 
 Tic-Tac-Toe is a well known game played by two
 persons who alternately place X's and O's upon a 3x3 playing field.
@@ -12,58 +16,31 @@ The object of the game is to be the first player with 3
 marks in a row, where a row can be either vertical, horizontal, or
 diagonal. If all the cells become filled the game is a draw.
 
-## Tic Tac Toe Detail requirements
-## High Level Requirements
-
-  ID |  Description  |    Category    |     Status    |
-  -------|---------|----------------|----------------|
-  HR01 | Display board  | Technical | |
-  HR02 | Player move  |  Technical | |
-  HR03 | Computer move |  Technical | |
-  HR04 | Winner finder  |  Technical | |
-
-##  Low level Requirements:
-  ID  | Description                   | HLR ID | Status 
-  ----|-------------------------------|--------|---------------------------
- LR01 | User shoud be able to input | HR02 | 
- LR02 | User should be able to take move | HR02 | 
- LR03 | Space is checked whether it is free  | HR02 | 
- LR04 | User should be able to insert letter | HR02 | 
- LR05 | Selection of random no | HR03 | 
- LR06 | Winner is decided   | HR03 | 
-
-
-
-### 2048
-2048 requirements:
-
-functional:
-1) movement physics - done
-2) 2048 detector 
-3) full board detector - partially done
-4) score counter
-5) difficulty selector - doable through changing distribution of 2 and 4
-6) input sanitation
-
-non functional:
-1) sounds
-2) timer
-3) pretty UI
-4) high score
+![image](https://user-images.githubusercontent.com/80813102/130335359-4401ea44-590e-4e5d-a1ff-3a60758bee6d.png)
 
 ### Sudoku Companion
+
 Sudoku is a logic-based, combinatorial number-placement puzzle. Sudoku Companion is a mini-application which can be used to solve Sudoku puzzles more conveniently. It improves the concentration and logical thinking. It provides the following functions:
 1. checking if a solution exists
 2. provide hints 
 3. solve puzzle entirely
 
-## Research
+![image](https://user-images.githubusercontent.com/80813102/130348527-e3109d9e-1138-434f-afff-b2c4bec762d7.png)
+
+
+### 2048
+
+2048 presents with with a 4×4 grid. When you start the game, there will be two “tiles” on the grid, each displaying the number 2 or 4. You hit the arrow keys on your keyboard to move the tiles around — and also to generate new tiles, which will also be valued at 2 or 4. When two equal tiles collide, they combine to give you one greater tile that displays their sum. The more you do this, obviously, the higher the tiles get and the more crowded the board becomes. Your objective is to reach 2048 before the board fills up.
+
+![image](https://user-images.githubusercontent.com/80813102/130348395-033b57ea-d359-4b08-b460-1c1bd244c3ca.png)
 
 
 ### Cost and features
-The cost requires only for software development and implementation of the software.
+The cost requires only for software development and implementation of the software. We can play 3 games using single Mini arcade game application.
 
 ### Defining Our System
+
+The Mini Arcade Game system will ask user to select which game he wants to play by selecting the options 1,2,3,4& 5(1-2048, 2-sudoku, 3- 1player_tictactoe, 4- 2player_tictactoe,5- Exit).And then he will be able to play the selected game and display of that game will open.
 
 
 ## SWOT Analysis
@@ -93,20 +70,66 @@ The cost requires only for software development and implementation of the softwa
 * The system aims to provide smooth experience for users and should be implemented in least possible cost and efficient way.
 * Users can attempt to play the games through any of the online medium
 
-## Detailed Requirements
+
+## Detail requirements
+
+### High Level Requirements
+
+  ID |  Description  |    Category    |     Status    |
+  -------|---------|----------------|----------------|
+  HR01 | Display board  | Technical | |
+  HR02 | Player move  |  Technical | |
+  HR03 | Computer move |  Technical | |
+  HR04 | Winner finder  |  Technical | |
+
+###  Low level Requirements
+
+  ID  | Description                   | HLR ID | Status 
+  ----|-------------------------------|--------|---------------------------
+ LR01 | User shoud be able to input | HR02 | 
+ LR02 | User should be able to take move | HR02 | 
+ LR03 | Space is checked whether it is free  | HR02 | 
+ LR04 | User should be able to insert letter | HR02 | 
+ LR05 | Selection of random no | HR03 | 
+ LR06 | Winner is decided   | HR03 | 
+
+
+
+### 2048
+2048 requirements:
+
+functional:
+1) movement physics - done
+2) 2048 detector 
+3) full board detector - partially done
+4) score counter
+5) difficulty selector - doable through changing distribution of 2 and 4
+6) input sanitation
+
+non functional:
+1) sounds
+2) timer
+3) pretty UI
+4) high score
+
+
+### Sudoku Detailed Requirements
 
 ### High Level Requirements
 
 ID |  Description  |     Status    
 ---|---------------|----------------
-HL03| **Sudoku Companion** : Provide tools to solve sudoku puzzle like hints, possible solution and check if a puzzle has a solution | ❌ 
+HL03| **Sudoku Companion** : Provide tools to solve sudoku puzzle like hints, possible solution and check if a puzzle has a solution | Implemented ✔ 
 
 ### Low Level Requirements
 
 ID  | Description                   | HLR ID | Status 
 ----|-------------------------------|--------|-------
-LL0X | **Sudoku Puzzle Input / Output** : Read or Save a sudoku grid from or to a file | HL03 | ❌ 
-LL0X | **Sudoku Puzzle Display**: Display Sudoku grid to the user | HL03 | ❌
-LL0X | **Sudoku Puzzle Message**: Find if solution exists for the given puzzle or not | HL03 | ❌
-LL0X | **Sudoku Puzzle Solve**: Solve the puzzle and display the same | HL03 | ❌
-LL0X | **Sudoku Puzzle Hint**: Provide hints for solving the sudoku puzzle| HL03 | ❌
+LL01 | **Sudoku Puzzle Input / Output** : Read or Save a sudoku grid from or to a file | HL03 | Implemented ✔ 
+LL02 | **Sudoku Puzzle Display**: Display Sudoku grid to the user | HL03 | Implemented ✔
+LL03 | **Sudoku Puzzle Message**: Find if solution exists for the given puzzle or not | HL03 | Implemented ✔
+LL04 | **Sudoku Puzzle Solve**: Solve the puzzle and display the same | HL03 | Implemented ✔
+LL05 | **Sudoku Puzzle Hint**: Provide hints for solving the sudoku puzzle| HL03 | Implemented ✔
+
+
+

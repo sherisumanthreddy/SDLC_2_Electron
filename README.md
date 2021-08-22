@@ -14,8 +14,8 @@
 PS No. |  Name   |    Features    | Issues Raised |Issues Resolved|No Test Cases|Test Case Pass
 -------|-------------|----------------|----------------|---------------|-------------|--------------
 `99005667` | Swathi  Ramachandran |     | X No     | X No   |X No   |X No   
-`99005660` | Bhargav  R |     | X No     | X No   |X No   |X No  
-`99005364` | Prakhar  Deep |     | X No     | X No   |X No   |X No    
+`99005660` | Bhargav  R |  SudokuComapanion   | X No     | X No   |X No   |X No  
+`99005364` | Prakhar  Deep |  Tic-Tac-Toe 2 player  | X No     | X No   |X No   |X No    
 `99005468` | Ayush  Bishnoi |     | X No     | X No   |X No   |X No     
 `99005584` | Saurav  Raja  |     | X No     | X No   |X No   |X No
 `99005637` | Prajwal  M|     | X No     | X No   |X No   |X No 
