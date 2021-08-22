@@ -21,7 +21,7 @@ PS No. |  Name   |    Features    | Issues Raised |Issues Resolved|No Test Cases
 `99005637` | Prajwal  M|     | X No     | X No   |X No   |X No 
 `99005638` | Kamarthi Vignesh  Sai |     | X No     | X No   |X No   |X No   
 `99005688` | Tankasala  Gaanalola  |     | X No     | X No   |X No   |X No  
-`99005679` | Annappa  M | SudokuCompanion: Sudoku Grid Issolvable logic, Solver Logic, Usecase UML,Testplan,few LLR and 2 unit tests   | X No     | X No   |2 No   |2 No     
+`99005679` | Annappa  M | SudokuCompanion: Sudoku Grid Issolvable logic, Solver Logic, Usecase UML,Testplan,few LLR and 2 unit tests   | X No     | 1   |2    |2    
 `99005635` | Yaseer Faiz Ahmed |     | X No     | X No   |X No   |X No  
 ## Challenges Faced and How Was It Overcome
 
