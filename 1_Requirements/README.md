@@ -2,6 +2,10 @@
 
 ## Introduction
 
+To design a Mini Arcade game system to play 2048,Sudoku and Tic-Tac-Toe(1player and 2player) games based on user choice.
+
+## Research
+
 ### Tic-Tac-Toe 
 Tic-Tac-Toe is a well known game played by two
 persons who alternately place X's and O's upon a 3x3 playing field.
@@ -30,6 +34,41 @@ Sudoku is a logic-based, combinatorial number-placement puzzle. Sudoku Companion
 
 ![image](https://user-images.githubusercontent.com/80813102/130348395-033b57ea-d359-4b08-b460-1c1bd244c3ca.png)
 
+
+### Cost and features
+The cost requires only for software development and implementation of the software.
+
+### Defining Our System
+
+The Mini Arcade Game system will ask user to select which game he wants to play by selecting the options 1,2,3,4& 5(1-2048, 2-sudoku, 3- 1player_tictactoe, 4- 2player_tictactoe,5- Exit).And then he will be able to play the selected game and display of that game will open.
+
+
+## SWOT Analysis
+![swot analysis](https://user-images.githubusercontent.com/81503646/130212472-be28520b-a495-451c-972e-28a45c8b0101.png)
+
+
+## 4W's and 1'H
+
+### Who:
+* Individuals looking for fun activities.
+* Game lovers irrespective of their age group.
+* These games are played between students and even experts to check their logical thinking.
+* People of any economical background having a hobby of playing games
+
+### What:
+* It provides multiple gaming options.
+* User can choose any game of his choice from the given list.
+
+### When:
+* These games can be played in a short interval of time if the user wants to prevent boredom, for relaxation and enjoyment.
+
+### Where:
+* It is simple and user-friendly, so it can be used in many domains.
+* It can be used anywhere around the world by anyone who loves playing games.
+
+### How:
+* The system aims to provide smooth experience for users and should be implemented in least possible cost and efficient way.
+* Users can attempt to play the games through any of the online medium
 
 
 ## Tic Tac Toe Detail requirements
@@ -90,41 +129,5 @@ LL03 | **Sudoku Puzzle Message**: Find if solution exists for the given puzzle o
 LL04 | **Sudoku Puzzle Solve**: Solve the puzzle and display the same | HL03 | Implemented ✔
 LL05 | **Sudoku Puzzle Hint**: Provide hints for solving the sudoku puzzle| HL03 | Implemented ✔
 
-## Research
 
-
-### Cost and features
-The cost requires only for software development and implementation of the software.
-
-### Defining Our System
-
-The Mini Arcade Game system will ask user to select which game he wants to play by selecting the options 1,2,3,4& 5(1-2048, 2-sudoku, 3- 1player_tictactoe, 4- 2player_tictactoe,5- Exit).And then he will be able to play the selected game and display of that game will open.
-
-
-## SWOT Analysis
-![swot analysis](https://user-images.githubusercontent.com/81503646/130212472-be28520b-a495-451c-972e-28a45c8b0101.png)
-
-
-## 4W's and 1'H
-
-### Who:
-* Individuals looking for fun activities.
-* Game lovers irrespective of their age group.
-* These games are played between students and even experts to check their logical thinking.
-* People of any economical background having a hobby of playing games
-
-### What:
-* It provides multiple gaming options.
-* User can choose any game of his choice from the given list.
-
-### When:
-* These games can be played in a short interval of time if the user wants to prevent boredom, for relaxation and enjoyment.
-
-### Where:
-* It is simple and user-friendly, so it can be used in many domains.
-* It can be used anywhere around the world by anyone who loves playing games.
-
-### How:
-* The system aims to provide smooth experience for users and should be implemented in least possible cost and efficient way.
-* Users can attempt to play the games through any of the online medium
 
