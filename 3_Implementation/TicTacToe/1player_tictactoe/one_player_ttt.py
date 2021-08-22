@@ -12,5 +12,3 @@ def ConsoleFront():
         else:
             break
 
-
-ConsoleFront()
