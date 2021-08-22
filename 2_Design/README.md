@@ -44,13 +44,14 @@ Low Level:
 
 
 ## Low Level Design
+### Flowchart
 ### Mini Arcade Game
 ![Arcade flowchart](https://user-images.githubusercontent.com/80352730/130350774-0b02545f-4cdf-4e59-b11c-72f12a077c10.png)
 
 ![arcade flow chart](https://user-images.githubusercontent.com/81627731/130354557-2baaedaa-b46f-4b2a-a296-b403289f8840.png)
 
 
-### Flowchart
+
 ![Flowchart](https://user-images.githubusercontent.com/80392588/130255510-3240d7fc-7770-42f2-8274-bdd6b534d432.png)
 
 ### SudokuCompanion
