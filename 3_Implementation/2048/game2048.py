@@ -12,7 +12,6 @@ gameboard = [
     [0, 0, 0, 0]
 ]
 
-
 #grid colors
 colors = {
         0: "white",
@@ -259,24 +258,11 @@ def slam_left():
 #  
 #  @details 
 #  
-def compress_left(TESTING = False):
-
+def compress_left():
     for j in range(4):
         for i in range(3):
             if gameboard[j][i] != 0 and gameboard[j][i] == gameboard[j][i + 1]:
                 gameboard[j][i] = gameboard[j][i] * 2
-                if not TESTING:
-                    global score
-                    global high_score
-                    score = score + gameboard[j][i]
-                    print(score)
-                    if score > high_score:
-                        high_score = score
-                        high_score_pickle = open('highscorepickle.txt', 'w')
-                        high_score_pickle.write(str(high_score))
-                        #print(high_score)
-                        high_score_pickle.close()
-
                 gameboard[j][i + 1] = 0
 ## 
 #  @brief moves left
@@ -285,16 +271,16 @@ def compress_left(TESTING = False):
 #  
 #  @details 
 #  
-def raw_move_left(TESTING = False):
+def raw_move_left():
     slam_left()
-    compress_left(TESTING)
+    compress_left()
     slam_left()
 
 
 
 def move_left(TESTING = False):
 
-    raw_move_left(TESTING)
+    raw_move_left()
     if not TESTING:
         pick_random_tile()
         draw_grid()
@@ -309,7 +295,7 @@ def move_up(TESTING = False):
 
     global gameboard
     gameboard = transpose(gameboard)
-    raw_move_left(TESTING)
+    raw_move_left()
     gameboard = transpose(gameboard)
     if not TESTING:
         pick_random_tile()
@@ -325,7 +311,7 @@ def move_right(TESTING = False):
 
     global gameboard
     gameboard = reverse(gameboard)
-    raw_move_left(TESTING)
+    raw_move_left()
     gameboard = reverse(gameboard)
     if not TESTING:
         pick_random_tile()
@@ -342,7 +328,7 @@ def move_down(TESTING = False):
     global gameboard
     gameboard = transpose(gameboard)
     gameboard = reverse(gameboard)
-    raw_move_left(TESTING)
+    raw_move_left()
     gameboard = reverse(gameboard)
     gameboard = transpose(gameboard)
     if not TESTING:
@@ -371,30 +357,10 @@ def main():
 	turtle.onscreenclick(btnclick_2048, 1)	#if mouse is clicked? check weather its inside the button's boundaries
 	window.mainloop()	#run the windown thread parallely
 
+
+
 if __name__ == "__main__":	
-
-    global high_score
-    global score
-
-    try:
-        high_score_pickle = open('highscorepickle.txt', 'r')
-        high_score = int(high_score_pickle.read().rstrip())
-        print(high_score)
-        high_score_pickle.close()
-
-    except FileNotFoundError:
-        high_score = 0
-        high_score_pickle = open('highscorepickle.txt', 'w')
-        high_score_pickle.write(str(high_score))
-        high_score_pickle.close()
-    
-    print('high score is: ' + str(high_score))
-    score = 0
-
-
-
-
-# Seting up the screen
+    # Seting up the screen
     window = turtle.Screen()
     window.title("Mini arcade games")
     window.bgcolor("black")
