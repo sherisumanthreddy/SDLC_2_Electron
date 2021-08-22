@@ -108,6 +108,6 @@ def check_diagonals():
     
     return printboard.play_board[2]
 
-  # Or return None if there was no winner
+  # Or else return None if there was no winner
   else:
     return None
