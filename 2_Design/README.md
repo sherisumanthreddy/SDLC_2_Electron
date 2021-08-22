@@ -32,6 +32,11 @@ Low Level:
 ### Class Diagram
 ![classdiagram](https://user-images.githubusercontent.com/80813102/130295145-c7d964d0-6ede-4646-bc94-ac79d09e312c.png)
 
+### SudokuCompanion
+### Usecase Diagram
+![image](https://user-images.githubusercontent.com/81627731/130348770-1c30567b-04fc-4bd0-8e32-01d09f08f171.png)
+
+
 
 
 ## Low Level Design
