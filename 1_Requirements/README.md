@@ -102,14 +102,14 @@ The cost requires only for software development and implementation of the softwa
 
 ID |  Description  |     Status    
 ---|---------------|----------------
-HL03| **Sudoku Companion** : Provide tools to solve sudoku puzzle like hints, possible solution and check if a puzzle has a solution | ❌ 
+HL03| **Sudoku Companion** : Provide tools to solve sudoku puzzle like hints, possible solution and check if a puzzle has a solution | Implemented ✔ 
 
 ### Low Level Requirements
 
 ID  | Description                   | HLR ID | Status 
 ----|-------------------------------|--------|-------
-LL0X | **Sudoku Puzzle Input / Output** : Read or Save a sudoku grid from or to a file | HL03 | ❌ 
-LL0X | **Sudoku Puzzle Display**: Display Sudoku grid to the user | HL03 | ❌
-LL0X | **Sudoku Puzzle Message**: Find if solution exists for the given puzzle or not | HL03 | ❌
-LL0X | **Sudoku Puzzle Solve**: Solve the puzzle and display the same | HL03 | ❌
-LL0X | **Sudoku Puzzle Hint**: Provide hints for solving the sudoku puzzle| HL03 | ❌
+LL0X | **Sudoku Puzzle Input / Output** : Read or Save a sudoku grid from or to a file | HL03 | Implemented ✔ 
+LL0X | **Sudoku Puzzle Display**: Display Sudoku grid to the user | HL03 | Implemented ✔
+LL0X | **Sudoku Puzzle Message**: Find if solution exists for the given puzzle or not | HL03 | Implemented ✔
+LL0X | **Sudoku Puzzle Solve**: Solve the puzzle and display the same | HL03 | Implemented ✔
+LL0X | **Sudoku Puzzle Hint**: Provide hints for solving the sudoku puzzle| HL03 | Implemented ✔
