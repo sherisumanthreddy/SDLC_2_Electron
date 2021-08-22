@@ -14,6 +14,13 @@ diagonal. If all the cells become filled the game is a draw.
 
 ![image](https://user-images.githubusercontent.com/80813102/130335359-4401ea44-590e-4e5d-a1ff-3a60758bee6d.png)
 
+### Sudoku Companion
+
+Sudoku is a logic-based, combinatorial number-placement puzzle. Sudoku Companion is a mini-application which can be used to solve Sudoku puzzles more conveniently. It improves the concentration and logical thinking. It provides the following functions:
+1. checking if a solution exists
+2. provide hints 
+3. solve puzzle entirely
+
 
 ## Tic Tac Toe Detail requirements
 ## High Level Requirements
@@ -54,12 +61,6 @@ non functional:
 3) pretty UI
 4) high score
 
-### Sudoku Companion
-
-Sudoku is a logic-based, combinatorial number-placement puzzle. Sudoku Companion is a mini-application which can be used to solve Sudoku puzzles more conveniently. It improves the concentration and logical thinking. It provides the following functions:
-1. checking if a solution exists
-2. provide hints 
-3. solve puzzle entirely
 
 ### Sudoku Detailed Requirements
 
