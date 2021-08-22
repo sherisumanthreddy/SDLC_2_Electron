@@ -21,6 +21,9 @@ Sudoku is a logic-based, combinatorial number-placement puzzle. Sudoku Companion
 2. provide hints 
 3. solve puzzle entirely
 
+![image](https://user-images.githubusercontent.com/80813102/130348527-e3109d9e-1138-434f-afff-b2c4bec762d7.png)
+
+
 ### 2048
 
 2048 presents with with a 4×4 grid. When you start the game, there will be two “tiles” on the grid, each displaying the number 2 or 4. You hit the arrow keys on your keyboard to move the tiles around — and also to generate new tiles, which will also be valued at 2 or 4. When two equal tiles collide, they combine to give you one greater tile that displays their sum. The more you do this, obviously, the higher the tiles get and the more crowded the board becomes. Your objective is to reach 2048 before the board fills up.
@@ -94,6 +97,8 @@ LL05 | **Sudoku Puzzle Hint**: Provide hints for solving the sudoku puzzle| HL03
 The cost requires only for software development and implementation of the software.
 
 ### Defining Our System
+
+The Mini Arcade Game system will ask user to select which game he wants to play by selecting the options 1,2,3,4& 5(1-2048, 2-sudoku, 3- 1player_tictactoe, 4- 2player_tictactoe,5- Exit).And then he will be able to play the selected game and display of that game will open.
 
 
 ## SWOT Analysis
