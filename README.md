@@ -1,4 +1,7 @@
 # SDLC Mini Arcade Game
+| Unit Test |
+|-----------|
+|[![Pytest-Miniarcade](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/unittest.yml/badge.svg)](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/unittest.yml)|
 
 ## Folder Structure
 
