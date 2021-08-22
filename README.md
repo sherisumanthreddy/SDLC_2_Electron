@@ -2,6 +2,7 @@
 | Unit Test |
 |-----------|
 |[![Pytest-Miniarcade](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/unittest.yml/badge.svg)](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/unittest.yml)|
+|[![Pytest-2048](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/test2048.yml/badge.svg)](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/test2048.yml)|
 
 ## Folder Structure
 
