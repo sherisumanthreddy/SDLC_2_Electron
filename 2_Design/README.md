@@ -34,7 +34,7 @@ Low Level:
 
 ### SudokuCompanion
 ### Usecase Diagram
-![image](https://user-images.githubusercontent.com/81627731/130348770-1c30567b-04fc-4bd0-8e32-01d09f08f171.png)
+![Usecase](https://user-images.githubusercontent.com/81627731/130348770-1c30567b-04fc-4bd0-8e32-01d09f08f171.png)
 
 
 
@@ -42,3 +42,6 @@ Low Level:
 ## Low Level Design
 ### Flowchart
 ![Flowchart](https://user-images.githubusercontent.com/80392588/130255510-3240d7fc-7770-42f2-8274-bdd6b534d432.png)
+#### SudokuCompanion
+![Flowchart](https://user-images.githubusercontent.com/81627731/130350626-f5a35118-b339-4035-9e83-42542d650b59.png)
+
