@@ -13,6 +13,7 @@ gameboard = [
     [0, 0, 0, 0]
 ]
 
+
 #grid colors
 colors = {
         0: "white",
@@ -259,13 +260,12 @@ def slam_left():
 #  
 #  @details 
 #  
-def compress_left():
+def compress_left(TESTING = False):
+
     for j in range(4):
         for i in range(3):
             if gameboard[j][i] != 0 and gameboard[j][i] == gameboard[j][i + 1]:
                 gameboard[j][i] = gameboard[j][i] * 2
-<<<<<<< HEAD
-=======
                 if not TESTING:
                     global score
                     global high_score
@@ -280,7 +280,6 @@ def compress_left():
                         #print(high_score)
                         high_score_pickle.close()
 
->>>>>>> 6901e741598bc886a6e6e55ef94e20906436f7d7
                 gameboard[j][i + 1] = 0
 ## 
 #  @brief moves left
@@ -289,16 +288,16 @@ def compress_left():
 #  
 #  @details 
 #  
-def raw_move_left():
+def raw_move_left(TESTING = False):
     slam_left()
-    compress_left()
+    compress_left(TESTING)
     slam_left()
 
 
 
 def move_left(TESTING = False):
 
-    raw_move_left()
+    raw_move_left(TESTING)
     if not TESTING:
         pick_random_tile()
         draw_grid()
@@ -313,7 +312,7 @@ def move_up(TESTING = False):
 
     global gameboard
     gameboard = transpose(gameboard)
-    raw_move_left()
+    raw_move_left(TESTING)
     gameboard = transpose(gameboard)
     if not TESTING:
         pick_random_tile()
@@ -329,7 +328,7 @@ def move_right(TESTING = False):
 
     global gameboard
     gameboard = reverse(gameboard)
-    raw_move_left()
+    raw_move_left(TESTING)
     gameboard = reverse(gameboard)
     if not TESTING:
         pick_random_tile()
@@ -346,7 +345,7 @@ def move_down(TESTING = False):
     global gameboard
     gameboard = transpose(gameboard)
     gameboard = reverse(gameboard)
-    raw_move_left()
+    raw_move_left(TESTING)
     gameboard = reverse(gameboard)
     gameboard = transpose(gameboard)
     if not TESTING:
@@ -375,12 +374,11 @@ def main():
 	turtle.onscreenclick(btnclick_2048, 1)	#if mouse is clicked? check weather its inside the button's boundaries
 	window.mainloop()	#run the windown thread parallely
 
-
-<<<<<<< HEAD
-
 if __name__ == "__main__":	
-    # Seting up the screen
-=======
+
+    global high_score
+    global score
+
     try:
         high_score_pickle = open('highscorepickle.pkl', 'rb')
         h = pickle.load(high_score_pickle)
@@ -403,7 +401,6 @@ if __name__ == "__main__":
 
 
 # Seting up the screen
->>>>>>> 6901e741598bc886a6e6e55ef94e20906436f7d7
     window = turtle.Screen()
     window.title("Mini arcade games")
     window.bgcolor("black")
@@ -427,5 +424,3 @@ if __name__ == "__main__":
     
 	
     main()
-
-
