@@ -35,7 +35,7 @@ def ConsoleFront():
     SolverObj = SudokuSolver(GridObj)
     if choice == "1":
         value = "" if SolverObj.IsSolvable() else "NOT "
-        print(f"The given sudoku puzzle is can {value}be solved!")
+        print(f"The given sudoku puzzle can {value}be solved!")
     elif choice == "2":
         pass
     elif choice == "3":
