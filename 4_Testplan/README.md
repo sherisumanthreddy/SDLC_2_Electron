@@ -7,6 +7,7 @@
 | **Test ID** | **Description**                                              | **Exp I/P** | **Exp O/P** | **Actual Out** |**Type Of Test**  |    
 |-------------|--------------------------------------------------------------|------------|-------------|----------------|------------------|
 |  HL_01       | Tic-Tac-Toe : 1 player Game |Number from 1 to 9|Win/loss/Draw|Win/loss/Draw|Requirement based |
+|  HL_02       | Tic-Tac-Toe : 2 player Game |Number from 1 to 9|Win/loss/tie|Win/loss/tie|Requirement based |
 
 
 
