@@ -1,6 +1,5 @@
 import printboard
 import check
-import takeinput
 import reverseplayer
 import tiecheck
 import winnercheck
@@ -33,18 +32,3 @@ def play_ttt():
   elif winnercheck.winner == None:
     print(" tie between X and O.")
 
-# ------------ Start Execution -------------
-# Play a game of tic tac toe
-while True:
-    X = takeinput.take_input()
-    if X.lower() == 'y':
-      
-      printboard.play_board = ["-", "-", "-",
-         "-", "-", "-",
-         "-", "-", "-"]
-      tiecheck.game_status = True
-      #check.first_player = "x"
-      winnercheck.winner = None
-      play_ttt()
-    else:
-      break
