@@ -40,7 +40,7 @@ The cost requires only for software development and implementation of the softwa
 
 ### Defining Our System
 
-The Mini Arcade Game system will ask user to select which game he wants to play by selecting the options 1,2,3,4& 5(1-2048, 2-sudoku, 3- 1player_tictactoe, 4- 2player_tictactoe,5- Exit).And then he will be able to play the selected game and display of that game will open.
+The Mini Arcade Game system will ask user to select which game he wants to play by selecting the options 1,2,3,4& 5(1-2048, 2-sudoku, 3- 1player_tictactoe, 4- 2player_tictactoe,5- Exit).And then user will able to play the selected game and display of that game will open.
 
 
 ## SWOT Analysis
@@ -75,12 +75,13 @@ The Mini Arcade Game system will ask user to select which game he wants to play 
 
 ### High Level Requirements
 
-  ID |  Description  |    Category    |     Status    |
-  -------|---------|----------------|----------------|
-  HR01 | Display board  | Technical | |
-  HR02 | Player move  |  Technical | |
-  HR03 | Computer move |  Technical | |
-  HR04 | Winner finder  |  Technical | |
+ID |  Description  |     Status    |
+---|---------------|----------------|
+HL01|**2048** : Provide tools like game board,movement physics,score counter,difficulty selector and non functional requirements(sounds,timer,pretty UI &high score)|Implemented|
+HL02| **Sudoku Companion** : Provide tools to solve sudoku puzzle like hints, possible solution and check if a puzzle has a solution | Implemented  |
+HL03|**Tic tac toe** : It contains requirements like display board,player move,computer move and winner finder for both 1player and 2player game| Implemented |
+
+
 
 ###  Low level Requirements
 
