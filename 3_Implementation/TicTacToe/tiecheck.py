@@ -4,7 +4,7 @@ import printboard
 # --------- Global Variables -----------
 game_status = True
 
-# Check if there is a tie
+# Check if there is a tie between player
 
 def tie_check():
   # Set global variables
