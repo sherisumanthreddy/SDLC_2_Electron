@@ -20,7 +20,7 @@
 |  LL_02   |Test to verify the position in playboard|Number from 1 to 9| Corresponding position occupied |Position occupied as expected|Requirement based |
 |  LL_03  |Test to verify letter in particular position| NA |'X' or 'O' at particular position |Playboard with 'X' or  'O' at particular position as expected| Requirement based|
 |  LL_04   |Test to verify whether playboard is occupied completely| Playboard |True or False|True or False as expected | Requirement based |
-|  LL_05   |Test to verify whether given location is occupied or not| Number from 1 to 9 |True or False as expected |True or false|Requirement based |
+|  LL_05   |Test to verify whether given location is occupied or not| Number from 1 to 9 |True or False  |True or false as expected|Requirement based |
 
 
 ## Table no 1: High level test plan
