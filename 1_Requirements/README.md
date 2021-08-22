@@ -50,7 +50,7 @@ The Mini Arcade Game system will ask user to select which game he wants to play 
 ## 4W's and 1'H
 
 ### Who:
-* Individuals looking for fun activities.
+* People looking for fun activities.
 * Game lovers irrespective of their age group.
 * These games are played between students and even experts to check their logical thinking and concentration.
 * People of any economical background having a hobby of playing games
