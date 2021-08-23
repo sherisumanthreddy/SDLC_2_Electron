@@ -28,7 +28,7 @@ PS No. |  Name   |    Features    | Issues Raised |Issues Resolved|No Test Cases
 `99005638` | Kamarthi Vignesh  Sai | Tic Tac Toe game, Activity diagram, Flowchart     | X No     | X No   | 1  | 1   
 `99005688` | Tankasala  Gaanalola  |     | X No     | X No   |X No   |X No  
 `99005679` | Annappa  M | SudokuCompanion: Sudoku Grid Issolvable logic, Solver Logic, Usecase UML,Testplan,few LLR and 2 unit tests   | X No     | 1   |2    |2    
-`99005635` | Yaseer Faiz Ahmed |     | X No     | X No   |X No   |X No  
+`99005635` | Yaseer Faiz Ahmed |Menu GUI, 2048 GUI, TicTacToe GUI | X No     | X No   |0   | 0
 ## Challenges Faced and How Was It Overcome
 
 1. Faced issues with integrating the modules because each of us had a different coding style. But eventually, reading through code and undersanding it helped us modify it and integrate it accordingly.
