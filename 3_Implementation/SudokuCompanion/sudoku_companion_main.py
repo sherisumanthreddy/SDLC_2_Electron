@@ -19,18 +19,12 @@ def JustPrintSudoku(SudokuStr):
         return
 
 def ConsoleFront():
+    print("\nWelcome to SudokuCompanion!\n")
     path_to_puzzle = input("Enter the path to txt file containing the puzzle: ")
     GridObj = SudokuGrid(FileIOHandler, path_to_puzzle)
 
-    try:
-        GridObj.Read()
-    except ValueError:
-        print(f"[ERR]: \"{path_to_puzzle}\" - Input file does not contain sudoku puzzle in the right format!")
-        print("Try Again :-( ")
-        return
-    except IOError as exception_here:
-        print(exception_here)
-        print("Try Again :-( ")
+    if not GridObj.Read():
+        print("\nCan not read the specified file!\n Try again...\n")
         return
 
     print("PUZZLE:")
