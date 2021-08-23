@@ -1,5 +1,5 @@
-import main
-import takeinput
+from . import main
+from . import takeinput
 
 
 def ConsoleFront():
@@ -12,3 +12,6 @@ def ConsoleFront():
         else:
             break
 
+
+if __name__ == "__main__":
+    ConsoleFront()

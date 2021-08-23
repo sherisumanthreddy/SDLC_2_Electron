@@ -24,7 +24,7 @@ PS No. |  Name   |    Features    | Issues Raised |Issues Resolved|No Test Cases
 `99005364` | Prakhar  Deep |  Tic-Tac-Toe 2 player  | X No     | X No   |X No   |X No    
 `99005468` | Ayush  Bishnoi |  2048 game engine and binary score keeper   | X No     | X No   |8    | 8    
 `99005584` | Saurav  Raja  |SudokuComapanion:Usecase UML,Flowchart,Testplan and Implementation     | X No     | 1   |1   |1
-`99005637` | Prajwal  M| Tic-Tac-Toe     | X No     | X No   | 1  | 1
+`99005637` | Prajwal  M| Tic-Tac-Toe : Requirements,Class diagram UML, Testplan and Implementation     | X No     | X No   | 1  | 1
 `99005638` | Kamarthi Vignesh  Sai | Tic Tac Toe game, Activity diagram, Flowchart     | X No     | X No   | 1  | 1   
 `99005688` | Tankasala  Gaanalola  |     | X No     | X No   |X No   |X No  
 `99005679` | Annappa  M | SudokuCompanion: Sudoku Grid Issolvable logic, Solver Logic, Usecase UML,Testplan,few LLR and 2 unit tests   | X No     | 1   |2    |2    

@@ -1,6 +1,6 @@
-import insertletter
-import spacefree
-import takemove
+from . import insertletter
+from . import spacefree
+from . import takemove
 
 
 def player_move(board):

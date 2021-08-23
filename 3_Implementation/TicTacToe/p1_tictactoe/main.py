@@ -1,9 +1,9 @@
-import check
-import playermove
-import printboard
-import winner
-import computermove
-import insertletter
+from . import check
+from . import playermove
+from . import printboard
+from . import winner
+from . import computermove
+from . import insertletter
 
 def main_function(board):
     """Function"""
