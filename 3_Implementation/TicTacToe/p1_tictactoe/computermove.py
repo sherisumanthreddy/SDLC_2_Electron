@@ -1,5 +1,5 @@
-import selectrandom
-import winner
+from . import selectrandom
+from . import winner
 
 
 def computer_move(board):
@@ -32,7 +32,6 @@ def computer_move(board):
     for i in possible_moves:
         if i in [2, 4, 6, 8]:
             edges_open.append(i)
-
     if len(edges_open) > 0:
         move = selectrandom.select_random(edges_open)
         return move
