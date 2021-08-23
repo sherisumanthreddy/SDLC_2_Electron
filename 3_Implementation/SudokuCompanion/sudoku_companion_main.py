@@ -1,4 +1,4 @@
-from SudokuCompanion import SudokuGrid, SudokuSolver, FileIOHandler
+from .SudokuCompanion import SudokuGrid, SudokuSolver, FileIOHandler
 
 def JustPrintSudoku(SudokuStr):
         stringObj = SudokuStr
