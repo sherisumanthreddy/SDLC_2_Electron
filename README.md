@@ -23,7 +23,7 @@ PS No. |  Name   |    Features    | Issues Raised |Issues Resolved|No Test Cases
 `99005660` | Bhargav  R | SudokuCompanion: FileI/O, Grid Representation and Providing Hint Feature Few, Unit Tests and Few HLR and LLR | 1    | X No   | 8  | 8  
 `99005364` | Prakhar  Deep |  Tic-Tac-Toe 2 player  | X No     | X No   |X No   |X No    
 `99005468` | Ayush  Bishnoi |  2048 game engine and binary score keeper   | X No     | X No   |8    | 8    
-`99005584` | Saurav  Raja  |SudokuComapanion:Few LLR,Usecase UML,Flowchart,Testplan and Implementation     | X No     | 1   |1   |1
+`99005584` | Saurav  Raja  |SudokuComapanion:Usecase UML,Flowchart,Testplan and Implementation     | X No     | 1   |1   |1
 `99005637` | Prajwal  M| Tic-Tac-Toe     | X No     | X No   | 1  | 1
 `99005638` | Kamarthi Vignesh  Sai | Tic Tac Toe game, Activity diagram, Flowchart     | X No     | X No   | 1  | 1   
 `99005688` | Tankasala  Gaanalola  |     | X No     | X No   |X No   |X No  
