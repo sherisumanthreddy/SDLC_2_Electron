@@ -16,13 +16,13 @@ gameboard = [
 TESTING = False
 
 if not TESTING:
-    import tic_tac_toe
+	import tic_tac_toe
 	from SudokuCompanion import sudoku_companion_main
-    window = turtle.Screen()
-    window.title("Mini arcade games")
-    window.bgcolor("black")
-    window.setup(width=450, height=600)
-    window.tracer(0)
+	window = turtle.Screen()
+	window.title("Mini arcade games")
+	window.bgcolor("black")
+	window.setup(width=450, height=600)
+	window.tracer(0)
 
 #grid colors
 colors = {
@@ -243,7 +243,7 @@ def btnclick(x, y):
 		
 		pen.clear()	#just clearing in case
 		
-		tic_tac_toe.draw_tictac_grid(0, testing=TESTING)
+		tic_tac_toe.draw_tictac_grid(0, TESTING)
 	
 	#tictactoe clicks
 	#global TIC_MOVE
@@ -269,9 +269,9 @@ def btnclick(x, y):
 		
 	
 	if (x > -139) and (x < 100) and (y > -129) and (y < -100) and IN_MENU:
-		
-		
 		IN_MENU = False	#not in menu anymore
+		window.bye()
+		sudoku_companion_main.ConsoleFront()
 	
 		
 	
