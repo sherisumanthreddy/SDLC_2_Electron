@@ -79,7 +79,7 @@ ID |  Description  |     Status    |
 ---|---------------|----------------|
 HL01|**2048** : Provide tools like game board,movement physics,score counter,difficulty selector and non functional requirements(sounds,timer,pretty UI &high score)|Implemented|
 HL02| **Sudoku Companion** : Provide tools to solve sudoku puzzle like hints, possible solution and check if a puzzle has a solution | Implemented  |
-HL03|**Tic tac toe** : It contains requirements like display board,player move,computer move and winner finder for both 1player and 2player game| Implemented |
+HL03|**Tic tac toe** : Provide tools for display board,player move,computer move and winner finder for both 1player and 2player game| Implemented |
 
 
 
