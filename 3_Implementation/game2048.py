@@ -120,7 +120,7 @@ def menu():
 	
 	#sudoku game
 	pen.goto(-120, -130)
-	pen.write("Sudoku Game", font=ARCADE_FONT)
+	pen.write("Sudoku Tool", font=ARCADE_FONT)
 	pen.penup()
 	
 	pen.goto(90, 90)	#back to default position
