@@ -1,5 +1,7 @@
 import game2048
 
+game2048.TESTING = True
+
 def test_slam_left():
     game2048.gameboard = [[2, 0, 2, 0],
                           [0, 0, 0, 8],

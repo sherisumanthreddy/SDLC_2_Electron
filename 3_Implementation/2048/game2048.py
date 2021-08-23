@@ -13,6 +13,14 @@ gameboard = [
     [0, 0, 0, 0]
 ]
 
+TESTING = False
+
+if not TESTING:
+    window = turtle.Screen()
+    window.title("Mini arcade games")
+    window.bgcolor("black")
+    window.setup(width=450, height=600)
+    window.tracer(0)
 
 #grid colors
 colors = {
@@ -35,6 +43,10 @@ text_colors = {
 	0:"#006600", 1:"#3498DB", 2:"#996633", 3:"#993366", 4:"#5D3AF8", 5:"#22D133", 6:"#C055D4", 7:"#55D4CE", 8:"#0066FF" 
 }
 
+#general purpose pen turtle
+pen = turtle.Turtle()
+pen.speed(0)
+pen.hideturtle()
 
 
 ## 
@@ -397,6 +409,7 @@ def move_down(TESTING = False):
 
 
 
+
 ## 
 #  @brief main
 #  
@@ -417,19 +430,15 @@ def main():
 	turtle.onscreenclick(btnclick, 1)	#if mouse is clicked? check weather its inside the button's boundaries
 	window.mainloop()	#run the windown thread parallely
 
+
+
 if __name__ == "__main__":	
 
-        #setting uo the screen
-    window = turtle.Screen()
-    window.title("Mini arcade games")
-    window.bgcolor("black")
-    window.setup(width=450, height=600)
-    window.tracer(0)
 
-    #general purpose pen turtle
-    pen = turtle.Turtle()
-    pen.speed(0)
-    pen.hideturtle()  # an invisible turtle for drawing buttons
+        #setting uo the screen
+
+
+ # an invisible turtle for drawing buttons
 
     #some constants
     CURSOR_SIZE = 20
@@ -438,7 +447,7 @@ if __name__ == "__main__":
     ARCADE_FONT = ('Arcade Interlaced', FONT_SIZE, 'bold')
 
     #some multifile bool flags
-    TESTING = False
+
     IN_MENU = True
     TICTAC = False
 
@@ -464,15 +473,5 @@ if __name__ == "__main__":
     if not TESTING:
         print('high score 2048 is: ' + str(high_score))
     score = 0
-
-
-
-
-# Setting up the screen
-    
-
-    
-    
-    
 	
     main()
