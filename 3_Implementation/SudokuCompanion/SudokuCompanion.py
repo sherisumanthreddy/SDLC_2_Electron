@@ -1,17 +1,19 @@
 from copy import deepcopy
 import random
 
+
 class FileIOHandler:
     """
     This class handles reading sudoku puzzle from a text file
     and saving the same to the text file.
     """
     def __init__(self):
-        self.sudokuTxt = "" # the data read from file is stored as string with no space or any delimiters
+        self.sudokuTxt = ""  # the data read from file is stored as string
 
     def ReadSudokuFromTxt(self, pathToPuzzle):
         """
-        Reads the formatted puzzle txt file and stores it as text (sudokuTxt<-Puzzle.txt).
+        Reads the formatted puzzle txt file and stores it as text.
+        (sudokuTxt<-Puzzle.txt)
         Input: Path to puzzle file
         Returns: True or False
         """
@@ -44,8 +46,8 @@ class FileIOHandler:
         retvar = retvar.replace(",", "")
         retvar = retvar.replace("#", ".")
         for i in retvar:
-            if i not in [".","1","2","3","4","5","6","7","8","9"]:
-                retvar = retvar.replace(i,".")
+            if i not in [".", "1", "2", "3", "4", "5", "6", "7", "8", "9"]:
+                retvar = retvar.replace(i, ".")
         return retvar
 
     @staticmethod
@@ -81,7 +83,7 @@ class FileIOHandler:
         file = open(pathToSolTxt, "x")
 
         savestring = ""
-        for i in range(0,81):
+        for i in range(0, 81):
             savestring += sudokuGridObjectStr[i]
             if (i + 1) % 9 == 0:
                 savestring += "\n"
@@ -98,12 +100,12 @@ class SudokuGrid:
     """
     This class is representation of a sudoku puzzle as a python object.
     Some features of this class are:
-        1. access to FileIOHandler object so it can read and write data to file.
+        1. access to FileIOHandler object so it can read/write data to file.
         2. this object handles displaying this object.
         3. this object is required by Sudoku Solver Object.
     """
-    def __init__(self, IOHandlerObj, puzz_source, sol_destination = None):
-        self.Grid = [['.' for _ in range(9)] for _ in range(9)] # 9 x 9 List
+    def __init__(self, IOHandlerObj, puzz_source, sol_destination=None):
+        self.Grid = [['.' for _ in range(9)] for _ in range(9)]  # 9 x 9 List
         self.IOHandler = IOHandlerObj()
         self.IOSource = puzz_source
         self.IODestination = sol_destination
@@ -138,7 +140,7 @@ class SudokuGrid:
         Input: self
         Returns: string
         """
-        retvar =""
+        retvar = ""
         for i in self.Grid:
             for j in i:
                 retvar += str(j)
@@ -151,13 +153,13 @@ class SudokuGrid:
 
         print("-"*25)
         for i in range(9):
-            print("|", end = " ")
+            print("|", end=" ")
             for j in range(9):
                 print(stringObj[j+i*9], end=" ")
-                if (j+1)%3 == 0:
+                if (j+1) % 3 == 0:
                     print("|", end=" ")
             print("\n", end="")
-            if (i+1)%3 == 0:
+            if (i+1) % 3 == 0:
                 print("-"*25)
 
         return
@@ -165,8 +167,9 @@ class SudokuGrid:
 
 class SudokuSolver:
     """
-    This takes a SudokuGrid object and provides the solution and other stuff required.
-        * Backtracking reccursive algorithm for solving.
+    This takes a SudokuGrid object and provides the solution
+    and other stuff required.
+    * Backtracking reccursive algorithm for solving.
     """
     def __init__(self, sudokuGridObj):
         self.Puzz = sudokuGridObj
@@ -225,10 +228,9 @@ class SudokuSolver:
         if not self.IsSolvable():
             return str(self.Puzz)
         else:
-            soln = list( str( self.Solve() ) )
-            puzz = list( str( self.Puzz   ) )
+            soln = list(str(self.Solve()))
+            puzz = list(str(self.Puzz))
             for i in range(81):
                 if random.random() >= 0.8 and puzz[i] == ".":
                     puzz[i] = soln[i]
             return "".join(puzz)
-
