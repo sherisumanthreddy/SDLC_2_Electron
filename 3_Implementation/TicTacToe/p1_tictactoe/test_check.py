@@ -1,4 +1,4 @@
-from . import check
+import check
 
 b = [' ' for x in range(10)]
 B = ['x' for x in range(10)]

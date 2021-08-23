@@ -1,4 +1,4 @@
-from . import insertletter
+import insertletter
 
 
 B = [' ', ' ', 'x', ' ', ' ', ' ', ' ', ' ', ' ', ' ']

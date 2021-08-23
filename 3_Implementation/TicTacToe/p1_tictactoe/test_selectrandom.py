@@ -1,4 +1,4 @@
-from . import selectrandom
+import selectrandom
 
 l = [1, 3, 7, 9]
 

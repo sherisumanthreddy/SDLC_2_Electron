@@ -1,4 +1,4 @@
-from . import winner
+import winner
 
 
 def test_is_winner():

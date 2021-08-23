@@ -1,4 +1,4 @@
-from . import spacefree
+import spacefree
 
 b = [' ' for x in range(10)]
 B = [' ', ' ', 'x', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
