@@ -1,7 +1,7 @@
 # SDLC Mini Arcade Game
-| Unit Test |
-|-----------|
-|[![Pytest-Miniarcade](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/unittest.yml/badge.svg)](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/unittest.yml)|
+| Unit Test | Code Quality|
+|-----------|-------------|
+|[![Pytest-Miniarcade](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/unittest.yml/badge.svg)](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/unittest.yml)|[![Flake8](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/flake8.yml/badge.svg)](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/flake8.yml)|
 |[![Pytest-2048 ](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/2048ptest.yml/badge.svg)](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/2048ptest.yml)|
 |[![Pytest-TicTacToe](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/ptesttictactoe.yml/badge.svg)](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/ptesttictactoe.yml)|
 |[![Pytest-Sudoku](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/ptestsudoku.yml/badge.svg)](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/ptestsudoku.yml)|
