@@ -1,10 +1,10 @@
-import printboard
-import check
+from . import printboard
+from . import check
 
-import reverseplayer
-import tiecheck
-import winnercheck
-import gameover
+from . import reverseplayer
+from . import tiecheck
+from . import winnercheck
+from . import gameover
 
 # ------------- Functions ---------------
 

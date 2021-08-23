@@ -1,5 +1,5 @@
-import winnercheck
-import tiecheck
+from . import winnercheck
+from . import tiecheck
 
 # Check if the game is over
 def game_over():

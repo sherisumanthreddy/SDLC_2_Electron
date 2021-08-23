@@ -1,5 +1,5 @@
-import printboard
-import tiecheck
+from . import printboard
+from . import tiecheck
 
 # Tells us who the winner is
 # --------- Global Variables -----------

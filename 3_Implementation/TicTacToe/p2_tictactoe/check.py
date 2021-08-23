@@ -1,4 +1,4 @@
-import printboard
+from . import printboard
 
 # --------- Global Variables -----------
 # Tells us who the current player is (X goes first)

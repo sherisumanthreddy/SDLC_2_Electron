@@ -1,4 +1,4 @@
-import check
+from . import check
 # Flip the current player from X to O, or O to X
 
 def reverse_player():

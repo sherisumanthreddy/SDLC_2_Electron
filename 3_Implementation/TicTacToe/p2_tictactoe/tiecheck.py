@@ -1,4 +1,4 @@
-import printboard
+from . import printboard
 
 # Lets us know if the game is over yet
 # --------- Global Variables -----------
