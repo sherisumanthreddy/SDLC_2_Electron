@@ -1,6 +1,5 @@
-import game2048
+import backend2048 as game2048
 
-game2048.TESTING = True
 
 def test_slam_left():
     game2048.gameboard = [[2, 0, 2, 0],
@@ -21,7 +20,7 @@ def test_compress_left():
                           [4, 0, 0, 0],
                           [0, 0, 2, 2]]
 
-    game2048.compress_left(True)
+    game2048.compress_left()
 
     assert game2048.gameboard == [[2, 0, 2, 0],
                                   [0, 0, 0, 8],
@@ -59,7 +58,7 @@ def test_move_left():
                           [4, 0, 0, 0],
                           [0, 0, 2, 2]]
 
-    game2048.move_left(True)
+    game2048.move_left()
     
     assert game2048.gameboard == [[4, 0, 0, 0],
                                   [8, 0, 0, 0],
@@ -73,7 +72,7 @@ def test_move_up():
                           [4, 0, 0, 0],
                           [0, 0, 2, 2]]
 
-    game2048.move_up(True)
+    game2048.move_up()
 
     assert game2048.gameboard == [[2, 0, 4, 8],
                                   [4, 0, 0, 2],
@@ -87,7 +86,7 @@ def test_move_right():
                           [4, 0, 0, 0],
                           [0, 0, 2, 2]]
 
-    game2048.move_right(True)
+    game2048.move_right()
 
     assert game2048.gameboard == [[0, 0, 0, 4],
                                   [0, 0, 0, 8],
@@ -101,9 +100,37 @@ def test_move_down():
                           [4, 0, 0, 0],
                           [0, 0, 2, 2]]
 
-    game2048.move_down(True)
+    game2048.move_down()
 
     assert game2048.gameboard == [[0, 0, 0, 0],
                                   [0, 0, 0, 0],
                                   [2, 0, 0, 8],
                                   [4, 0, 4, 2]]
+
+def test_scoring():
+    game2048.score = 0
+    game2048.gameboard = [[2, 0, 2, 0],
+                          [0, 0, 0, 8],
+                          [4, 0, 0, 0],
+                          [0, 0, 2, 2]]
+
+    game2048.move_left()
+
+    assert game2048.score == 8
+
+def test_is_game_over():
+
+    game2048.gameboard = [[2048, 0, 2, 0],
+                          [0, 0, 0, 8],
+                          [4, 0, 0, 0],
+                          [0, 0, 2, 2]]
+
+    assert game2048.is_game_over() is True
+
+def test_is_game_not_over():
+    game2048.gameboard = [[16, 0, 2, 0],
+                          [0, 0, 0, 8],
+                          [4, 0, 0, 0],
+                          [0, 0, 2, 2]]
+    
+    assert game2048.is_game_over() is False
