@@ -2,7 +2,7 @@
 import turtle
 import random
 import pickle
-import tic_tac_toe
+
 
 
 #our main grid 
@@ -16,6 +16,7 @@ gameboard = [
 TESTING = False
 
 if not TESTING:
+    import tic_tac_toe
     window = turtle.Screen()
     window.title("Mini arcade games")
     window.bgcolor("black")
