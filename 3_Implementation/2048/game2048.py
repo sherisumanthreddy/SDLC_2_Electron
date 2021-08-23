@@ -35,29 +35,6 @@ text_colors = {
 	0:"#006600", 1:"#3498DB", 2:"#996633", 3:"#993366", 4:"#5D3AF8", 5:"#22D133", 6:"#C055D4", 7:"#55D4CE", 8:"#0066FF" 
 }
 
-#setting uo the screen
-window = turtle.Screen()
-window.title("Mini arcade games")
-window.bgcolor("black")
-window.setup(width=450, height=600)
-window.tracer(0)
-
-#general purpose pen turtle
-pen = turtle.Turtle()
-pen.speed(0)
-pen.hideturtle()  # an invisible turtle for drawing buttons
-
-#some constants
-CURSOR_SIZE = 20
-FONT_SIZE = 16
-FONT = ('Arial', FONT_SIZE, 'bold')
-ARCADE_FONT = ('Arcade Interlaced', FONT_SIZE, 'bold')
-
-#some multifile bool flags
-TESTING = False
-IN_MENU = True
-TICTAC = False 
-
 
 
 ## 
@@ -227,6 +204,7 @@ def draw_grid():
 def btnclick(x, y):
 	global IN_MENU
 	global TICTAC
+	global TESTING
 	#2048
 	#print(x,y)
 	if (x > -93) and (x < 81) and (y > -94) and (y < -64) and IN_MENU:	#clicked at 2048?
@@ -251,28 +229,28 @@ def btnclick(x, y):
 		
 		pen.clear()	#just clearing in case
 		
-		tic_tac_toe.draw_tictac_grid()
+		tic_tac_toe.draw_tictac_grid(0, testing=TESTING)
 	
 	#tictactoe clicks
 	#global TIC_MOVE
 	if (x > -129) and (x < -60) and (y < 120) and (y > 50) and TICTAC:
-		tic_tac_toe.draw_tictac_grid(1)
+		tic_tac_toe.draw_tictac_grid(1, TESTING)
 	elif (x > -44) and (x < 27) and (y < 120) and (y > 50) and TICTAC:
-		tic_tac_toe.draw_tictac_grid(2)
+		tic_tac_toe.draw_tictac_grid(2, TESTING)
 	elif (x > 45) and (x < 117) and (y < 120) and (y > 50) and TICTAC:
-		tic_tac_toe.draw_tictac_grid(3)
+		tic_tac_toe.draw_tictac_grid(3, TESTING)
 	elif (x > -129) and (x < -60) and (y < 36) and (y > -36) and TICTAC:
-		tic_tac_toe.draw_tictac_grid(4)
+		tic_tac_toe.draw_tictac_grid(4, TESTING)
 	elif (x > -45) and (x < 30) and (y < 36) and (y > -36) and TICTAC:
-		tic_tac_toe.draw_tictac_grid(5)
+		tic_tac_toe.draw_tictac_grid(5, TESTING)
 	elif (x > 45) and (x < 120) and (y < 36) and (y > -36) and TICTAC:
-		tic_tac_toe.draw_tictac_grid(6)
+		tic_tac_toe.draw_tictac_grid(6, TESTING)
 	elif (x > -129) and (x < -60) and (y < -54) and (y > -129) and TICTAC:
-		tic_tac_toe.draw_tictac_grid(7)
+		tic_tac_toe.draw_tictac_grid(7, TESTING)
 	elif (x > -45) and (x < 27) and (y < -54) and (y > -129) and TICTAC:
-		tic_tac_toe.draw_tictac_grid(8)
+		tic_tac_toe.draw_tictac_grid(8, TESTING)
 	elif (x > 45) and (x < 117) and (y < -54) and (y > -129) and TICTAC:
-		tic_tac_toe.draw_tictac_grid(9)
+		tic_tac_toe.draw_tictac_grid(9, TESTING)
 	
 		
 	
@@ -441,8 +419,34 @@ def main():
 
 if __name__ == "__main__":	
 
+        #setting uo the screen
+    window = turtle.Screen()
+    window.title("Mini arcade games")
+    window.bgcolor("black")
+    window.setup(width=450, height=600)
+    window.tracer(0)
+
+    #general purpose pen turtle
+    pen = turtle.Turtle()
+    pen.speed(0)
+    pen.hideturtle()  # an invisible turtle for drawing buttons
+
+    #some constants
+    CURSOR_SIZE = 20
+    FONT_SIZE = 16
+    FONT = ('Arial', FONT_SIZE, 'bold')
+    ARCADE_FONT = ('Arcade Interlaced', FONT_SIZE, 'bold')
+
+    #some multifile bool flags
+    TESTING = False
+    IN_MENU = True
+    TICTAC = False
+
+
+
     global high_score
     global score
+    #global TESTING
 
     try:
         high_score_pickle = open('highscorepickle.pkl', 'rb')
@@ -457,8 +461,8 @@ if __name__ == "__main__":
         high_score_pickle = open('highscorepickle.pkl', 'wb')
         pickle.dump(h, high_score_pickle)
         high_score_pickle.close()
-    
-    print('high score 2048 is: ' + str(high_score))
+    if not TESTING:
+        print('high score 2048 is: ' + str(high_score))
     score = 0
 
 

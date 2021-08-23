@@ -1,4 +1,4 @@
-name: Pytest-2048
+name: Pytest-2048 
 
 on: [push]
 
@@ -24,6 +24,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install pytest
           pip install turtle
+          pip install mock
       - name: Test with pytest
         run: |
           pytest
