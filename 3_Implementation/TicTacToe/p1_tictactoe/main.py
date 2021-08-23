@@ -5,8 +5,9 @@ from . import winner
 from . import computermove
 from . import insertletter
 
+
 def main_function(board):
-    """Function"""
+    """Function of main program"""
     print("Welcome to tic-tac-toe game!")
     printboard.print_board(board)
     if check.is_board_full(board):
