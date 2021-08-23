@@ -1,27 +1,27 @@
 """import random module"""
-import random
+"""import random
 board = [' ' for x in range(10)]
 
 def insert_letter(letter, pos):
-    """Function to insert letter at particular position"""
+    #Function to insert letter at particular position
     board[pos] = letter
 
 def take_input():
-    """Function to take input from user whether to play or not"""
+    #Function to take input from user whether to play or not
     opt = input("Do you want to play? (y/n) : ")
     return opt
 
 def take_move():
-    """Function to select position on board by choosing numbers from 1 to 9"""
+    #Function to select position on board by choosing numbers from 1 to 9
     move = input("Select a position to enter the X between 1 to 9 : ")
     return move
 
 def space_is_free(pos):
-    """Function to check whether space is free or not"""
+    #Function to check whether space is free or not
     return board[pos] == ' '
 
 def print_board(board):
-    """Function to design tic-tac-toe board"""
+    #Function to design tic-tac-toe board
     print('   |   |   ')
     print(' ' + board[1] + ' | ' + board[2] + ' | ' + board[3])
     print('   |   |   ')
@@ -35,14 +35,14 @@ def print_board(board):
     print('   |   |   ')
 
 def is_board_full(board):
-    """Function to check  board is full"""
+    #Function to check  board is full
     if board.count(' ') != 1:
         return False
     else:
         return True
 
 def is_winner(b, ch):
-    """Function for checking winner"""
+    #Function for checking winner
     return ((b[1] == ch and b[2] == ch and b[3] == ch) or
             (b[4] == ch and b[5] == ch and b[6] == ch) or
             (b[7] == ch and b[8] == ch and b[9] == ch) or
@@ -53,7 +53,7 @@ def is_winner(b, ch):
             (b[3] == ch and b[5] == ch and b[7] == ch))
 
 def player_move():
-    """Function for player move"""
+    #Function for player move
     run = True
     while run:
         move = take_move()
@@ -72,7 +72,7 @@ def player_move():
             print('Please type a number')
 
 def computer_move():
-    """Function for computer move"""
+    #Function for computer move
     possible_moves = [x for x, letter in enumerate(board) if letter == ' ' and x != 0]
     move = 0
 
@@ -107,13 +107,13 @@ def computer_move():
         return move
 
 def select_random(list_num):
-    """Function to select random number"""
+    #Function to select random number
     length = len(list_num)
     r_int = random.randrange(0, length)
     return list_num[r_int]
 
 def main():
-    """Function of main program"""
+    #Function of main program
     print("Welcome to tic-tac-toe game!")
     print_board(board)
     if is_board_full(board):
@@ -151,4 +151,4 @@ while True:
         print('--------------------')
         main()
     else:
-        break
+        break"""
