@@ -457,8 +457,9 @@ if __name__ == "__main__":
         high_score_pickle = open('highscorepickle.pkl', 'wb')
         pickle.dump(h, high_score_pickle)
         high_score_pickle.close()
-    
-    print('high score 2048 is: ' + str(high_score))
+        TESTING = True
+    if not TESTING:
+        print('high score 2048 is: ' + str(high_score))
     score = 0
 
 

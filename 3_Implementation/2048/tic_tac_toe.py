@@ -185,21 +185,24 @@ def draw_tictac_grid(Xmark=0):
 			player_move(Xmark)
 			print_board(board)
 			if is_board_full(board):	#TIE!!
-				print("Tie game")
+				if not new.TESTING:
+					print("Tie game")
 		else:
-			print("You loose! try again")
+			if not new.TESTING:
+				print("You loose! try again")
+			
 			
 		if not (is_winner(board, 'X')):
 			move = computer_move()
-			if move == 0:
-				print(" ")
-			else:
-				insert_letter('O', move)
-				print_board(board)
-				if is_board_full(board):
+			insert_letter('O', move)
+			print_board(board)
+			if is_board_full(board):
+				if not new.TESTING:
 					print("Tie game")
 		else:
-			print("You win!")
+			if not new.TESTING:
+				print("You win!")
+	#print(new.TESTING)
 	
 	
 	# player_move(Xmark)
