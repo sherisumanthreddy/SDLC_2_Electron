@@ -17,4 +17,4 @@
 6. A function to check status of game.
 7. A function to reverse player.
 8. A function to check winner.
-9. A function to display the playboard
+9. A function to display the playboard.
