@@ -22,8 +22,8 @@
 |  LL_04   |Test to verify whether playboard is occupied completely| Playboard |True or False|True or False as expected | Requirement based |
 |  LL_05   |Test to verify whether given location is occupied or not| Number from 1 to 9 |True or False|True or False as expected|Requirement based |
 |  LL_06   |Test to verify the winner of the game| 'X' or 'O' |True or False|True or False as expected|Requirement based |
-|  LL_07   |Test to verify computer move| in between 1 to 9 |1 or 0|1 or 0 as expected|Requirement based |
-|  LL_08   |Test to verify whether game is over or not| in between 1 to 9 |True or False|True or False as expected|Requirement based |
+|  LL_07   |Test to verify computer move| From 1 to 9 |1 or 0|1 or 0 as expected|Requirement based |
+|  LL_08   |Test to verify whether game is over or not| from 1 to 9 |True or False|True or False as expected|Requirement based |
 
 
 ## Table no 1: High level test plan
