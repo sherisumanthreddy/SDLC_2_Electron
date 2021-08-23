@@ -1,5 +1,6 @@
 from SudokuCompanion import sudoku_companion_main
 from TicTacToe.p1_tictactoe import one_player_ttt
+from TicTacToe.p2_tictactoe import two_player_ttt
 
 if __name__ == "__main__":
     print("Welcome To MiniArcade Game!")
@@ -17,5 +18,7 @@ if __name__ == "__main__":
         sudoku_companion_main.ConsoleFront()
     elif console_or_gui == '3':
         one_player_ttt.ConsoleFront()
+    elif console_or_gui == '4':
+        two_player_ttt.ConsoleFront()
     else:
         print("EXITING")
