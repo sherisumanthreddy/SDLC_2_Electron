@@ -1,12 +1,25 @@
 
-### Mini Arcade Game
+# Design Mini Arcade Game
+
+## High Level Design
 ### Usecase Diagram
 ![gen2](https://user-images.githubusercontent.com/80380749/130321212-4e6acd37-cab3-46dd-9f7a-2bb48f645955.jpg)
 
 ### Activity Diagram
-![Mini Arcade Activity UML](https://user-images.githubusercontent.com/80352730/130353126-3a59b4cb-7dc5-47ad-a047-79c7ebbe56f9.png)
+![Activity Diagram](https://user-images.githubusercontent.com/80352730/130457855-3db1ac76-2372-4e99-825a-7f4fb44caec5.png)
 
 
+## Low Level Design
+
+### Package Diagram
+![Package MiniArcae](../6_ImagesAndVideos/pakcage_diagram.jpg)
+
+### Flowchart
+![arcade flow chart](https://user-images.githubusercontent.com/81627731/130354557-2baaedaa-b46f-4b2a-a296-b403289f8840.png)
+
+
+
+## THESE HAS TO GO
 ### Tic-Tac-Toe
 ### Usecase Diagram
 ![UseCase](https://user-images.githubusercontent.com/66193894/130224628-59df5222-5c62-4bf4-9e64-b2c190b3cb96.png)
@@ -21,20 +34,9 @@
 ### Usecase Diagram
 ![Usecase](https://user-images.githubusercontent.com/81627731/130348770-1c30567b-04fc-4bd0-8e32-01d09f08f171.png)
 
-
-
-
-## Low Level Design
-### Flowchart
 ### Mini Arcade Game
-![Arcade flowchart](https://user-images.githubusercontent.com/80352730/130350774-0b02545f-4cdf-4e59-b11c-72f12a077c10.png)
-
-![arcade flow chart](https://user-images.githubusercontent.com/81627731/130354557-2baaedaa-b46f-4b2a-a296-b403289f8840.png)
-
-
 
 ![Flowchart](https://user-images.githubusercontent.com/80392588/130255510-3240d7fc-7770-42f2-8274-bdd6b534d432.png)
 
 ### SudokuCompanion
 ![flow chart](https://user-images.githubusercontent.com/81627731/130350850-e825f6bb-d5cb-4376-abb7-96f1f03769c9.png)
-
