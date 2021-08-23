@@ -11,7 +11,7 @@ def player_move(board):
         try:
             move = int(move)
             if 0 < move < 10:
-                if spacefree.space_is_free(board,move):
+                if spacefree.space_is_free(board, move):
                     run = False
                     insertletter.insert_letter(board, 'X', move)
                 else:
