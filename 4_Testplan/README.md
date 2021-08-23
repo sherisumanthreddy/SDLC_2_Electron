@@ -40,7 +40,7 @@
 
 | **Test ID** | **Description**                                              | **Exp IN** | **Exp OUT** | **Actual Out** |**Type Of Test**  |    
 |-------------|--------------------------------------------------------------|------------|-------------|----------------|------------------|
-|  LL_01  |**Sudoku Puzzle Cleanread data**: Test to verify if data is read correctly| String containing values |Modified String   |Modified String as desired |Scenario based |
+|  LL_01  |**Sudoku Puzzle Cleanread data**: Test to verify if data is read correctly from file| String containing values |Modified String   |Modified String as desired |Scenario based |
 |  LL_02   |**Sudoku Puzzle Hint**: Test to verify if provided hint is valid|Path to txt file containing puzzle|Partially solved grid |Partially solved grid as expected|Requirement based |
 |  LL_03  |**Sudoku Puzzle Value**: Test to verify if value entered is right or wrong| row,column and value |True or False |True or false as expected|Scenario based |
 |  LL_04   |**Sudoku Puzzle ValidateCleanedData**: Test to validate if given data is in right format| String containing values |True or False|True or False as expected | Scenario based |
