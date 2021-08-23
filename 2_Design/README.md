@@ -19,7 +19,11 @@ Low Level:
 ## High Level Design
 
 ### Mini Arcade Game
+### Usecase Diagram
 ![gen2](https://user-images.githubusercontent.com/80380749/130321212-4e6acd37-cab3-46dd-9f7a-2bb48f645955.jpg)
+
+### Activity Diagram
+![Mini Arcade Activity UML](https://user-images.githubusercontent.com/80352730/130353126-3a59b4cb-7dc5-47ad-a047-79c7ebbe56f9.png)
 
 
 ### Tic-Tac-Toe
@@ -40,10 +44,14 @@ Low Level:
 
 
 ## Low Level Design
+### Flowchart
 ### Mini Arcade Game
 ![Arcade flowchart](https://user-images.githubusercontent.com/80352730/130350774-0b02545f-4cdf-4e59-b11c-72f12a077c10.png)
 
-### Flowchart
+![arcade flow chart](https://user-images.githubusercontent.com/81627731/130354557-2baaedaa-b46f-4b2a-a296-b403289f8840.png)
+
+
+
 ![Flowchart](https://user-images.githubusercontent.com/80392588/130255510-3240d7fc-7770-42f2-8274-bdd6b534d432.png)
 
 ### SudokuCompanion

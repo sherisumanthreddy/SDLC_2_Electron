@@ -52,7 +52,7 @@ The Mini Arcade Game system will ask user to select which game he wants to play 
 ### Who:
 * Individuals looking for fun activities.
 * Game lovers irrespective of their age group.
-* These games are played between students and even experts to check their logical thinking.
+* These games are played between students and even experts to check their logical thinking and concentration.
 * People of any economical background having a hobby of playing games
 
 ### What:
@@ -79,20 +79,35 @@ ID |  Description  |     Status    |
 ---|---------------|----------------|
 HL01|**2048** : Provide tools like game board,movement physics,score counter,difficulty selector and non functional requirements(sounds,timer,pretty UI &high score)|Implemented|
 HL02| **Sudoku Companion** : Provide tools to solve sudoku puzzle like hints, possible solution and check if a puzzle has a solution | Implemented  |
-HL03|**Tic tac toe** : It contains requirements like display board,player move,computer move and winner finder for both 1player and 2player game| Implemented |
+HL03|**Tic tac toe** : Provide tools for display board,player move,computer move and winner finder for both 1player and 2player game| Implemented |
 
 
 
 ###  Low level Requirements
 
-  ID  | Description                   | HLR ID | Status 
-  ----|-------------------------------|--------|---------------------------
- LR01 | User shoud be able to input | HR02 | 
- LR02 | User should be able to take move | HR02 | 
- LR03 | Space is checked whether it is free  | HR02 | 
- LR04 | User should be able to insert letter | HR02 | 
- LR05 | Selection of random no | HR03 | 
- LR06 | Winner is decided   | HR03 | 
+ID  | Description                   | HLR ID | Status 
+----|-------------------------------|--------|-------
+LL01 | **Sudoku Puzzle Input / Output** : Read or Save a sudoku grid from or to a file | HL02 | Implemented |
+LL02 | **Sudoku Puzzle Display**: Display Sudoku grid to the user | HL02 | Implemented 
+LL03 | **Sudoku Puzzle Message**: Find if solution exists for the given puzzle or not | HL02 | Implemented |
+LL04 | **Sudoku Puzzle Solve**: Solve the puzzle and display the same | HL02 | Implemented |
+LL05 | **Sudoku Puzzle Hint**: Provide hints for solving the sudoku puzzle| HL02 | Implemented |
+LL06 | **Tic tac toe take input** : Ask whether user wants to play game or not|HL03| Implemented|
+LL07 | **Tic tac toe print board** : Provide 3X3 board to play|HL03|Implemented|
+LL08 | **Tic tac toe computermove** : Check empty squares and move accordingly|HL03|Implemented|
+LL09 | **Tic tac toe player move** : Player can check the empty squares and can play accordingly|HL03|Implemented|
+LL10 | **Tic tac toe winner** : Winner is decided by checking the board conditions | HL03 | Implemented |
+LL11 | **2048 Movement physics** : Used to move right,left,up and down | HL01| Implemented |
+Ll12 | **2048 Game board** : Display 2048 game board to the user | HL01 | Implemented |
+LL13 | **2048 detector** : Detect 2048 on the game board | HL01 | Implemented |
+LL14 | **2048 Scoring system** : Display scores on the game board | HL01 | Implemented |
+LL15 | **2048 Non functional system** : Provide sounds,timer,high score and pretty UI|HL01 |Implemented|
+
+
+
+
+
+ 
 
 
 
@@ -112,25 +127,6 @@ non functional:
 2) timer
 3) pretty UI
 4) high score
-
-
-### Sudoku Detailed Requirements
-
-### High Level Requirements
-
-ID |  Description  |     Status    
----|---------------|----------------
-HL03| **Sudoku Companion** : Provide tools to solve sudoku puzzle like hints, possible solution and check if a puzzle has a solution | Implemented ✔ 
-
-### Low Level Requirements
-
-ID  | Description                   | HLR ID | Status 
-----|-------------------------------|--------|-------
-LL01 | **Sudoku Puzzle Input / Output** : Read or Save a sudoku grid from or to a file | HL03 | Implemented ✔ 
-LL02 | **Sudoku Puzzle Display**: Display Sudoku grid to the user | HL03 | Implemented ✔
-LL03 | **Sudoku Puzzle Message**: Find if solution exists for the given puzzle or not | HL03 | Implemented ✔
-LL04 | **Sudoku Puzzle Solve**: Solve the puzzle and display the same | HL03 | Implemented ✔
-LL05 | **Sudoku Puzzle Hint**: Provide hints for solving the sudoku puzzle| HL03 | Implemented ✔
 
 
 

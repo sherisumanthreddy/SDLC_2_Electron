@@ -1,8 +1,9 @@
 from SudokuCompanion import FileIOHandler, SudokuGrid, SudokuSolver
 import os
 
-puzz_path = "puzzle.txt"
-Unsolve_puzz = "UnsolvablePuzz.txt"
+puzz_path = "3_Implementation/SudokuCompanion/puzzle.txt"
+Unsolve_puzz = "3_Implementation/SudokuCompanion/UnsolvablePuzz.txt"
+
 def test_FileIOHandler_ReadSudokuFromTxt():
     path_ = puzz_path
 
