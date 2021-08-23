@@ -3,8 +3,9 @@ from . import winner
 
 
 def computer_move(board):
-    """Function"""
-    possible_moves = [x for x, letter in enumerate(board) if letter == ' ' and x != 0]
+    """Function to take computer move"""
+    possible_moves = [x for x, letter in enumerate(board)
+                      if letter == ' ' and x != 0]
     move = 0
 
     for let in ['O', 'X']:
@@ -35,6 +36,3 @@ def computer_move(board):
     if len(edges_open) > 0:
         move = selectrandom.select_random(edges_open)
         return move
-
-
-
