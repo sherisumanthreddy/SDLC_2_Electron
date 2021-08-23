@@ -2,8 +2,8 @@ from copy import deepcopy
 import random
 
 class FileIOHandler:
-    """ 
-    This class handles reading sudoku puzzle from a text file 
+    """
+    This class handles reading sudoku puzzle from a text file
     and saving the same to the text file.
     """
     def __init__(self):
@@ -27,7 +27,7 @@ class FileIOHandler:
                 return True
             else:
                 return False
-    
+
         except Exception as e:
             print(e)
             return False
@@ -57,7 +57,7 @@ class FileIOHandler:
         """
         if len(stringObj) != 81:
             return False
-        
+
         for i in stringObj:
             if i.isdigit():
                 if int(i) < 1 and int(i) > 9:
@@ -87,7 +87,7 @@ class FileIOHandler:
                 savestring += "\n"
             else:
                 savestring += ","
-        
+
         file.write(savestring)
         file.close()
 
@@ -131,7 +131,7 @@ class SudokuGrid:
             return False
         else:
             return True
-        
+
     def __str__(self):
         """
         This converts grid to compatible string or can be called GridToString
@@ -148,7 +148,7 @@ class SudokuGrid:
         stringObj = str(self)
         if not FileIOHandler.ValidateCleanedData(stringObj):
             print("MegaError!!!!!!!!")
-        
+
         print("-"*25)
         for i in range(9):
             print("|", end = " ")
@@ -159,7 +159,7 @@ class SudokuGrid:
             print("\n", end="")
             if (i+1)%3 == 0:
                 print("-"*25)
-                
+
         return
 
 
@@ -172,7 +172,7 @@ class SudokuSolver:
         self.Puzz = sudokuGridObj
         self.Soln = None
         self.count = 0
- 
+
     def IsValidEntry(self, row, col, val):
         """
         This checks if the value entered is right or wrong
@@ -220,7 +220,7 @@ class SudokuSolver:
             return True
         else:
             return False
-    
+
     def GetHintString(self):
         if not self.IsSolvable():
             return str(self.Puzz)
@@ -231,3 +231,4 @@ class SudokuSolver:
                 if random.random() >= 0.8 and puzz[i] == ".":
                     puzz[i] = soln[i]
             return "".join(puzz)
+

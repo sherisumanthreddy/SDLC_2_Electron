@@ -4,7 +4,7 @@ def JustPrintSudoku(SudokuStr):
         stringObj = SudokuStr
         if not FileIOHandler.ValidateCleanedData(stringObj):
             print("MegaError!!!!!!!!")
-        
+
         print("-"*25)
         for i in range(9):
             print("|", end = " ")
@@ -15,7 +15,7 @@ def JustPrintSudoku(SudokuStr):
             print("\n", end="")
             if (i+1)%3 == 0:
                 print("-"*25)
-                
+
         return
 
 def ConsoleFront():
@@ -49,13 +49,13 @@ def ConsoleFront():
             print("Invalid Option...Try Again")
             print("="*80)
             print()
-    
+
     SolverObj = SudokuSolver(GridObj)
-    
+
     if choice == "1":
         value = "" if SolverObj.IsSolvable() else "NOT "
         print(f"The given sudoku puzzle can {value}be solved!")
-    
+
     elif choice == "2":
         hintStr = SolverObj.GetHintString()
         print("HINT:")
@@ -83,9 +83,10 @@ def ConsoleFront():
             return
     elif choice == "q":
         return
-    
+
     else:
         print("MAJOR ERROR!!!")
 
 if __name__ == "__main__":
     ConsoleFront()
+
