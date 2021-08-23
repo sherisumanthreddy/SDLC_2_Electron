@@ -42,7 +42,7 @@ colors = {
 	
 values = [0,1,2,3,4,5,6,7,8]
 text_colors = {
-	0:"#006600", 1:"#3498DB", 2:"#996633", 3:"#993366", 4:"#5D3AF8", 5:"#22D133", 6:"#C055D4", 7:"#55D4CE", 8:"#0066FF" 
+	0:"#006600", 1:"#3498DB", 2:"#996633", 3:"#993366", 4:"#5D3AF8", 5:"#22D133", 6:"#0066FF", 7:"#55D4CE", 8:"#0066FF" 
 }
 
 #general purpose pen turtle
@@ -167,10 +167,16 @@ def draw_grid():
 	board_x = 0	#indexes
 	board_y = 0	
 	
+	pen.goto(-100, -170)
+	pen.color("white")
+	pen.write("'WASD' to move", font=('Arcade Interlaced', 12))
+	pen.penup()
+	
 	pen.goto(-90, -150)
 	pen.color("white")
 	pen.write("'E' for menu", font=('Arcade Interlaced', 12))
 	pen.penup()
+	
 	
 	
 	pen.goto(-110, 110)	#statying in middle

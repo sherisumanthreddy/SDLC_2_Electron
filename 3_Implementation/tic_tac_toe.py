@@ -172,6 +172,11 @@ def draw_hashtag():
 	new.pen.color("white")
 	new.pen.write("'E' for menu", font=('Arcade Interlaced', 12))
 	new.pen.penup()
+	
+	new.pen.goto(-70, -170)
+	new.pen.color("white")
+	new.pen.write("use mouse", font=('Arcade Interlaced', 12))
+	new.pen.penup()
 
 def draw_tictac_grid(Xmark=0, testing=False):
 	new.IN_MENU = False
@@ -186,10 +191,16 @@ def draw_tictac_grid(Xmark=0, testing=False):
 			print_board(board)
 			if is_board_full(board):	#TIE!!
 				if not testing:
-					print("Tie game")
+					new.pen.goto(-40, 150)
+					new.pen.color("white")
+					new.pen.write("TIE !", font=('Arcade Interlaced', 20))
+					new.pen.penup()
 		else:
 			if not testing:
-				print("You loose! try again")
+				new.pen.goto(-100, 150)
+				new.pen.color("white")
+				new.pen.write("you lost !", font=('Arcade Interlaced', 20))
+				new.pen.penup()
 			
 			
 		if not (is_winner(board, 'X')):
@@ -198,7 +209,10 @@ def draw_tictac_grid(Xmark=0, testing=False):
 			print_board(board)
 			if is_board_full(board):
 				if not testing:
-					print("Tie game")
+					new.pen.goto(-40, 150)
+					new.pen.color("white")
+					new.pen.write("TIE !", font=('Arcade Interlaced', 20))
+					new.pen.penup()
 		else:
 			if not testing:
 				print("You win!")
