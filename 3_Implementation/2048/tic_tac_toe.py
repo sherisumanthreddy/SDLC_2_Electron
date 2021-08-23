@@ -173,7 +173,7 @@ def draw_hashtag():
 	new.pen.write("'E' for menu", font=('Arcade Interlaced', 12))
 	new.pen.penup()
 
-def draw_tictac_grid(Xmark=0):
+def draw_tictac_grid(Xmark=0, testing=False):
 	new.IN_MENU = False
 	new.TICTAC = True	#jsut in case
 	
@@ -185,10 +185,10 @@ def draw_tictac_grid(Xmark=0):
 			player_move(Xmark)
 			print_board(board)
 			if is_board_full(board):	#TIE!!
-				if not new.TESTING:
+				if not testing:
 					print("Tie game")
 		else:
-			if not new.TESTING:
+			if not testing:
 				print("You loose! try again")
 			
 			
@@ -197,10 +197,10 @@ def draw_tictac_grid(Xmark=0):
 			insert_letter('O', move)
 			print_board(board)
 			if is_board_full(board):
-				if not new.TESTING:
+				if not testing:
 					print("Tie game")
 		else:
-			if not new.TESTING:
+			if not testing:
 				print("You win!")
 	#print(new.TESTING)
 	
