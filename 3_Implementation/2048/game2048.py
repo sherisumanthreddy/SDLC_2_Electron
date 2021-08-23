@@ -35,29 +35,6 @@ text_colors = {
 	0:"#006600", 1:"#3498DB", 2:"#996633", 3:"#993366", 4:"#5D3AF8", 5:"#22D133", 6:"#C055D4", 7:"#55D4CE", 8:"#0066FF" 
 }
 
-#setting uo the screen
-window = turtle.Screen()
-window.title("Mini arcade games")
-window.bgcolor("black")
-window.setup(width=450, height=600)
-window.tracer(0)
-
-#general purpose pen turtle
-pen = turtle.Turtle()
-pen.speed(0)
-pen.hideturtle()  # an invisible turtle for drawing buttons
-
-#some constants
-CURSOR_SIZE = 20
-FONT_SIZE = 16
-FONT = ('Arial', FONT_SIZE, 'bold')
-ARCADE_FONT = ('Arcade Interlaced', FONT_SIZE, 'bold')
-
-#some multifile bool flags
-TESTING = False
-IN_MENU = True
-TICTAC = False 
-
 
 
 ## 
@@ -441,6 +418,31 @@ def main():
 	window.mainloop()	#run the windown thread parallely
 
 if __name__ == "__main__":	
+
+        #setting uo the screen
+    window = turtle.Screen()
+    window.title("Mini arcade games")
+    window.bgcolor("black")
+    window.setup(width=450, height=600)
+    window.tracer(0)
+
+    #general purpose pen turtle
+    pen = turtle.Turtle()
+    pen.speed(0)
+    pen.hideturtle()  # an invisible turtle for drawing buttons
+
+    #some constants
+    CURSOR_SIZE = 20
+    FONT_SIZE = 16
+    FONT = ('Arial', FONT_SIZE, 'bold')
+    ARCADE_FONT = ('Arcade Interlaced', FONT_SIZE, 'bold')
+
+    #some multifile bool flags
+    TESTING = False
+    IN_MENU = True
+    TICTAC = False
+
+
 
     global high_score
     global score
