@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./3_Implementation/SudokuCompanion
+        working-directory: ./3_Implementation
     strategy:
       matrix:
         python-version: [3.8]
