@@ -57,3 +57,6 @@ PS No. |  Name   |    Features    | Issues Raised |Issues Resolved|No Test Cases
 2. Testing was something new to each and everyone of us in Python. We had to start from scratch and learn how to write test files for python programs.
 3. Following and keeping track of every process in SDLC was very difficult. With constant support and hardwork, we were able to atleast keep up with atleast half of it.
 4. Working within the time constraint was difficult.
+## Contributions of individual team member
+
+![5_6136330195109413742](https://user-images.githubusercontent.com/80392588/130630541-41a42012-1636-4b45-9547-5a6a670f3d1d.png)
