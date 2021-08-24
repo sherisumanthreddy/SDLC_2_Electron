@@ -65,7 +65,7 @@ PS No. |  Name   |    Features    | Issues Raised |Issues Resolved|No Test Cases
 4. Working within the time constraint was difficult.
 
 
-### Introduction
+## Introduction
 
 To design a Mini Arcade game system to play 2048,Sudoku and Tic-Tac-Toe(1player and 2player) games based on user choice.
 
@@ -126,7 +126,7 @@ The Mini Arcade Game system will ask user to select which game he wants to play 
 ![swot analysis](https://user-images.githubusercontent.com/81503646/130212472-be28520b-a495-451c-972e-28a45c8b0101.png)
 
 
-## 4W's and 1'H
+## 4 W's and 1 H
 
 ### Who:
 * Individuals looking for fun activities.
@@ -150,7 +150,7 @@ The Mini Arcade Game system will ask user to select which game he wants to play 
 * Users can attempt to play the games through any of the online medium
 
 
-## Detail requirements
+## Detail requirements:
 
 ### High Level Requirements
 
@@ -200,6 +200,7 @@ non functional:
 2) timer
 3) pretty UI - done
 4) high score - done
+
 ### Design
 ## High Level Design
 
@@ -231,8 +232,9 @@ non functional:
 ![2048 class diagram](./2048_class_diagram.png)
 ![Class diagram sudoku](https://user-images.githubusercontent.com/81503646/130604251-b7050d21-9ead-4dba-b1aa-3319b908b415.png)
 
+## Test plan
 
-## Table no 1: High level test plan
+### Table no 1: High level test plan
 
 | **Test ID** | **Description**                                              | **Exp I/P** | **Exp O/P** | **Actual Out** |**Type Of Test**  |    
 |-------------|--------------------------------------------------------------|------------|-------------|----------------|------------------|
@@ -246,8 +248,8 @@ non functional:
 |  HL_08      |**2048 Move Right**: Test to verify if all functions are performed correctly on a right move |gameboard |gameboard with right movement| gameboard with right movement|movement |
 |  HL_09      |**2048 Move Down**: Test to verify if all functions are performed correctly on a down move |gameboard |gameboard with down movement| gameboard with down movement|movement |
 
-### Test Plan
-## Table no 2: Low level test plan
+
+### Table no 2: Low level test plan
 
 | **Test ID** | **Description**                                              | **Exp IN** | **Exp OUT** | **Actual Out** |**Type Of Test**  |    
 |-------------|--------------------------------------------------------------|------------|-------------|----------------|------------------|
