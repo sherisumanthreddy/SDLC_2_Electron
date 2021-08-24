@@ -38,6 +38,7 @@
 
 ### Class Diagram
 ![classdiagram](https://user-images.githubusercontent.com/80813102/130295145-c7d964d0-6ede-4646-bc94-ac79d09e312c.png)
+![2048 class diagram](./2048+class+diagram.png)
 
 ### SudokuCompanion
 ### Usecase Diagram
