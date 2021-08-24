@@ -19,5 +19,5 @@ def player_move(board):
             else:
                 print('Select a number between 1 and 9 : ')
 
-        except:
+        except ValueError:
             print('Please type a number')
