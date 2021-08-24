@@ -6,6 +6,8 @@ To design a Mini Arcade game system to play 2048,Sudoku and Tic-Tac-Toe(1player 
 
 ## Research
 
+It is an all-in one gaming platform for various games where user can access different types of games in single application.
+
 ### Tic-Tac-Toe 
 Tic-Tac-Toe is a well known game played by two
 persons who alternately place X's and O's upon a 3x3 playing field.
