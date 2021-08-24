@@ -40,6 +40,10 @@ logical thinking. It provides the following functions:
 
 ![image](https://user-images.githubusercontent.com/80813102/130348527-e3109d9e-1138-434f-afff-b2c4bec762d7.png)
 
+Here is an example of a Sudoku puzzle and its solution:
+
+![image](https://user-images.githubusercontent.com/80380749/130177030-8885cc7c-9269-410b-8e45-33085646503e.png)
+
 
 ### 2048
 
