@@ -2,6 +2,11 @@
 # Design Mini Arcade Game
 
 ## High Level Design
+
+### GUI game flow
+
+![flow](https://github.com/yasirfaizahmed/SDLC_2_Electron/blob/master/6_ImagesAndVideos/OUR%20SYSTEM.png)
+
 ### Usecase Diagram
 ![gen2](https://user-images.githubusercontent.com/80380749/130321212-4e6acd37-cab3-46dd-9f7a-2bb48f645955.jpg)
 ![usecase](https://user-images.githubusercontent.com/81627731/130580788-b4dd640a-51ae-4f81-b9be-92ea7438ec25.png)
