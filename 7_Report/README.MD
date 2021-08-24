@@ -65,7 +65,7 @@ PS No. |  Name   |    Features    | Issues Raised |Issues Resolved|No Test Cases
 4. Working within the time constraint was difficult.
 
 
-## Introduction
+### Introduction
 
 To design a Mini Arcade game system to play 2048,Sudoku and Tic-Tac-Toe(1player and 2player) games based on user choice.
 
