@@ -41,7 +41,7 @@ PS No. |  Name   |    Features    | Issues Raised |Issues Resolved|No Test Cases
 `99005584` | Saurav  Raja  |SudokuComapanion:Usecase UML,Flowchart,Testplan and Implementation     |      | 1   |1   |1
 `99005637` | Prajwal  M| Tic-Tac-Toe : Requirements,Class diagram UML, Testplan and Implementation     |      |    | 1  | 1
 `99005638` | Kamarthi Vignesh  Sai | Tic Tac Toe game, Activity diagram, Flowchart     |      |    | 1  | 1   
-`99005688` | Tankasala  Gaanalola  |     |      |    |   |  
+`99005688` | Tankasala  Gaanalola  | Tic Tac Toe, Requiements - SWOT Analysis, 4 W's 1H     |      |    |   |  
 `99005679` | Annappa  M | SudokuCompanion: Sudoku Grid Issolvable logic, Solver Logic, Usecase UML,Testplan,few LLR and 2 unit tests   |      | 1   |2    |2    
 `99005635` | Yaseer Faiz Ahmed |Menu GUI, 2048 GUI, TicTacToe GUI, integrating all game files to work together |      |    |0   | 0
 ## Challenges Faced and How Was It Overcome
