@@ -4,13 +4,17 @@ import os
 
 puzz_path = "3_Implementation/SudokuCompanion/puzzle.txt"
 Unsolve_puzz = "3_Implementation/SudokuCompanion/UnsolvablePuzz.txt"
+puzz_path2 = "3_Implementation/SudokuCompanion/puzzle2.txt"
 
 
 def test_FileIOHandler_ReadSudokuFromTxt():
     path_ = puzz_path
+    path2_ = puzz_path2
 
     IO_Obj = FileIOHandler()
     assert IO_Obj.ReadSudokuFromTxt(path_)
+    IO_Obj = FileIOHandler()
+    assert IO_Obj.ReadSudokuFromTxt(path2_)
 
 
 def test_FileIOHandler_CleanReadData():
@@ -90,11 +94,19 @@ def test_FileIOHandler_SaveSudokuToTxt():
     var = "9..21.4...32.4.....4.8....7..7.5...9..17.23..3."\
           "..8.17.5....9.8.....2854...8.....1"
 
+    var2 = ".3.9...8...94..3.7...8..2......2.5...9.....4...1.5....."\
+           ".6..1...3.4..71...2...3.6."
+
     IO_Obj = FileIOHandler()
     assert IO_Obj.SaveSudokuToTxt(var, path_)
     assert IO_Obj.ReadSudokuFromTxt(path_)
     os.remove(path_)
 
+    IO_Obj = FileIOHandler()
+    assert IO_Obj.SaveSudokuToTxt(var2, path_)
+    assert IO_Obj.ReadSudokuFromTxt(path_)
+    os.remove(path_)
+    
 
 def test_SudokuGrid_StrAndRead():
     myGridSudoku = SudokuGrid(FileIOHandler, puzz_path)
@@ -104,6 +116,15 @@ def test_SudokuGrid_StrAndRead():
           ".9.8.....2854...8.....1"
     assert myGridSudoku.Read()
     assert str(myGridSudoku) == var
+
+    myGridSudoku = SudokuGrid(FileIOHandler, puzz_path2)
+    assert str(myGridSudoku) == "." * 81
+
+    var2 = ".3.9...8...94..3.7...8..2......2.5...9.....4...1.5....."\
+           ".6..1...3.4..71...2...3.6."
+           
+    assert myGridSudoku.Read()
+    assert str(myGridSudoku) == var2
 
 
 def test_Sudoku_Save():
@@ -115,7 +136,6 @@ def test_Sudoku_Save():
 
     assert myGridSudoku.Save()
     os.remove(path_)
-
     # print("\n")
     # myGridSudoku.PrintSudoku()
     # print("\n")
@@ -158,9 +178,32 @@ def test_SudokuSolver_Solve():
 
     print(Solver1.count)
 
+    myGridSudoku = SudokuGrid(FileIOHandler, puzz_path2)
+    myGridSudoku.Read()
+
+    Solver1 = SudokuSolver(myGridSudoku)
+
+    soln = Solver1.Solve()
+
+    ans = "4329756818694123577158362946783245195"\
+          "93168742241759836956281473384697125127543968"
+    assert ans == str(soln)
+
+    assert str(soln) != "9762154388333394761514586392742735186968"\
+                        "17923545359486172514679283793128546268534791"
+    assert str(soln) != "98621543783294761514586392742735186968179235"\
+                        "4359434572514679283793128546268534791"
+
+    print(Solver1.count)
+
 
 def test_SudokuSolver_IsSolvable():
     myGridSudoku = SudokuGrid(FileIOHandler, puzz_path)
+    myGridSudoku.Read()
+    Solver1 = SudokuSolver(myGridSudoku)
+    assert Solver1.IsSolvable()
+
+    myGridSudoku = SudokuGrid(FileIOHandler, puzz_path2)
     myGridSudoku.Read()
     Solver1 = SudokuSolver(myGridSudoku)
     assert Solver1.IsSolvable()
@@ -173,6 +216,12 @@ def test_SudokuSolver_IsSolvable():
 
 def test_SudokuSolver_GetHintString():
     myGridSudoku = SudokuGrid(FileIOHandler, puzz_path)
+    myGridSudoku.Read()
+    Solver1 = SudokuSolver(myGridSudoku)
+
+    assert Solver1.GetHintString() != str(myGridSudoku)
+
+    myGridSudoku = SudokuGrid(FileIOHandler, puzz_path2)
     myGridSudoku.Read()
     Solver1 = SudokuSolver(myGridSudoku)
 
