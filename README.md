@@ -59,5 +59,4 @@ PS No. |  Name   |    Features    | Issues Raised |Issues Resolved|No Test Cases
 4. Working within the time constraint was difficult.
 ## Contributions of individual team member
 
-![5_6136330195109413742](https://user-images.githubusercontent.com/80392588/130630541-41a42012-1636-4b45-9547-5a6a670f3d1d.png)
-
+![contribution charts](6_ImagesAndVideos/contributionSDLC_2_Electron.png)
