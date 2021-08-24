@@ -20,6 +20,13 @@ diagonal. If all the cells become filled the game is a draw.
 
 ![image](https://user-images.githubusercontent.com/80813102/130335359-4401ea44-590e-4e5d-a1ff-3a60758bee6d.png)
 
+To win the game, a player must place three of their marks in a horizontal, vertical, or diagonal row.
+
+The following example game is won by the first player, X:
+
+![image](https://user-images.githubusercontent.com/80813102/130637075-dc93fe62-53b7-4b94-83c3-ec3fd4c5cf04.png)
+
+
 ### Sudoku Companion
 
 Sudoku is a logic-based, combinatorial number-placement puzzle. Sudoku Companion is a mini-application which can be used to solve Sudoku puzzles more conveniently. It improves the concentration and logical thinking. It provides the following functions:
