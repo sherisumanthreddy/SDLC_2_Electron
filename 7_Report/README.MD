@@ -1,4 +1,3 @@
-
 # SDLC Mini Arcade Game
 | Unit Test | Code Quality| Git Inspector|
 |-----------|-------------|--------------|
@@ -256,6 +255,7 @@ non functional:
 |  LL_17   |**2048 reverse**: Test to mirror rows|gameboard |gameboard with flipped rows |gameboard with the correct moves |core move test |
 |  LL_18   |**2048 scoring**: Test to add tile values to score if the tile merges |gameboard |score |score |score tracker |
 |  LL_19   |**2048 game over detection**: Test to check if there is 2048 in the gameboard|gameboard |True/False |True/False |game over |
+
 
 
 
