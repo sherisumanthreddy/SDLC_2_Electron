@@ -130,7 +130,7 @@ The user can play the following games:
 * It has high performance.
 * Accuracy in results.
 
-### Defining Our System
+## Defining Our System
 
 The Mini Arcade Game system will ask user to select which game he wants to play by selecting the options 1,2,3,4& 5(1-2048, 2-sudoku, 3- 1player_tictactoe, 4- 2player_tictactoe,5- Exit).And then user will able to play the selected game and display of that game will open.
 
@@ -214,7 +214,7 @@ non functional:
 3) pretty UI - done
 4) high score - done
 
-### Design
+# Design
 
 ## High Level Design
 
