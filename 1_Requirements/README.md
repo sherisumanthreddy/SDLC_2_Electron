@@ -2,7 +2,7 @@
 
 ## Introduction
 
-To design a Mini Arcade game system to play 2048,Sudoku and Tic-Tac-Toe(1player and 2player) games based on user choice.
+To design a Mini Arcade game system to play 2048, Sudoku and Tic-Tac-Toe(1 player and 2 player) games based on user choice.
 
 ## Research
 
@@ -38,7 +38,11 @@ Sudoku is a logic-based, combinatorial number-placement puzzle. Sudoku Companion
 
 
 ### Cost and features
-The cost requires only for software development and implementation of the software. We can play 3 games using single Mini arcade game application.The games are 2048,Sudoku and tic-tac-toe( 1-player and 2-player).
+The cost requires only for software development and implementation of the software. We can play 3 games using single Mini arcade game application.
+The user can play the following games:
+* 2048
+* Sudoku
+* Tic-Tac-Toe (1 player and 2 player)
 
 ### Defining Our System
 
