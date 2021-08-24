@@ -60,3 +60,4 @@ PS No. |  Name   |    Features    | Issues Raised |Issues Resolved|No Test Cases
 ## Contributions of individual team member
 
 ![5_6136330195109413742](https://user-images.githubusercontent.com/80392588/130630541-41a42012-1636-4b45-9547-5a6a670f3d1d.png)
+<img width="678" alt="gitinspector" src="https://user-images.githubusercontent.com/80392588/130649452-58ed87fc-0dd1-49f6-bbf8-ddd603375883.png">
