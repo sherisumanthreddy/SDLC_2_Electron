@@ -29,7 +29,11 @@ The following example game is won by the first player, X:
 
 ### Sudoku Companion
 
-Sudoku is a logic-based, combinatorial number-placement puzzle. Sudoku Companion is a mini-application which can be used to solve Sudoku puzzles more conveniently. It improves the concentration and logical thinking. It provides the following functions:
+Sudoku is a logic-based, combinatorial number-placement puzzle.The standard version of Sudoku consists of a 9×9 square grid containing 81 cells. The grid is subdivided into nine
+3×3 blocks. Some of the 81 cells are filled in with numbers from the set {1,2,3,4,5,6,7,8,9}.The whole grid is filled using the nine digits so that each row, each column, and each
+block contains each number exactly once.Sudoku Companion is a mini-application which can be used to solve Sudoku puzzles more conveniently. It improves the concentration and 
+logical thinking. It provides the following functions:
+
 1. checking if a solution exists
 2. provide hints 
 3. solve puzzle entirely
