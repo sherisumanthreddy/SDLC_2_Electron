@@ -8,7 +8,7 @@ def player_move(board):
     run = True
     while run:
         move = takemove.take_move()
-        if int(move) < 100:
+        try:
             move = int(move)
             if 0 < move < 10:
                 if spacefree.space_is_free(board, move):
@@ -19,5 +19,5 @@ def player_move(board):
             else:
                 print('Select a number between 1 and 9 : ')
 
-        else:
+        except:
             print('Please type a number')
