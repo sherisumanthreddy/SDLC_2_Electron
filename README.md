@@ -35,7 +35,7 @@ Navigate to the directory containing this project after cloning from the termina
 PS No. |  Name   |    Features    | Issues Raised |Issues Resolved|No Test Cases|Test Case Pass
 -------|-------------|----------------|----------------|---------------|-------------|--------------
 `99005667` | Swathi  Ramachandran |  Tic-Tac-Toe 1 Player : Multifile, Unit tests, Testplan, Low level requirement, Object diagram |      | 1 | 7  | 7
-`99005660` | Bhargav  R | SudokuCompanion: FileI/O, Grid Representation and Providing Hint Feature Few, Unit Tests and Few HLR and LLR | 1    |    | 8  | 8  
+`99005660` | Bhargav  R | SudokuCompanion: FileI/O, Grid Representation and Providing Hint Feature Few, Unit Tests and Few HLR and LLR | 1    |    | 11  | 11  
 `99005364` | Prakhar  Deep |  Tic-Tac-Toe 2 player : Multifile, flowchart, low level requirement  |      |    |   |    
 `99005468` | Ayush  Bishnoi |  2048 game engine and binary score keeper   |      |    |8    | 8    
 `99005584` | Saurav  Raja  |SudokuComapanion:Usecase UML,Flowchart,Testplan and Implementation     |      | 1   |1   |1
