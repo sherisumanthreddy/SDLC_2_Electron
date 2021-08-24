@@ -29,3 +29,6 @@
 ### Class Diagram
 ![classdiagram](https://user-images.githubusercontent.com/80813102/130295145-c7d964d0-6ede-4646-bc94-ac79d09e312c.png)
 ![2048 class diagram](./2048_class_diagram.png)
+![Class diagram sudoku](https://user-images.githubusercontent.com/81503646/130604251-b7050d21-9ead-4dba-b1aa-3319b908b415.png)
+
+
