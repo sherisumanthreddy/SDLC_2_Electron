@@ -8,7 +8,7 @@ def player_move(board):
     run = True
     while run:
         move = takemove.take_move()
-        if move < 100:
+        if int(move) < 100:
             move = int(move)
             if 0 < move < 10:
                 if spacefree.space_is_free(board, move):
