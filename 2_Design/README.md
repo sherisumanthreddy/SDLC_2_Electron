@@ -4,6 +4,7 @@
 ## High Level Design
 ### Usecase Diagram
 ![gen2](https://user-images.githubusercontent.com/80380749/130321212-4e6acd37-cab3-46dd-9f7a-2bb48f645955.jpg)
+![usecase](https://user-images.githubusercontent.com/81627731/130580788-b4dd640a-51ae-4f81-b9be-92ea7438ec25.png)
 
 ### Activity Diagram
 ![Activity Diagram](https://user-images.githubusercontent.com/80352730/130457855-3db1ac76-2372-4e99-825a-7f4fb44caec5.png)
@@ -36,7 +37,7 @@
 ### SudokuCompanion
 ### Usecase Diagram
 ![Usecase](https://user-images.githubusercontent.com/81627731/130348770-1c30567b-04fc-4bd0-8e32-01d09f08f171.png)
-![usecase](https://user-images.githubusercontent.com/81627731/130580788-b4dd640a-51ae-4f81-b9be-92ea7438ec25.png)
+
 
 
 ### Mini Arcade Game
