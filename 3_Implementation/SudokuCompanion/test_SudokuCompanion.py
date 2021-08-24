@@ -5,6 +5,7 @@ import os
 puzz_path = "3_Implementation/SudokuCompanion/puzzle.txt"
 Unsolve_puzz = "3_Implementation/SudokuCompanion/UnsolvablePuzz.txt"
 puzz_path2 = "3_Implementation/SudokuCompanion/puzzle2.txt"
+Unsolve_puzz2 = "3_Implementation/SudokuCompanion/UnsolvablePuzz2.txt"
 
 
 def test_FileIOHandler_ReadSudokuFromTxt():
@@ -213,6 +214,11 @@ def test_SudokuSolver_IsSolvable():
     Solver2 = SudokuSolver(myGridSudoku2)
     assert not Solver2.IsSolvable()
 
+    myGridSudoku2 = SudokuGrid(FileIOHandler, Unsolve_puzz2)
+    myGridSudoku2.Read()
+    Solver2 = SudokuSolver(myGridSudoku2)
+    assert not Solver2.IsSolvable()
+
 
 def test_SudokuSolver_GetHintString():
     myGridSudoku = SudokuGrid(FileIOHandler, puzz_path)
@@ -228,6 +234,11 @@ def test_SudokuSolver_GetHintString():
     assert Solver1.GetHintString() != str(myGridSudoku)
 
     myGridSudoku2 = SudokuGrid(FileIOHandler, Unsolve_puzz)
+    myGridSudoku2.Read()
+    Solver2 = SudokuSolver(myGridSudoku2)
+    assert Solver2.GetHintString() == str(myGridSudoku2)
+
+    myGridSudoku2 = SudokuGrid(FileIOHandler, Unsolve_puzz2)
     myGridSudoku2.Read()
     Solver2 = SudokuSolver(myGridSudoku2)
     assert Solver2.GetHintString() == str(myGridSudoku2)
