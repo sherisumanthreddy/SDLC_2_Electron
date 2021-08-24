@@ -44,6 +44,13 @@ The user can play the following games:
 * Sudoku
 * Tic-Tac-Toe (1 player and 2 player)
 
+## Features
+* User can play multiple games like sudoku, tic tac toe and 2048.
+* It is simple to use.
+* User friendly.
+* It has high performance.
+* Accuracy in results.
+
 ### Defining Our System
 
 The Mini Arcade Game system will ask user to select which game he wants to play by selecting the options 1,2,3,4& 5(1-2048, 2-sudoku, 3- 1player_tictactoe, 4- 2player_tictactoe,5- Exit).And then user will able to play the selected game and display of that game will open.
