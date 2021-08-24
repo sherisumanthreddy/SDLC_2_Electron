@@ -12,14 +12,19 @@
 
 ## Running the program
 Navigate to the directory containing this project after cloning from the terminal. Run the following commands:
-* `cd 3_Implementation`
-* `python game2048.py` to launch gui games
-* `python main.py` to launch console games
+* `cd 3_Implementation/`
+* `python game2048.py` to launch GUI games, includes all 2 GUI games + 1 console game
+* `python main.py` to launch console game seperately
 
 ### Note:
-1. Please install the `ARCADE_I.TTF` font.
-2. Install the following pip packages: `turtle` .
-3. For Sudoku Companion have the sudoku game as comma separated text file like `3_Implementation/SudokuCompanion/puzzle.txt`.
+1. Please install the `ARCADE_I.TTF` font present in the `3_Implementation/` directory, just open the font file to install it.
+2. Install the following pip packages: `turtle`, `pickle` .
+
+        pip install pickle-mixin
+    
+        pip install turtle
+
+4. For Sudoku Companion have the sudoku game as comma separated text file like `3_Implementation/SudokuCompanion/puzzle.txt`.
 ## Folder Structure
 
 |         Folder    	  | 			Description 		    |
