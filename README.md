@@ -45,7 +45,7 @@ PS No. |  Name   |    Features    | Issues Raised |Issues Resolved|No Test Cases
 `99005660` | Bhargav  R | SudokuCompanion: FileI/O, Grid Representation and Providing Hint Feature Few, Unit Tests and Few HLR and LLR | 1    |    | 8  | 8  
 `99005364` | Prakhar  Deep |  Tic-Tac-Toe 2 player : Multifile, flowchart, low level requirement  |      |    |   |    
 `99005468` | Ayush  Bishnoi |  2048 game engine and binary score keeper   |      |    |11    | 11    
-`99005584` | Saurav  Raja  |SudokuComapanion:Usecase UML,Flowchart,Testplan and Implementation     |      | 1   |1   |1
+`99005584` | Saurav  Raja  |SudokuComapanion:Usecase UML,Flowchart,Testplan and Implementation     |      | 1   |   |
 `99005637` | Prajwal  M| Tic-Tac-Toe : Requirements,Class diagram UML, Testplan and Implementation     |      |    | 1  | 1
 `99005638` | Kamarthi Vignesh  Sai | Tic Tac Toe game, Activity diagram, Flowchart     |      |    | 1  | 1   
 `99005688` | Tankasala  Gaanalola  | Tic Tac Toe, Requiements - SWOT Analysis, 4 W's 1H     |      |    |   |  
