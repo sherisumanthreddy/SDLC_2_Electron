@@ -62,9 +62,6 @@ PS No. |  Name   |    Features    | Issues Raised |Issues Resolved|No Test Cases
 3. Following and keeping track of every process in SDLC was very difficult. With constant support and hardwork, we were able to atleast keep up with atleast half of it.
 4. Working within the time constraint was difficult.
 
-## Contributions of individual team member
-
-![contribution charts](6_ImagesAndVideos/contributionSDLC_2_Electron.png)
 
 # REQUIREMENT MD FILE
 
