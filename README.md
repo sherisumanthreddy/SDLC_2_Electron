@@ -34,8 +34,7 @@ Navigate to the directory containing this project after cloning from the termina
 
 PS No. |  Name   |    Features    | Issues Raised |Issues Resolved|No Test Cases|Test Case Pass
 -------|-------------|----------------|----------------|---------------|-------------|--------------
-<<<<<<< HEAD
-`99005667` | Swathi  Ramachandran |  Tic-Tac-Toe 1 Player : Multifile, Unit tests, Testplan, Low level requirement |      | 1 | 7  | 7
+`99005667` | Swathi  Ramachandran |  Tic-Tac-Toe 1 Player : Multifile, Unit tests, Testplan, Low level requirement, Object diagram |      | 1 | 7  | 7
 `99005660` | Bhargav  R | SudokuCompanion: FileI/O, Grid Representation and Providing Hint Feature Few, Unit Tests and Few HLR and LLR | 1    |    | 8  | 8  
 `99005364` | Prakhar  Deep |  Tic-Tac-Toe 2 player : Multifile, flowchart, low level requirement  |      |    |   |    
 `99005468` | Ayush  Bishnoi |  2048 game engine and binary score keeper   |      |    |8    | 8    
@@ -45,18 +44,6 @@ PS No. |  Name   |    Features    | Issues Raised |Issues Resolved|No Test Cases
 `99005688` | Tankasala  Gaanalola  |     |      |    |   |  
 `99005679` | Annappa  M | SudokuCompanion: Sudoku Grid Issolvable logic, Solver Logic, Usecase UML,Testplan,few LLR and 2 unit tests   |      | 1   |2    |2    
 `99005635` | Yaseer Faiz Ahmed |Menu GUI, 2048 GUI, TicTacToe GUI, integrating all game files to work together |      |    |0   | 0
-=======
-`99005667` | Swathi  Ramachandran |  Tic-Tac-Toe 1 Player : Multifile, Unit tests, Testplan, Low level requirement, Object diagram | X No     | 1 | 7  | 7
-`99005660` | Bhargav  R | SudokuCompanion: FileI/O, Grid Representation and Providing Hint Feature Few, Unit Tests and Few HLR and LLR | 1    | X No   | 8  | 8  
-`99005364` | Prakhar  Deep |  Tic-Tac-Toe 2 player : Multifile, flowchart, low level requirement  | X No     | X No   |X No   |X No    
-`99005468` | Ayush  Bishnoi |  2048 game engine and binary score keeper   | X No     | X No   |8    | 8    
-`99005584` | Saurav  Raja  |SudokuComapanion:Usecase UML,Flowchart,Testplan and Implementation     | X No     | 1   |1   |1
-`99005637` | Prajwal  M| Tic-Tac-Toe : Requirements,Class diagram UML, Testplan and Implementation     | X No     | X No   | 1  | 1
-`99005638` | Kamarthi Vignesh  Sai | Tic Tac Toe game, Activity diagram, Flowchart     | X No     | X No   | 1  | 1   
-`99005688` | Tankasala  Gaanalola  |     | X No     | X No   |X No   |X No  
-`99005679` | Annappa  M | SudokuCompanion: Sudoku Grid Issolvable logic, Solver Logic, Usecase UML,Testplan,few LLR and 2 unit tests   | X No     | 1   |2    |2    
-`99005635` | Yaseer Faiz Ahmed |Menu GUI, 2048 GUI, TicTacToe GUI, integrating all game files to work together | X No     | X No   |0   | 0
->>>>>>> 4b61e09b3fd32bd8a25e36ac4a3b603dcfc9063b
 ## Challenges Faced and How Was It Overcome
 
 1. Faced issues with integrating the modules because each of us had a different coding style. But eventually, reading through code and undersanding it helped us modify it and integrate it accordingly.
