@@ -36,6 +36,8 @@
 ### SudokuCompanion
 ### Usecase Diagram
 ![Usecase](https://user-images.githubusercontent.com/81627731/130348770-1c30567b-04fc-4bd0-8e32-01d09f08f171.png)
+![usecase](https://user-images.githubusercontent.com/81627731/130580788-b4dd640a-51ae-4f81-b9be-92ea7438ec25.png)
+
 
 ### Mini Arcade Game
 
