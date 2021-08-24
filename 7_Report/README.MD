@@ -1,21 +1,5 @@
 
-# SDLC Mini Arcade Game
-| Unit Test | Code Quality| Git Inspector|
-|-----------|-------------|--------------|
-|[![Pytest-Miniarcade](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/unittest.yml/badge.svg)](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/unittest.yml)|[![Flake8](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/flake8.yml/badge.svg)](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/flake8.yml)|[![Contribution Check - Git Inspector](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/gitinspector.yml)|
-|[![Pytest-2048 ](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/2048ptest.yml/badge.svg)](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/2048ptest.yml)|
-|[![Pytest-TicTacToe](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/ptesttictactoe.yml/badge.svg)](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/ptesttictactoe.yml)|
-|[![Pytest-Sudoku](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/ptestsudoku.yml/badge.svg)](https://github.com/yasirfaizahmed/SDLC_2_Electron/actions/workflows/ptestsudoku.yml)|
 
-## Demo
-![Demo gif](https://github.com/yasirfaizahmed/SDLC_2_Electron/blob/master/6_ImagesAndVideos/demo.gif)
-
-
-## Running the program
-Navigate to the directory containing this project after cloning from the terminal. Run the following commands:
-* `cd 3_Implementation/`
-* `python game2048.py` to launch GUI games, includes all 2 GUI games + 1 console game
-* `python main.py` to launch console game seperately
 
 ### Note:
 1. Please install the `ARCADE_I.TTF` font present in the `3_Implementation/` directory, just open the font file to install it.
