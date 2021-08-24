@@ -101,7 +101,19 @@ Sudoku is a logic-based, combinatorial number-placement puzzle. Sudoku Companion
 
 
 ### Cost and features
-The cost requires only for software development and implementation of the software. We can play 3 games using single Mini arcade game application.
+The cost requires only for software development and implementation of the software. We can play 3 games using single Mini arcade game application.The user can play the following games:
+
+* 2048
+* Sudoku
+* Tic-Tac-Toe (1 player and 2 player)
+
+##Features
+
+* User can play multiple games like sudoku, tic tac toe and 2048.
+* It is simple to use.
+* User friendly.
+* It has high performance.
+* Accuracy in results.
 
 ### Defining Our System
 
