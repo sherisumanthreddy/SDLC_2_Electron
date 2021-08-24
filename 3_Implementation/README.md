@@ -19,5 +19,6 @@ Navigate to the directory containing this project after cloning from the termina
 4. For Sudoku Companion have the sudoku game as comma separated text file like `3_Implementation/SudokuCompanion/puzzle.txt`.
 ## 2048 Game
 ## Sudoku Companion
+It contains example puzzles,unsolvablepuzzles,Sudoku companion main file and test files.
 ## Tic-Tac-Toe
 
