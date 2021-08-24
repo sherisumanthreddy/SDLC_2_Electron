@@ -1,4 +1,55 @@
 
+
+## Demo
+![Demo gif](https://github.com/yasirfaizahmed/SDLC_2_Electron/blob/master/6_ImagesAndVideos/demo.gif)
+
+
+## Running the program
+Navigate to the directory containing this project after cloning from the terminal. Run the following commands:
+* `cd 3_Implementation/`
+* `python game2048.py` to launch GUI games, includes all 2 GUI games + 1 console game
+* `python main.py` to launch console game seperately
+
+
+### Note:
+1. Please install the `ARCADE_I.TTF` font present in the `3_Implementation/` directory, just open the font file to install it.
+2. Install the following pip packages: `turtle`, `pickle`, `mock`.
+
+        pip install pickle-mixin
+    
+        pip install turtle
+        
+        pip install mock
+
+4. For Sudoku Companion have the sudoku game as comma separated text file like `3_Implementation/SudokuCompanion/puzzle.txt`.
+
+
+## Folder Structure
+
+|         Folder    	  | 			Description 		    |
+| ----------------------- | ----------------------------------------------  |
+| 	1_Requirements    | Documents detailing requirements and research   |
+| 	2_Design	  | Documents specifying design details        	    |
+| 	3_Implementation  | All code and documentation        		    |
+| 	4_test_plan	  | Documents with test plans and procedures        |
+| 5_Report       | Folder consisting of documentation of the project 
+| 6_ImagesAndVideos   | Images and Videos 
+
+## Contributors List and Summary
+
+PS No. |  Name   |    Features    | Issues Raised |Issues Resolved|No Test Cases|Test Case Pass
+-------|-------------|----------------|----------------|---------------|-------------|--------------
+`99005667` | Swathi  Ramachandran |  Tic-Tac-Toe 1 Player : Multifile, Unit tests, Testplan, Low level requirement, Object diagram |      | 1 | 7  | 7
+`99005660` | Bhargav  R | SudokuCompanion: FileI/O, Grid Representation and Providing Hint Feature Few, Unit Tests and Few HLR and LLR | 1    |    | 8  | 8  
+`99005364` | Prakhar  Deep |  Tic-Tac-Toe 2 player : Multifile, flowchart, low level requirement  |      |   1 |   2|   2 
+`99005468` | Ayush  Bishnoi |  2048 game engine and binary score keeper   |      |    |11    | 11    
+`99005584` | Saurav  Raja  |SudokuComapanion:Usecase UML,Flowchart,Testplan and Implementation     |      | 1   |   |
+`99005637` | Prajwal  M| Tic-Tac-Toe : Requirements,Class diagram UML, Testplan and Implementation     |      |    | 1  | 1
+`99005638` | Kamarthi Vignesh  Sai | Tic Tac Toe game, Activity diagram, Flowchart     |      |    | 1  | 1   
+`99005688` | Tankasala  Gaanalola  | Tic Tac Toe, Requirements - SWOT Analysis, 4 W's 1H, SudokuCompanion:UML Class diagram     |      | 0   | 0  |  
+`99005679` | Annappa  M | SudokuCompanion: Sudoku Grid Issolvable logic, Solver Logic, Usecase UML,Testplan,few LLR and 2 unit tests   |      | 1   |2    |2    
+`99005635` | Yaseer Faiz Ahmed |Menu GUI, 2048 GUI, TicTacToe GUI, integrating all game files to work together |      |    |0   | 0
+
 ## Introduction
 
 To design a Mini Arcade game system to play 2048,Sudoku and Tic-Tac-Toe(1player and 2player) games based on user choice.
