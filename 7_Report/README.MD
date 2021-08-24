@@ -50,6 +50,14 @@ PS No. |  Name   |    Features    | Issues Raised |Issues Resolved|No Test Cases
 `99005679` | Annappa  M | SudokuCompanion: Sudoku Grid Issolvable logic, Solver Logic, Usecase UML,Testplan,few LLR and 2 unit tests   |      | 1   |2    |2    
 `99005635` | Yaseer Faiz Ahmed |Menu GUI, 2048 GUI, TicTacToe GUI, integrating all game files to work together |      |    |0   | 0
 
+## Challenges Faced and How Was It Overcome
+
+1. Faced issues with integrating the modules because each of us had a different coding style. But eventually, reading through code and undersanding it helped us modify it and integrate it accordingly.
+2. Testing was something new to each and everyone of us in Python. We had to start from scratch and learn how to write test files for python programs.
+3. Following and keeping track of every process in SDLC was very difficult. With constant support and hardwork, we were able to atleast keep up with atleast half of it.
+4. Working within the time constraint was difficult.
+
+
 ## Introduction
 
 To design a Mini Arcade game system to play 2048,Sudoku and Tic-Tac-Toe(1player and 2player) games based on user choice.
