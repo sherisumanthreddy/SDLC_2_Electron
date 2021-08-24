@@ -102,14 +102,14 @@ Sudoku is a logic-based, combinatorial number-placement puzzle. Sudoku Companion
 ![image](https://user-images.githubusercontent.com/80813102/130348395-033b57ea-d359-4b08-b460-1c1bd244c3ca.png)
 
 
-### Cost and features
+## Cost and features
 The cost requires only for software development and implementation of the software. We can play 3 games using single Mini arcade game application.The user can play the following games:
 
 * 2048
 * Sudoku
 * Tic-Tac-Toe (1 player and 2 player)
 
-## Features
+### Features
 
 * User can play multiple games like sudoku, tic tac toe and 2048.
 * It is simple to use.
@@ -184,6 +184,7 @@ LL15 | **2048 Non functional system** : Provide sounds,timer,high score and pret
 
 
 ### 2048
+
 2048 requirements:
 
 functional:
