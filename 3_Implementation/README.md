@@ -21,4 +21,5 @@ Navigate to the directory containing this project after cloning from the termina
 ## Sudoku Companion
 It contains example puzzles,unsolvablepuzzles,Sudoku companion main file and test files.
 ## Tic-Tac-Toe
+It contains Player 1 and player 2 tictactoe games multi files and test files.
 
