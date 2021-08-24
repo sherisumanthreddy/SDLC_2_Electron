@@ -10,6 +10,10 @@
 |  HL_03       | **Sudoku Companion Input/Output**: Test basic input/output function| Path to txt file containing puzzle|SudokuGrid|SudokuGrid|Requirement based |
 |  HL_04       |**Sudoku Puzzle Solver**: Test to verify the solution provided by solver function|Path to txt file containing puzzle| Solved grid as a string|Solved grid as a string|Requirement based   |
 |  HL_05      |**Sudoku Puzzle Issolvable**: Test to verify if given puzzle is sovable |Path to txt file containing puzzle|True or False| Can/cannot be solved|Requirement based |
+|  HL_06      |**2048 Move Left**: Test to verify if all functions are performed correctly on a left move |gameboard |gameboard with left movement| gameboard with left movement|movement |
+|  HL_07      |**2048 Move Up**: Test to verify if all functions are performed correctly on an up move |gameboard |gameboard with up movement| gameboard with up movement|movement |
+|  HL_08      |**2048 Move Right**: Test to verify if all functions are performed correctly on a right move |gameboard |gameboard with right movement| gameboard with right movement|movement |
+|  HL_09      |**2048 Move Down**: Test to verify if all functions are performed correctly on a down move |gameboard |gameboard with down movement| gameboard with down movement|movement |
 
 
 ## Table no 2: Low level test plan
@@ -29,5 +33,9 @@
 |  LL_11  |**Sudoku Puzzle Value**: Test to verify if value entered is right or wrong| row,column and value |True or False |True or false as expected|Scenario based |
 |  LL_12   |**Sudoku Puzzle ValidateCleanedData**: Test to validate if given data is in right format| String containing values |True or False|True or False as expected | Scenario based |
 |  LL_13   |**Sudoku Puzzle Save**: Test to verify if file is saved successfully|Path to txt file  |File containing puzzle |File saved as expected|Scenario based |
-
-
+|  LL_14   |**2048 slam left**: Test to move all elements to the left|gameboard |gameboard with the correct moves |gameboard with the correct moves |core move test |
+|  LL_15   |**2048 compress left**: Test to combine all similar elements to the left|gameboard |gameboard with the correct moves |gameboard with the correct moves |core move test |
+|  LL_16   |**2048 transpose**: Test to swap rows and coloumns to perform further functions|gameboard |gameboard with rows as coloums |gameboard with the correct moves |core move test |
+|  LL_17   |**2048 reverse**: Test to mirror rows|gameboard |gameboard with flipped rows |gameboard with the correct moves |core move test |
+|  LL_18   |**2048 scoring**: Test to add tile values to score if the tile merges |gameboard |score |score |score tracker |
+|  LL_19   |**2048 game over detection**: Test to check if there is 2048 in the gameboard|gameboard |True/False |True/False |game over |
