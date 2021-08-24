@@ -109,7 +109,7 @@ The cost requires only for software development and implementation of the softwa
 * Sudoku
 * Tic-Tac-Toe (1 player and 2 player)
 
-##Features
+## Features
 
 * User can play multiple games like sudoku, tic tac toe and 2048.
 * It is simple to use.
