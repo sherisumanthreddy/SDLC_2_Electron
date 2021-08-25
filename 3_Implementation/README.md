@@ -1,20 +1,25 @@
 # IMPLEMENTATION MD FILE HERE
+
+## Running the program
+Navigate to the directory containing this project after cloning from the terminal. Run the following commands:
+* `cd 3_Implementation/`
+* `python game2048.py` to launch GUI games, includes all 2 GUI games + 1 console game
+* `python main.py` to launch console game seperately
+
+### Note:
+1. Please install the `ARCADE_I.TTF` font present in the `3_Implementation/` directory, just open the font file to install it.
+2. Install the following pip packages: `turtle`, `pickle`, `mock`.
+
+        pip install pickle-mixin
+    
+        pip install turtle
+        
+        pip install mock
+
+4. For Sudoku Companion have the sudoku game as comma separated text file like `3_Implementation/SudokuCompanion/puzzle.txt`.
+## 2048 Game
 ## Sudoku Companion
-1. A optional function to help load the puzzles from a .txt file.
-2. A function to find an empty cell and remove unwanted data.
-3. A fuction to find if a number is valid to be filled in an empty cell.
-4. A function to print the board at any moment as and when needed.
-5. A function to solve the puzzle using backtracking recursive algorithm.
-6. Atlast a function which will display the the final result after solving.
-
+It contains example puzzles,unsolvablepuzzles,Sudoku companion main file and test files.
 ## Tic-Tac-Toe
+It contains Player 1 and player 2 tictactoe games multi files and test files.
 
-1. A function to take input from user whether to play the game or not.
-2. A function to create tic-tac-toe playboard.
-3. A function to take human player move.
-4. A function to take Computer player move.
-5. A function to check whether playboard is full or not.
-6. A function to check status of game.
-7. A function to reverse player.
-8. A function to check winner.
-9. A function to display the playboard.

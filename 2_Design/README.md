@@ -26,29 +26,9 @@
 ### Flowchart
 ![arcade flow chart](https://user-images.githubusercontent.com/81627731/130354557-2baaedaa-b46f-4b2a-a296-b403289f8840.png)
 
-
-
-## THESE HAS TO GO
-### Tic-Tac-Toe
-### Usecase Diagram
-![UseCase](https://user-images.githubusercontent.com/66193894/130224628-59df5222-5c62-4bf4-9e64-b2c190b3cb96.png)
-
-### Activity Diagram
-![ActivityDiagram](https://user-images.githubusercontent.com/66193894/130256678-15037fb4-0fbd-49c7-ab79-75bc213cf870.png)
-
 ### Class Diagram
 ![classdiagram](https://user-images.githubusercontent.com/80813102/130295145-c7d964d0-6ede-4646-bc94-ac79d09e312c.png)
-![2048 class diagram](./2048+class+diagram.png)
-
-### SudokuCompanion
-### Usecase Diagram
-![Usecase](https://user-images.githubusercontent.com/81627731/130348770-1c30567b-04fc-4bd0-8e32-01d09f08f171.png)
+![2048 class diagram](./2048_class_diagram.png)
+![Class diagram sudoku](https://user-images.githubusercontent.com/81503646/130604251-b7050d21-9ead-4dba-b1aa-3319b908b415.png)
 
 
-
-### Mini Arcade Game
-
-![Flowchart](https://user-images.githubusercontent.com/80392588/130255510-3240d7fc-7770-42f2-8274-bdd6b534d432.png)
-
-### SudokuCompanion
-![flow chart](https://user-images.githubusercontent.com/81627731/130350850-e825f6bb-d5cb-4376-abb7-96f1f03769c9.png)

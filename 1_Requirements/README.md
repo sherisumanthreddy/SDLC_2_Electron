@@ -2,9 +2,11 @@
 
 ## Introduction
 
-To design a Mini Arcade game system to play 2048,Sudoku and Tic-Tac-Toe(1player and 2player) games based on user choice.
+To design a Mini Arcade game system to play 2048, Sudoku and Tic-Tac-Toe(1 player and 2 player) games based on user choice.
 
 ## Research
+
+It is an all-in one gaming platform for various games where user can access different types of games in single application.
 
 ### Tic-Tac-Toe 
 Tic-Tac-Toe is a well known game played by two
@@ -18,14 +20,29 @@ diagonal. If all the cells become filled the game is a draw.
 
 ![image](https://user-images.githubusercontent.com/80813102/130335359-4401ea44-590e-4e5d-a1ff-3a60758bee6d.png)
 
+To win the game, a player must place three of their marks in a horizontal, vertical, or diagonal row.
+
+The following example game is won by the first player, X:
+
+![image](https://user-images.githubusercontent.com/80813102/130637075-dc93fe62-53b7-4b94-83c3-ec3fd4c5cf04.png)
+
+
 ### Sudoku Companion
 
-Sudoku is a logic-based, combinatorial number-placement puzzle. Sudoku Companion is a mini-application which can be used to solve Sudoku puzzles more conveniently. It improves the concentration and logical thinking. It provides the following functions:
+Sudoku is a logic-based, combinatorial number-placement puzzle.The standard version of Sudoku consists of a 9×9 square grid containing 81 cells. The grid is subdivided into nine
+3×3 blocks. Some of the 81 cells are filled in with numbers from the set {1,2,3,4,5,6,7,8,9}.The whole grid is filled using the nine digits so that each row, each column, and each
+block contains each number exactly once.Sudoku Companion is a mini-application which can be used to solve Sudoku puzzles more conveniently. It improves the concentration and 
+logical thinking. It provides the following functions:
+
 1. checking if a solution exists
 2. provide hints 
 3. solve puzzle entirely
 
 ![image](https://user-images.githubusercontent.com/80813102/130348527-e3109d9e-1138-434f-afff-b2c4bec762d7.png)
+
+Here is an example of a Sudoku puzzle and its solution:
+
+![image](https://user-images.githubusercontent.com/80380749/130177030-8885cc7c-9269-410b-8e45-33085646503e.png)
 
 
 ### 2048
@@ -37,6 +54,17 @@ Sudoku is a logic-based, combinatorial number-placement puzzle. Sudoku Companion
 
 ### Cost and features
 The cost requires only for software development and implementation of the software. We can play 3 games using single Mini arcade game application.
+The user can play the following games:
+* 2048
+* Sudoku
+* Tic-Tac-Toe (1 player and 2 player)
+
+## Features
+* User can play multiple games like sudoku, tic tac toe and 2048.
+* It is simple to use.
+* User friendly.
+* It has high performance.
+* Accuracy in results.
 
 ### Defining Our System
 
@@ -116,17 +144,17 @@ LL15 | **2048 Non functional system** : Provide sounds,timer,high score and pret
 
 functional:
 1) movement physics - done
-2) 2048 detector 
-3) full board detector - partially done
-4) score counter
+2) 2048 detector - done
+3) full board detector - done
+4) score counter - done
 5) difficulty selector - doable through changing distribution of 2 and 4
 6) input sanitation
 
 non functional:
 1) sounds
 2) timer
-3) pretty UI
-4) high score
+3) pretty UI - done
+4) high score - done
 
 
 

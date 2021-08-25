@@ -224,6 +224,7 @@ class SudokuSolver:
         else:
             return False
 
+        
     def GetHintString(self):
         if not self.IsSolvable():
             return str(self.Puzz)

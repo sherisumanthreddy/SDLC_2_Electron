@@ -1,4 +1,4 @@
-name: Pytest-2048 
+name: Code Coverage
 
 on: [push]
 
@@ -8,10 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./3_Implementation/2048/
+        working-directory: ./.
     strategy:
       matrix:
-        python-version: [3.6, 3.7, 3.8, 3.9]
+        python-version: [3.8]
 
     steps:
       - uses: actions/checkout@v2
@@ -25,6 +25,7 @@ jobs:
           pip install pytest
           pip install turtle
           pip install mock
+          pip install pytest-cov
       - name: Test with pytest
         run: |
-          pytest
+          pytest --cov
